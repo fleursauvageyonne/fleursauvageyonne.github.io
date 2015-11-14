@@ -111,6 +111,7 @@ height:auto;
 #article {
 	width: 498px;
 	float: left;
+	padding-bottom: !important;
 	padding-left: 18px;
 	padding-right: 42px;
 	margin-top: 0px;
