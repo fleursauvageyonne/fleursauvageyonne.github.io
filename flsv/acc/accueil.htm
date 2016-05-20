@@ -29,6 +29,21 @@ body {background-color:#ece0d9; color:#404a25;}
 .alert {border:0px solid #ffffff; background-color:#e5faff; font-weight:lighter; text-align:center;}
 -->
 </style>
+<script type="text/javascript"> 
+<!--
+var nom = ["img01.jpg","img02.jpg","img03.jpg","img04.jpg"];
+var lien = ["","","",""];
+var numero = 0;
+function changer() {
+document.imageCarousel.src = "../../flsv/acc/dacc/d_hapen/"+nom[numero];
+document.getElementById("imageCarouselLien").href = lien[numero];
+//document.getElementById("imageCarousel").title = lienTitle[numero];
+numero += 1;
+if (numero == nom.length ) numero = 0;
+setTimeout("changer()",2900);
+}
+//-->
+</script>
 </head>
 <body onload="changer()"><div id="site"> 
 <a name="top"></a>
@@ -107,7 +122,11 @@ body {background-color:#ece0d9; color:#404a25;}
 
 <p><img src="../../imag10/flsvy.jpg" width="314" height="39" alt="Fleurs sauvages de l'Yonne" title="Fleurs sauvages de l'Yonne" /><h5><a title="page d'accueil en ligne" href="http://fleursauvageyonne.github.io/">http://fleursauvageyonne.github.io/</a></h5>
 
-<p align="justify">Né, au début des années 2000,  de l'idée d'un botaniste amateur passionné, cet herbier numérique n'avait d'autre but que celui de permettre de <a href="../../flsv/noms/noms1.htm">donner un nom</a> aux fleurs qui peuvent croiser notre chemin, un nom français ou <a href="../../flsv/jaune/lactucaser.htm">latin</a>... car partir à la cueillette des noms peut parfois être aussi amusant que partir à la cueillette des fleurs... et parfois ce sont des mots que l'on cueille comme les <a href="../../flsv/Lex/Lexi1_1.htm#stylopode">stylopodes</a> des Apiaceae dont l'apparition est imminente chez certaines d'entre elles</p><p align="center"><br /><br /><img src="../../imag10/flormai/stylopode1.jpg" border="0" width="454" height="193" alt="Stylopodes" title="Stylopodes"/><br /><br /><img src="../../imag10/flormai/stylopode2.jpg" border="0" width="446" height="239" alt="Stylopodes" title="Stylopodes"/><br /><br /></p>
+<p align="justify">Né, au début des années 2000,  de l'idée d'un botaniste amateur passionné, cet herbier numérique n'avait d'autre but que celui de permettre de <a href="../../flsv/noms/noms1.htm">donner un nom</a> aux fleurs qui peuvent croiser notre chemin, un nom français ou <a href="../../flsv/jaune/lactucaser.htm">latin</a>... car partir à la cueillette des noms peut parfois être aussi amusant que partir à la cueillette des fleurs... et parfois ce sont des mots que l'on cueille comme les <a href="../../flsv/Lex/Lexi1_1.htm#stylopode">stylopodes</a> des Apiaceae dont l'apparition est imminente chez certaines d'entre elles...</p><p align="center"><br /><br /><img src="../../imag10/flormai/stylopode1.jpg" border="0" width="454" height="193" alt="Stylopodes" title="Stylopodes"/><br /><br /><img src="../../imag10/flormai/stylopode2.jpg" border="0" width="446" height="239" alt="Stylopodes" title="Stylopodes"/><br /><br /></p>
+<p align="justify">...ou des phénomènes auxquels les botanistes ont donné des noms savants, comme <a href="../../flsv/Lex/Lexi1_1.htm#nyct">nyctinastie</a>, spectacle qu'offrent en ce mois de mai, à Arcy-sur-Cure et Saint-Moré, les petits hélianthèmes des Apennins  (<a href="../../flsv/blanc/heliantapp.htm"><em>Helianthemum apenninum</em></a>) repliant leurs pétales le soir au coucher du soleil.</p>
+
+<p><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../flsv/acc/dacc/d_hapen/img01.jpg" width="456" height="512" name="imageCarousel" id="imageCarousel" alt="" title=""/><br /><br /></p>
+
 <p align="justify">La Botanique, science encore jeune, se trouve dans une période de transition et il faut avoir une grande ouverture d'esprit pour accepter certains changements, ne serait-ce que le changement des noms latins...</p>
 <p align="justify">Comme l'écrit <a href="http://www.snhf.org/images/stories/2_Une_histoire_de_famille/malecot_nomenclature_botanique_et_horticole.pdf">Valérie Malécot</a>, <em>la nomenclature, bien qu’elle paraisse généralement imposée et compliquée, est en fait <a href="#nomcl">une activité</a> indispensable et très rigoureuse qui fournit les noms qui nous servent à communiquer. Cependant ce
 n’est pas elle qui fait le choix taxinomique [...] Ce dernier évoluant selon les époques, les méthodes et les conceptions des auteurs.</em></p>
