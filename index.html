@@ -32,27 +32,6 @@ body {background-color:#3f4b37; color:#6c8351;
 <script>
 
 <script>
-var tagAnalyticsCNIL = {}
-
-tagAnalyticsCNIL.CookieConsent = function() {
-    var gaProperty = 'UA-63048403-1 '
-    var disableStr = 'ga-disable-' + gaProperty;
-    var firstCall = false;
-	
-	function showBanner(){
-        var bodytag = document.getElementsByTagName('body')[0];
-        var div = document.createElement('div');
-        div.setAttribute('id','cookie-banner');
-        div.setAttribute('width','70%');
-        // Le code HTML de la demande de consentement
-        div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding:5px;font-size:12px;\
-        border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
-        Analytics. En continuant à  naviguer, vous nous autorisez à  déposer un cookie à  des fins de mesure\
-        d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
-     }
-
-
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
