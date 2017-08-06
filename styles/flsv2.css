@@ -58,6 +58,14 @@ a img {border:none;}
 	text-align:center;
 	line-height: 180%;
 	border-bottom:solid 1px #dddddd;}
+
+	#bandeaufleurbdp {border:0;
+	padding:16px 10px 16px 10px;	
+	margin:0 0 4px 0; 
+	height:auto; 
+	text-align:center;
+	line-height: 180%;
+	border-bottom:solid 1px #dddddd;}
 		
 	#bandeaufleur h2 { margin:0; clear:left; font-size:1.6em}
 
