@@ -29,21 +29,6 @@ body {background-color:#ece0d9; color:#404a25;}
 #article h2 {color:#42a5de; }
 -->
 </style>
-<script type="text/javascript"> 
-<!--
-var nom = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg"];
-var lien = ["","","","","","","",""];
-var numero = 0;
-function changer() {
-document.imageCarousel.src = "../../flsv/acc/dacc/diap/"+nom[numero];
-document.getElementById("imageCarouselLien").href = lien[numero];
-//document.getElementById("imageCarousel").title = lienTitle[numero];
-numero += 1;
-if (numero == nom.length ) numero = 0;
-setTimeout("changer()",2900);
-}
-//-->
-</script>
 </head>
 <body onload="changer()"><div id="site"> 
 
@@ -241,10 +226,23 @@ du Tholon et du Ravillon avec leurs peupleraies<br /><br /></li>
 
 <p><font size="-2"><a href="../../flsv/acc/yonne_1.htm#slp">Sols et paysages</a> | <a href="../../flsv/acc/yonne_1.htm#rlf">Altitudes et relief</a> | L'Yonne est une <a href="../../flsv/acc/yonne_2.htm#riv">rivière</a> | L'Yonne est un <a href="../../flsv/acc/yonne_2.htm#dept">département</a> | <a href="../../flsv/acc/yonne_2.htm#herb">Herboriser</a> dans l'Yonne | <a href="../../flsv/acc/yonne_2.htm#clim">Son climat</a> | <a href="../../flsv/acc/yonne_2.htm#vts">Ses vents</a> | </font></p>
 
-
  <p align="center" style="font-size:10px">
  <img src="../../imag03/rvb1.gif" width="460" height="4" alt="" title=""/><br /><br />Mise à jour :&#160;août 2017 &#160;<img src="../../imag10/copyleft.png" alt="" title="" width="13" height="13" />&#160;2005 à 2017&#160;&#160;<em><a title="page d'accueil en ligne" href="http://fleursauvageyonne.github.io">fleursauvageyonne</a></em>&#160;&#160;<a href="#top"><img src="../../imag10/flecheHBL.gif" width="15" height="10" alt="" title="Haut de la page" /></a></p>
-</div>
-</div>
+</div></div>
+<script type="text/javascript"> 
+<!--
+var nom = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg","img8.jpg"];
+var lien = ["","","","","","","",""];
+var numero = 0;
+function changer() {
+document.imageCarousel.src = "../../flsv/acc/dacc/diap/"+nom[numero];
+document.getElementById("imageCarouselLien").href = lien[numero];
+//document.getElementById("imageCarousel").title = lienTitle[numero];
+numero += 1;
+if (numero == nom.length ) numero = 0;
+setTimeout("changer()",2900);
+}
+//-->
+</script>
 </body>
 </html>

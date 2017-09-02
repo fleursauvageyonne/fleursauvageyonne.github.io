@@ -31,21 +31,6 @@ body {background-color:#ece0d9; color:#404a25;}
 .alert {border:0px solid #ffffff; background-color:#e5faff; font-weight:lighter; text-align:center;}
 -->
 </style>
-<script type="text/javascript"> 
-<!--
-var nom = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg"];
-var lien = ["","","","","",""];
-var numero = 0;
-function changer() {
-document.imageCarousel.src = "../../idiapo/d_ronce/"+nom[numero];
-document.getElementById("imageCarouselLien").href = lien[numero];
-//document.getElementById("imageCarousel").title = lienTitle[numero];
-numero += 1;
-if (numero == nom.length ) numero = 0;
-setTimeout("changer()",2900);
-}
-//-->
-</script>
 </head>
 <body onload="changer()"><div id="site"> 
 
@@ -151,5 +136,20 @@ setTimeout("changer()",2900);
   <img src="../../imag03/rvb1.gif" width="460" height="4" alt="" title=""/><br /><br />Mise à jour :&#160;novembre 2015 &#160;<img src="../../imag10/copyleft.png" alt="" title="" width="13" height="13" />&#160;2005 à 2017&#160;&#160;<em><a title="page d'accueil en ligne" href="http://fleursauvageyonne.github.io">fleursauvageyonne</a></em>&#160;&#160;<a href="#top"><img src="../../imag10/flecheHBL.gif" width="15" height="10" alt="" title="Haut de la page" /></a></p>
 
 </div></div>
+<script type="text/javascript"> 
+<!--
+var nom = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg"];
+var lien = ["","","","","",""];
+var numero = 0;
+function changer() {
+document.imageCarousel.src = "../../idiapo/d_ronce/"+nom[numero];
+document.getElementById("imageCarouselLien").href = lien[numero];
+//document.getElementById("imageCarousel").title = lienTitle[numero];
+numero += 1;
+if (numero == nom.length ) numero = 0;
+setTimeout("changer()",2900);
+}
+//-->
+</script>
 </body>
 </html>

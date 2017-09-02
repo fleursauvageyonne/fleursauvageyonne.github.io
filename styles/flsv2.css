@@ -164,9 +164,8 @@ acronym {border-bottom: 1px dashed #999;}
 
 h3 {margin-left:15px;}
 
-
-.tableaucouleur{width:80px; height:125px; border:1px outset; text-align:center;}
-.tableaucouleur td{ width:20px; height:20px; border:inset 1px; font-size:1.6em;text-align:center; font: 16px Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;}
+.tableaucouleur{border:1px outset; text-align:center; background-color: white;}
+.tableaucouleur td{width:25px; height:25px; text-align:center; font:16px Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;}
 .tableaucouleur td a:hover {text-decoration:none;}
 .tableaucouleur td a {}
 .genre{text-transform:uppercase; font-style:italic;}
