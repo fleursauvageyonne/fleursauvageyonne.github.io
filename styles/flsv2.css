@@ -164,10 +164,22 @@ acronym {border-bottom: 1px dashed #999;}
 
 h3 {margin-left:15px;}
 
-.tableaucouleur{border:1px outset; text-align:center; background-color: white;}
-.tableaucouleur td{width:25px; height:25px; text-align:center; font:16px Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;}
+.tableaucouleur{
+	border:1px outset;
+	text-align:center; 
+	background-color: white;
+	    border-collapse:separate;
+    border-spacing: 2px;
+}
+.tableaucouleur td{
+	width:21px; 
+	height:21px; 
+	text-align:center; 
+	font-size: 1px;
+	padding:0;
+}
 .tableaucouleur td a:hover {text-decoration:none;}
-.tableaucouleur td a {}
+.tableaucouleur td a {width:21px; height:21px;display:block;}
 .genre{text-transform:uppercase; font-style:italic;}
 
 
