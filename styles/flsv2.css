@@ -172,14 +172,22 @@ h3 {margin-left:15px;}
     border-spacing: 2px;
 }
 .tableaucouleur td{
-	width:21px; 
-	height:21px; 
+	width:23px; 
+	height:23px; 
 	text-align:center; 
 	font-size: 1px;
 	padding:0;
+	border-radius: 12px;
+	/*border:1px solid #fff;*/
 }
 .tableaucouleur td a:hover {text-decoration:none;}
-.tableaucouleur td a {width:21px; height:21px;display:block;}
+.tableaucouleur td a {
+	width:20px;
+	height:20px;
+	display:block;
+border-radius: 10px;
+}
+
 .genre{text-transform:uppercase; font-style:italic;}
 
 
