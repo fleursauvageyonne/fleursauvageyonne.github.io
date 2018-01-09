@@ -38,7 +38,7 @@ body {background-color:#f8f9f5; color:#0e0309;}
 
 </script>
 </head>
-<body><div id="site">
+<body onload="changer()"><div id="site">
 <div id="bandeau">
 <h2 style="color:#ffffff"></h2>
 </div>
@@ -52,9 +52,8 @@ body {background-color:#f8f9f5; color:#0e0309;}
     </form>
 <h1><a title="Accueil de Fleurs sauvages de l'Yonne" href="../../flsv/acc/accueil.htm">Accueil</a></h1>
   <ul><li><a title="Utilisation des cookies" href="../../flsv/acc/cookies.htm">Cookies</a></li></ul>  
-  
 
-<h1><a title="Présentation d'un département bourguignon" href="../../flsv/acc/yonne_1.htm">L'Yonne</a><br /><font style="text-transform:lowercase" size="-2">et ses prévisions météo</font></h1><ul><li>&#160;
+ <h1><a title="Présentation d'un département bourguignon" href="../../flsv/acc/yonne_1.htm">L'Yonne</a><br /><font style="text-transform:lowercase" size="-2">et ses prévisions météo</font></h1><ul><li>&#160;
   <a title="Météo en Bourgogne" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne/regi26"><img src="../../imag10/mto.gif" border="0" width="40" height="16" alt="Météo en Bourgogne" title="Prévisions en Bourgogne" /></a>&#160;&#160;&#160;  
 <a title="Météo dans l'Yonne" href="http://www.meteofrance.com/previsions-meteo-france/yonne/dept89"><img src="../../imag10/meteofrance.jpg" border="0" width="50" height="16" alt="Météo dans l'Yonne" title="Temps, vents, hydrographie, précipitations... dans l'Yonne" /></a></li></ul>
 
@@ -146,6 +145,24 @@ et les fleurs" href="../../flsv/acc/cinqsens.htm">Fleurs et sens</a></h1>
 
 <div id="article">
 	<h1 class="padding-t-x"><img src="../../imag02/aceranp.jpg" width="47" height="68" alt="" title="Labelle"/>Orchidaceae<br /><font size="1">Les Orchidées <a href="#chlo">chlorophylliennes</a> et <a href="#nochlo">non chlorophylliennes</a></font></h1>
+	
+  <p align="center"><img src="../../idiapo/orchidee__/orch_01.jpg" width="448" height="280" name="imageCarousel" id="imageCarousel" alt="" title=""/><a name="imageCarouselLien" id="imageCarouselLien"></a><script type="text/javascript"> 
+<!--
+var nom = ["orch_01.jpg", "orch_02.jpg", "orch_03.jpg", "orch_04.jpg", "orch_05.jpg", "orch_06.jpg", "orch_07.jpg", "orch_08.jpg", "orch_09.jpg", "orch_10.jpg", "orch_11.jpg", "orch_12.jpg", "orch_13.jpg", "orch_14.jpg", "orch_15.jpg", "orch_16.jpg", "orch_17.jpg", "orch_18.jpg", "orch_19.jpg", "orch_20.jpg", "orch_21.jpg", "orch_22.jpg", "orch_23.jpg", "orch_24.jpg", "orch_25.jpg", "orch_26.jpg", "orch_27.jpg", "orch_28.jpg", "orch_29.jpg", "orch_30.jpg", "orch_31.jpg", "orch_32.jpg", "orch_33.jpg", "orch_34.jpg", "orch_35.jpg", "orch_36.jpg", "orch_37.jpg", "orch_38.jpg", "orch_39.jpg", "orch_40.jpg", "orch_41.jpg",];
+var lien = ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""];
+var numero = 0;
+function changer() {
+document.imageCarousel.src = "../../idiapo/orchidee__//"+nom[numero];
+document.getElementById("imageCarouselLien").href = lien[numero];
+//document.getElementById("imageCarousel").title = lienTitle[numero];
+numero += 1;
+if (numero == nom.length ) numero = 0;
+setTimeout("changer()",2900);
+}
+//-->
+</script></p>
+
+
 	<h2><a name="chlo"></a>Orchidées chlorophylliennes<br />
 	<font size="1">avec <a href="#avec">pollinaires</a> ou <a href="#sans">pollinies</a></font></h2>
 	
@@ -212,7 +229,6 @@ Platanthère à deux feuilles,<br />platanthère à fleurs blanches</a></td></tr
 <tr><td><a href="../../flsv/orchid/epipacmuelleri.htm"><img src="../../imag02/epipacthellebp.jpg" title="Cliquer pour agrandir" alt=""/></a></td><td><a href="../../flsv/orchid/epipacmuelleri.htm"><em>Epipactis muelleri</em>  Godfery<br />Épipactis de Müller</a></td></tr>
 
 <tr><td><a href="../../flsv/orchid/epipacpurp.htm"><img src="../../imag02/epipactipurpp.jpg" title="Cliquer pour agrandir" alt=""/></a></td><td><a href="../../flsv/orchid/epipacpurp.htm"><em>Epipactis viridiflora</em> (Hoffm.) Krock.<br />Épipactis pourprée, helléborine pourpre</a></td></tr>
-
 <tr><td><a href="#top"><img src="../../imag10/pgh.gif" width="15" height="20" title="Haut de la page" alt="Haut de la page"/></a></td></tr>
 <tr><td><a href="../../flsv/orchid/listerov.htm"><img src="../../imag02/listerap.jpg" title="Cliquer pour agrandir" alt=""/></a></td><td><a href="../../flsv/orchid/listerov.htm"><em>Neottia ovata</em> (L.) Bluff & Fingerh.<br />
 Grande listère, listère ovale, listère à feuilles ovales</a></td></tr>
