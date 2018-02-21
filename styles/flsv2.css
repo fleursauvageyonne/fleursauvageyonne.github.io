@@ -116,6 +116,46 @@ height:auto;
 #menu_pr ul li { margin:0 0 0 0; background:url(../imag10/bgris.gif) no-repeat center left;padding-left:14px; }
 .lang_pr { border:0px solid #666666; margin: 5px 0 5px 0;padding: 0px; font-size:0.8em; font-weight:lighter; line-height:105%}
 
+#menusmart {width:498px; 
+height:auto;
+	text-align:left;
+	font-size:1em;
+	font-weight:bolder;
+	float:left;
+	padding:8px;
+	margin-top:1px;
+	margin-right:8px;
+}
+#menusmart a img{ border:0;}
+#menusmart p { text-align:left; margin:0; padding:0}
+#menusmart hr { margin:10px 0; width:50%; padding:0}
+#menusmart h1 { text-transform:uppercase; font-size:1em; font-weight:bold; margin:1em 0 0 0;padding:0;}
+#menusmart ul { position:relative;margin:0; padding:0; list-style:none; list-style-position:inherit; }
+#menusmart ul li { margin:0 0 0 0; background:url(../imag10/bgris.gif) no-repeat center left;padding-left:14px; }
+.lang { border:0px solid #666666; margin: 5px 0 5px 0;padding: 0px; font-size:0.8em; font-weight:lighter; line-height:105%}
+
+#menusmart_pr {
+	width: 200px;
+	text-align:left;
+	font-size:1em;
+	font-weight:bolder;
+	float:left;
+	height:100%;
+	padding:8px;
+	margin-top:1px;
+	margin-right:8px;
+	margin-left:280px;
+}
+#menusmart_pr a img{ border:0;}
+#menusmart_pr p { text-align:left; margin:0; padding:0}
+#menusmart_pr hr { margin:10px 0; width:50%; padding:0}
+#menusmart_pr h1 { text-transform:uppercase; font-size:1em; font-weight:bold; margin:1em 0 0 0;padding:0;}
+#menusmart_pr ul { position:relative;margin:0; padding:0; list-style:none; list-style-position:outside; }
+
+
+#menusmart_pr ul li { margin:0 0 0 0; background:url(../imag10/bgris.gif) no-repeat center left;padding-left:14px; }
+.lang_pr { border:0px solid #666666; margin: 5px 0 5px 0;padding: 0px; font-size:0.8em; font-weight:lighter; line-height:105%}
+
 #article {
 	width: 498px;
 	float: left;
@@ -128,7 +168,7 @@ height:auto;
 }
 #article table { font-size:1em; margin:auto;}
 #article table caption{ margin:auto;}
-#article h1 {  margin:1.4em 1em 1.8em 1em; clear:both; padding:0; font-size:1.4em; text-align:right;}
+#article h1 {margin:1.4em 1em 1.8em 1em; clear:both; padding:0; font-size:1.4em; text-align:right;}
 
 #article h2 { margin:1.2em 0 .6em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.4em; font-weight:bold;}
 #article h3 { margin:1.7em 0 .1em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.2em; font-weight:bold;}
@@ -319,5 +359,4 @@ table tbody tr th{font-weight:bold; text-align:left; vertical-align:top;}
 	padding:0;
 	text-align: center;}
 	
-	#bandeaumono {width:1750px; margin:0 auto; background-color:#ffffff; text-align:center;}
-	
+	#bandeaumono {width:1750px; margin:0 auto; background-color:#ffffff; text-align:center;}	
