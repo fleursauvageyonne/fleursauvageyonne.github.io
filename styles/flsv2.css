@@ -189,7 +189,7 @@ height:auto;
 #article .imagedroite {float:right; margin:0 8px 8px 5px; border:0;}
 .legende { font-size:.8em}
 .alertnl {text-align:inherit; border-top:40px; border-left:100px; border-right: 100px; border-bottom:40px; margin-left:inherit; margin-right: inherit; solid: #ffffff; background-color:#f1eae8; font-weight:bolder; padding-left: 100px; padding-right: 100px; padding-top: 40px; padding-bottom:40px; }
-.alert {border:1px solid #666666; background-color:#cccccc; margin: 17px 0 16px 0;padding: 12px;  line-height:110%}
+.alert {solid #666666; background-color:#cccccc; margin: 17px 0 16px 100px;padding: 12px;  line-height:110%}
 .alert ul { margin:1em 0 0 17px}
 .descriptif{background-color:#ffffff; margin:auto; border:0;}
 .descriptif th, .descriptif td { padding:4px; white-space:nowrap;}
