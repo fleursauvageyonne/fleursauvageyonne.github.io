@@ -76,7 +76,7 @@ a img {border:none;}
 	line-height: 150%;
 	text-align:center;}
 
-#menu { width:25%; 
+#menu {width:25%; 
 height:auto;
 	text-align:left;
 	font-size:1em;
@@ -166,8 +166,13 @@ height:auto;
 	background-color: #ffffff;
 	text-align: left;
 }
-#article table { font-size:1em; margin:auto;}
-#article table caption{ margin:auto;}
+.articlezdt {width: 300px; 
+	padding-left: 100px;
+	padding-right: 42px;
+}
+
+#article table {font-size:1em; margin:auto;}
+#article table caption{margin:auto;}
 #article h1 {margin:1.4em 1em 1.8em 1em; clear:both; padding:0; font-size:1.4em; text-align:right;}
 
 #article h2 { margin:1.2em 0 .6em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.4em; font-weight:bold;}
@@ -183,7 +188,7 @@ height:auto;
 #article .imagegauche { float:left; margin:0 8px 8px 0; border:0;}
 #article .imagedroite {float:right; margin:0 8px 8px 5px; border:0;}
 .legende { font-size:.8em}
-.alertnl {text-align: inherit; border-top:40px; border-left:100px; border-right: 100px; border-bottom:40px; margin-left:inherit; margin-right: inherit; solid #ffffff; background-color:#f1eae8; font-weight:bolder; padding-left: 100px; padding-right: 100px; padding-top: 40px; padding-bottom: 40px; }
+.alertnl {text-align:inherit; border-top:40px; border-left:100px; border-right: 100px; border-bottom:40px; margin-left:inherit; margin-right: inherit; solid: #ffffff; background-color:#f1eae8; font-weight:bolder; padding-left: 100px; padding-right: 100px; padding-top: 40px; padding-bottom:40px; }
 .alert {border:1px solid #666666; background-color:#cccccc; margin: 17px 0 16px 0;padding: 12px;  line-height:110%}
 .alert ul { margin:1em 0 0 17px}
 .descriptif{background-color:#ffffff; margin:auto; border:0;}
@@ -191,10 +196,6 @@ height:auto;
 .descriptif th{ text-align:left; line-height:0.9em}
 .descriptif th .legend {font-size: .8em; font-weight:normal; margin:0;padding:0;display:block;}
 .genre { text-transform:uppercase}
-.descriptif th {background-color:#f5f5f5;}
-.descriptif th, .descriptif td {border:1px #53711c solid;}
-.descriptif .titre {font-size:1em; background-color:#CCCCCC; font-style:italic; padding-top:10px}
-
 .tdB {width:21px; border-bottom-style:dashed; border-bottom-width:1px; border-bottom-color:#666666; height:21px;}
 
 .tdlxlat {width:32%; vertical-align:top; font-weight:bold; color:#053a89;}
@@ -230,6 +231,11 @@ border-radius: 10px;
 }
 
 .genre{text-transform:uppercase; font-style:italic;}
+
+table tbody tr th{font-weight:bold; text-align:left; vertical-align:top; background-color:#d3ff9e;}
+.descriptif th {background-color:#f5f5f5; column-span: all; width: inherit;}
+.descriptif th, .descriptif td {border:1px #53711c solid;}
+.descriptif .titre {font-size:1em; background-color:#CCCCCC; font-style:italic; padding-top:10px}
 
 
 /* Barre JL */
@@ -341,8 +347,6 @@ ul#ordres li a:hover {
 .clear {float:none; height:0; clear:both}
 .center {margin: 0 auto;}
 
-table tbody tr th{font-weight:bold; text-align:left; vertical-align:top;}
-
 #visite {
 	width:1060px;
 	border:10px;
@@ -351,8 +355,7 @@ table tbody tr th{font-weight:bold; text-align:left; vertical-align:top;}
 	text-align: center;}
 	
 	#bandeauflsvisite {width:1060px; margin:0 auto; background-color:#ffffff; text-align:center;}
-	
-	
+		
 	#cartemono {
 	width:1750px;
 	border:10px;
