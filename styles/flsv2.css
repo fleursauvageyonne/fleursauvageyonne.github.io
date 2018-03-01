@@ -166,9 +166,7 @@ height:auto;
 	background-color: #ffffff;
 	text-align: left;
 }
-.articlezdt {width: 300px; 
-	padding-left: 100px;
-	padding-right: 42px;
+.articlezdt {width: inherit;
 }
 
 #article table {font-size:1em; margin:auto;}
