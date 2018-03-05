@@ -172,10 +172,9 @@ height:auto;
 #article table {font-size:1em; margin:auto;}
 #article table caption{margin:auto;}
 #article h1 {margin:1.4em 1em 1.8em 1em; clear:both; padding:0; font-size:1.4em; text-align:right;}
-
 #article h2 { margin:1.2em 0 .6em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.4em; font-weight:bold;}
 #article h3 { margin:1.7em 0 .1em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.2em; font-weight:bold;}
-
+#article h5 { margin:1.7em 0 .1em 0; padding:.2em 0 .2em 0;text-align:left; font-size:1.2em; font-weight:bold;}
 /*titres*/
 #article .padding-t-x{ padding-top:20px}
 #article .padding-t-xx{ padding-top:40px}
