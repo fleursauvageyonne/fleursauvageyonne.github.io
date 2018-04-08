@@ -31,6 +31,9 @@ body {background-color:#3f4b37; color:#6c8351;
 	margin-right:0px;
 	margin-bottom:0px;
 	margin-left:0px;}
+	#wrapper {
+  overflow: hidden; /* Empêche le dépassement des flottants. */
+}
 -->
 </style>
 <script>
@@ -43,8 +46,10 @@ body {background-color:#3f4b37; color:#6c8351;
   ga('send', 'pageview');
 
 </script>
-</head><body><!-- debut du script anime fleurs -->
-
+</head>
+<body>
+<div id="wrapper">
+<!-- debut du script anime fleurs -->
 <div id="dot0" style="visibility: hidden; width:36px; position: absolute; height: 36px"><img height="36" alt="" src="imag10/clrd/rond.gif" width="36" border="0" /></div>
 
 <div id="dot1" style="width: 36px; position: absolute; height: 36px"><img height="36" alt="" src="imag10/clrd/FB3.gif" width="36" border="0" /></div>
@@ -57,7 +62,8 @@ body {background-color:#3f4b37; color:#6c8351;
 
 <div id="dot5" style="width: 22px; position: absolute; height: 22px"><img height="22" alt="" src="imag10/clrd/FB3.gif" width="22" border="0" /></div>
 
-<div id="dot6" style="width: 18px; position: absolute; height: 18px"><img height="18" alt="" src="imag10/clrd/rond.gif" width="18" border="0" /></div><br />
+<div id="dot6" style="width: 18px; position: absolute; height: 18px"><img height="18" alt="" src="imag10/clrd/rond.gif" width="18" border="0" /></div>
+<!-- fin du script anime fleurs -->
 
 <table summary="" width="40%" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
 <tr>
@@ -69,9 +75,11 @@ body {background-color:#3f4b37; color:#6c8351;
 <tr>
   <td align="center" colspan="3">
   <a href="flsv/acc/accueil.htm"><img title="Entrez / Welcome / Bienvenidos / добро пожаловать / مَرْحَبا" src="imag10/clrd/titrindex1.png" width="514" height="181" alt=""/></a></td></tr>
+  
   <tr><td align="center" colspan="5"><font size="1">Enumeratio silvaticorum agrorumque florum Icaunae, in Burgundia (Gallia celtica)</font></td></tr>
   
   <tr><td align="center"><a href="https://youtu.be/nZkgyIdXt44" target="_blank"><img src="imag10/avcmskp.gif" width="25" height="24" border="0" alt="" title="Claude Debussy, Printemps, Suite symphonique." /></a></td></tr>
+  
   <tr><td align="center"><img src="imag10/clrd/herbvirt1.png" width="381" height="92" alt="L'Herbier virtuel icaunais de Claude Richard" title="L'Herbier virtuel icaunais de Claude Richard" /><br /><img src="imag10/clrd/CR.jpg" width="66" height="91" alt="Claude Richard" title="Claude Richard"/><br /><font size="-1">membre de<br />l'Association Icaunaise de Botanique</font><br /><img src="imag10/clrd/AIB.gif" width="41" height="39" alt="AIB" title="AIB" border="0"/><br /><br />en collabortion avec<br />Annick Jani et Daniel Bourget<br /><br />
 </td></tr>
   
@@ -110,9 +118,8 @@ body {background-color:#3f4b37; color:#6c8351;
 	<td bgcolor="#af007e" width="23" height="23"><a title="fleurs pourpres" href="flsv/pourpre/LF4.htm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
       <td bgcolor="#fe0000" width="23" height="23"><a title="fleurs rouges" href="flsv/rouge/LF10.htm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
 		</tr></table>
-
   	    
-    </td></tr><tr><td align="center" colspan="21"><br />ou bien<br /><a title="Entrez / Welcome / Bienvenidos / добро пожаловать / مَرْحَبا" href="flsv/acc/accueil.htm"><strong>&#160;&#160;&#160;ENTREZ&#160;&#160;&#160;</strong><br /><img src="imag10/clrd/FB3.gif" width="36" height="36" alt="" border="0" /></a><br /></td></tr></td></tr><tr><td><hr width="10%" /></td></tr>
+<tr><td align="center" colspan="21"><br />ou bien<br /><a title="Entrez / Welcome / Bienvenidos / добро пожаловать / مَرْحَبا" href="flsv/acc/accueil.htm"><strong>&#160;&#160;&#160;ENTREZ&#160;&#160;&#160;</strong><br /><img src="imag10/clrd/FB3.gif" width="36" height="36" alt="" border="0" /></a><br /></td></tr></td></tr><tr><td><hr width="10%" /></td></tr>
      	    
 
 
@@ -122,7 +129,8 @@ body {background-color:#3f4b37; color:#6c8351;
 	</tr>
 <tr>
   <td align="center" colspan="6">
-	<font size="1">Mise à jour :&#160;Mars 2018&#160;&#160;<img src="imag10/copyleft.png" alt="Copyleft" title="Copyleft" align="absbottom" width="13" height="13"/> 2005 à 2018<br /><br />
+	<font size="1">Mise à jour :&#160;Avril  2018&#160;&#160;<img src="imag10/copyleft.png" alt="Copyleft" title="Copyleft" align="absbottom" width="13" height="13"/> 2005 à 2018<br />
+	<br />
 <em>Conception et maintenance : <a href="flsv/acc/merci.htm#acj">Annick Jani</a></em></font><br /><a href="flsv/acc/cookies.htm"><font size="1" color="#2c3aa4">Utilisation des cookies</font></a><br /><br /></td></tr>
 	</table>
 	
@@ -313,7 +321,7 @@ dots[i].obj.top =  dots[i].Y+"px";
    }
 }
 </script>	
-
 <br /><br />
+	</div>
 </body>
 </html>
