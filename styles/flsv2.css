@@ -12,7 +12,7 @@ html {font-size: 100%;
 body {margin:0 auto;
 font: 80% Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;}
 
-#wrapper {overflow: hidden;}
+#wrapper {overflow:auto;}
 	
 #pagebasflr {margin:auto;
 width:90%;
