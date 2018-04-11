@@ -1,9 +1,9 @@
-/* CSS Document */
+article/* CSS Document */
 
 html {font-size: 100%;
 }
 
-#site {width:790px;
+#site {width:780px;
 	border:10px;
 	margin:0 auto;
 	padding:0;
@@ -145,20 +145,19 @@ height:auto;
 #menusmart_pr h1 {text-transform:uppercase; font-size:1em; font-weight:bold; margin:1em 0 0 0;padding:0;}
 #menusmart_pr ul {position:relative;margin:0; padding:0; list-style:none; list-style-position:outside;}
 
-
 #menusmart_pr ul li {margin:0 0 0 0; background:url(../imag10/bgris.gif) no-repeat center left;padding-left:14px;}
 .lang_pr {border:0px solid #666666; margin: 5px 0 5px 0;padding: 0px; font-size:0.8em; font-weight:lighter; line-height:105%;}
 
-#article {width: 498px;
+#article {width: 500px;
 	float: left;
 	padding-left: 18px;
-	padding-right: 42px;
+	padding-right: 32px;
 	margin-top: 0px;
 	line-height: 150%;
 	background-color: #ffffff;
 	text-align: left;}
 
-.articlezdt {width: inherit;}
+.articlezdt {width: 510px;}
 
 #article table {font-size:1em; margin:auto;}
 #article table caption {margin:auto;}
