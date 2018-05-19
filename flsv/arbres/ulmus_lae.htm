@@ -40,7 +40,7 @@ body {background-color:#73655a;}
 <tr><td align="left"><a href="#descriptif"><img src="../../imag03/fledesc.gif" width="15" height="20" alt="Cliquer pour descriptif" title="Cliquer pour descriptif" align="top"/></a></td></tr></table>
 
 <p align="center"><a name="imageCarouselLien" id="imageCarouselLien"></a>
-<img src="../../idiapo/darbre/d_ulmuslae/img1.jpg" width="506" height="546" name="imageCarousel" id="imageCarousel" alt="Ulmus laevis, orme pédonculé" title="Ulmus laevis, orme pédonculé"/><br /><font size="-2">Saint-Moré, 19 avril 2010</font></p>
+<img src="../../idiapo/darbre/d_ulmuslae/img1.jpg" width="506" height="546" name="imageCarousel" id="imageCarousel" alt="Ulmus laevis, orme pédonculé" title="Ulmus laevis, orme pédonculé"/><br /></p><div id="CarouselText" style="text-align:center; width:auto; font-style:normal; font-size:1em; margin:0;padding:0"></div><br /><br />
 
 <table summary="descriptif" width="578" border="0" cellpadding="10" bgcolor="#ffffff" align="center">
 <caption><a name="descriptif"></a><em>ULMUS laevis</em> Pallas<br />Orme blanc, orme pédonculé</caption>
@@ -104,18 +104,20 @@ Plante ligneuse</li><li>Commun</li><li>Période de floraison : Mars-Avril</li><l
 </div></div></div>
 <script type="text/javascript"> 
 <!--
-var nom = ["img1.jpg","img2.jpg","img3.jpg"];
-var lien = ["","",""];
+var nom = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+var lien = ["../../flsv/arbres/ulmus-lae.htm","../../flsv/arbres/ulmus-lae.htm","../../flsv/arbres/ulmus-lae.htm","../../flsv/arbres/ulmus-lae.htm"];
+var lienTitle = ["Saint-Moré, 19 avril 2010","Saint-Moré, 19 avril 2010","Saint-Moré, 19 avril 2010","Arcy-sur-Cure, 11 mai 2018"];
 var numero = 0;
 function changer() {
 document.imageCarousel.src = "../../idiapo/darbre/d_ulmuslae/"+nom[numero];
 document.getElementById("imageCarouselLien").href = lien[numero];
 //document.getElementById("imageCarousel").title = lienTitle[numero];
+document.getElementById("CarouselText").innerHTML = lienTitle[numero];
 numero += 1;
 if (numero == nom.length ) numero = 0;
 setTimeout("changer()",2500);
 }
 //-->
 </script>
-</div></body>
+</body>
 </html> 
