@@ -219,6 +219,19 @@ table tbody tr th{font-weight:bold; text-align:left; vertical-align:top; backgro
 .descriptif th, .descriptif td {border:1px #53711c solid;}
 .descriptif .titre {font-size:1em; background-color:#CCCCCC; font-style:italic; padding-top:10px;}
 
+.tableauplsfl{border:0px outset;
+	text-align:center; 
+	background-color: white;
+	    border-collapse:separate;
+    border-spacing: 2px;}
+
+.tableauplsfl td{width:150px; 
+	height:50px; 
+	text-align:center; 
+	font-size:15px;
+	padding:0;
+	border-radius: 12px;
+	/*border:1px solid #fff;*/ }
 
 /* Barre JL */
 ul#menu {position: static;
