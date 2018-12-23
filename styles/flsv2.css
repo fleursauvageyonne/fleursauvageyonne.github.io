@@ -204,7 +204,7 @@ h3 {margin-left:15px;}
 	text-align:center; 
 	font-size: 1px;
 	padding:0;
-	border-radius: 12px;
+	border-radius: 10px;
 	/*border:1px solid #fff;*/ }
 .tableaucouleur td a:hover {text-decoration:none;}
 .tableaucouleur td a {width:20px;
@@ -230,7 +230,7 @@ table tbody tr th{font-weight:bold; text-align:left; vertical-align:top; backgro
 	text-align:center; 
 	font-size:15px;
 	padding:0;
-	border-radius: 12px;
+	border-radius: 10px;
 	/*border:1px solid #fff;*/ }
 
 /* Barre JL */
