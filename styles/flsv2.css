@@ -185,7 +185,7 @@ height:auto;
 .genre {text-transform:uppercase;}
 .tdB {width:21px; border-bottom-style:dashed; border-bottom-width:1px; border-bottom-color:#666666; height:21px;}
 
-.tdlxlat {width:32%; vertical-align:top; font-weight:bold; color:#053a89;}
+.tdlxlat {vertical-align:top; font-weight:bold; color:#053a89;}
 
 acronym {cursor: help;}
 
