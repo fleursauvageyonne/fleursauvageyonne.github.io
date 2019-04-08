@@ -41,7 +41,7 @@ body {background-color:#ece0d9;}
 
 </head>
 
-<body>
+<body onload="changer()">
 <div id="wrapper">
 <div id="site"> 
 <div id="bandeau">
@@ -147,10 +147,12 @@ body {background-color:#ece0d9;}
 
 <h1 class="padding-t-x">Accueil<br />et nouvelles éventuelles</h1>
 
-<p align="center">Printemps : les bourgeons floraux s'épanouissent.
-<br /><br /><img src="../../imag10/bfloral.jpg" width="461" height="392" title="" /><br /><font size="-2">Lucy-sur-Cure, 3 avril 2019</font></p>
+	<p align="center">Printemps : les bourgeons s'épanouissent.
+<br /><br /><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="bfloral/bfloral1.jpg" width="461" height="392" name="imageCarousel" id="imageCarousel" title=""/>
+</p><div id="CarouselText" style="text-align:center; width:auto; font-style:italic; font-size:0.9em; margin:0;padding:0"></div>
 
-<p align="center"><a href="https://www.youtube.com/watch?v=yrhGmXY_wpk" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24"  title="Igor Stravinsky : Le Sacre du Printemps - 1910-1913" /></a><br /><br /><font size="-3">Il faut admettre que, comme l'écrit <a href="../../flsv/acc/biblio.htm#lddm">R. Bertrand</a> :<br /><em>Parce qu'ils font parader des êtres soustraits aux déterminations de leur milieu,<br />les [...] herbiers qui agaçaient tant le jeune <a href="../../flsv/var/bota.htm#darwin">Wallace</a> [...] inventent mille solitudes<br />quand le vivant ne forme qu'un seul peuple.</em><br /><br />
+
+<p align="center"><br /><br /><a href="https://www.youtube.com/watch?v=yrhGmXY_wpk" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24"  title="Igor Stravinsky : Le Sacre du Printemps - 1910-1913" /></a><br /><br /><font size="-3">Il faut admettre que, comme l'écrit <a href="../../flsv/acc/biblio.htm#lddm">R. Bertrand</a> :<br /><em>Parce qu'ils font parader des êtres soustraits aux déterminations de leur milieu,<br />les [...] herbiers qui agaçaient tant le jeune <a href="../../flsv/var/bota.htm#darwin">Wallace</a> [...] inventent mille solitudes<br />quand le vivant ne forme qu'un seul peuple.</em><br /><br />
 Mais, ne serait-ce là qu'une illusion ? 
 Vues de plus près, ces « solitudes » ne sont pas seules !<br />
 <a href="../../flsv/acc/biblio.htm#jscmqc">Des microbes</a>, des champignons, des insectes... les "déconstruisent" !</font><br /><br /></p>
@@ -194,8 +196,6 @@ ou même pour un ver de terre, à acquérir une organisation supérieure ? (page
 	<p align="center">Mais il est certain qu'en 2019 avec un smartphone<br />
 	<a title="Pl@nteNet" href="http://identify.plantnet-project.org/">Pl@nteNet</a> permet de trouver le nom d'une plante aisément.<br />
 	Soyez cependant <a href="../../flsv/acc/yonne_2.htm#bvn">bienvenus dans l'Yonne</a> pour de belles balades florales.</p>
-	
-
 
 	<p align="center">-------</p>
 	<p align="justify">La Botanique est un domaine difficile. Il est parfois ardu d'y démêler le vrai du faux quand on est amateur, d'autant plus que ce domaine ne nomme désormais Biologie végétale et qu'il étudie les végétaux au niveau de leurs molécules, leurs gènes, leurs cellules, leurs organismes et
@@ -214,5 +214,22 @@ ou même pour un ver de terre, à acquérir une organisation supérieure ? (page
   <img src="../../imag03/rvb1.gif" width="460" height="4" /><br /><br />
   Mise à jour :&#160;avril 2019&#160;&#160;<img src="../../imag10/copyleft.png"  width="13" height="13" />&#160; 2005 à 2019&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">fleursauvageyonne</a></em>&#160;&#160;<a href="#top"><img src="../../imag10/flecheHBL.gif" width="15" height="10" title="Haut de la page" /></a></p>
 </div></div></div></div>
+<script type="text/javascript"> 
+<!--
+var nom = ["bfloral1.jpg", "bfloral2.jpg", "bfloral3.jpg", "bfloral4.jpg"];
+var lien = ["../../flsv/acc/accueil.htm","../../flsv/acc/accueil.htm","../../flsv/acc/accueil.htm","../../flsv/acc/accueil.htm"];
+var lienTitle = ["Lucy-sur-Cure, 3 avril 2019","Lucy-sur-Cure, 3 avril 2019","Lucy-sur-Cure, 8 avril 2019","Lucy-sur-Cure, 8 avril 2019"];
+var numero = 0;
+function changer() {
+document.imageCarousel.src = "bfloral/"+nom[numero];
+document.getElementById("imageCarouselLien").href = lien[numero];
+//document.getElementById("imageCarousel").title = lienTitle[numero];
+document.getElementById("CarouselText").innerHTML = lienTitle[numero];
+numero += 1;
+if (numero == nom.length ) numero = 0;
+setTimeout("changer()", 3000);
+}
+//-->
+</script>
 </body>
 </html>
