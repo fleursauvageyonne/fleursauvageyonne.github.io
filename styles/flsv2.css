@@ -196,6 +196,9 @@ acronym {border-bottom: 1px dashed #999;}
 
 h3 {margin-left:15px;}
 
+.reponse{border:1px outset;
+	text-align:center;background-color:#e7d8cf; width:65px;}
+
 .tableaucouleur{border:1px outset;
 	text-align:center; 
 	background-color: white;
