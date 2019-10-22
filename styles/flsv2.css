@@ -569,17 +569,9 @@ a img {
 }
 
 .tdlxlat {
-	width: 2000px;
-	vertical-align: top;
+	width: 100%;
 	font-size: 1.2em;
 	font-weight: bold;
-	color: #053a89;
-}
-
-.tdcdlat {
-	vertical-align: top;
-	font-size: 1.2em;
-	font-weight: normal;
 	color: #053a89;
 }
 
