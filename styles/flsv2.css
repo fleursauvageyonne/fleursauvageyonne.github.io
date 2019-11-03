@@ -87,7 +87,7 @@ a img {
 #bandeau h2 {
 	margin: 0;
 	clear: left;
-	font-size: 1.6em
+	font-size: 1.6em;
 }
 
 #bandeau h2 img {
@@ -158,7 +158,7 @@ a img {
 #menu hr {
 	margin: 10px 0;
 	width: 50%;
-	padding: 0
+	padding: 0;
 }
 
 #menu h1 {
@@ -212,13 +212,13 @@ a img {
 #menu_pr p {
 	text-align: left;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 #menu_pr hr {
 	margin: 10px 0;
 	width: 50%;
-	padding: 0
+	padding: 0;
 }
 
 #menu_pr h1 {
@@ -445,7 +445,7 @@ a img {
 	right: 0px;
 	font-size: 0.8em;
 	font-weight: lighter;
-	line-height: 105%
+	line-height: 105%;
 }
 
 #article p {
