@@ -372,18 +372,18 @@ a img {
 }
 
 #article {
-	width: 500px;
+	width: 718px;
 	float: left;
-	padding-left: 18px;
-	padding-right: 43px;
-	margin-top: 0px;
+	padding-left: 50px;
+	padding-right: 10px;
+	margin: 0px 0px 16px 0px;
 	line-height: 150%;
 	background-color: #ffffff;
 	text-align: left;
 }
 
 .articlezdt {
-	width: 510px;
+	width: 650px;
 }
 
 #article table {
