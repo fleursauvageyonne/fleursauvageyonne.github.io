@@ -138,8 +138,8 @@ a img {
 	height: auto;
 	text-align: left;
 	font-size: 1em;
-	font-weight: lighter;
-	float: left;
+	font-weight: bold;
+	float: right;
 	padding: 8px;
 	margin-top: 1px;
 	margin-right: 8px;
@@ -180,7 +180,7 @@ a img {
 #menu ul li {
 	margin: 0 0 0 0;
 	background: url(../imag10/bgris.gif) no-repeat center left;
-	padding-left: 14px;
+	padding-left: : 14px;
 }
 
 .lang {
@@ -193,11 +193,11 @@ a img {
 }
 
 #menu_pr {
-	width: 200px;
+	width: 400px;
 	text-align: left;
 	font-size: 1em;
 	font-weight: lighter;
-	float: left;
+	float: right;
 	height: 100%;
 	padding: 8px;
 	margin-top: 1px;
@@ -217,7 +217,7 @@ a img {
 
 #menu_pr hr {
 	margin: 10px 0;
-	width: 50%;
+	width: 90%;
 	padding: 0;
 }
 
@@ -225,7 +225,7 @@ a img {
 	text-transform: uppercase;
 	font-size: 1em;
 	font-weight: bold;
-	margin: 1em 0 0 0;
+	text-align: left;
 	padding: 0;
 }
 
@@ -252,56 +252,6 @@ a img {
 	line-height: 105%;
 }
 
-#menusmart {
-	width: 498px;
-	height: auto;
-	text-align: left;
-	font-size: 1em;
-	font-weight: bolder;
-	float: left;
-	padding: 8px;
-	margin-top: 1px;
-	margin-right: 8px;
-}
-
-#menusmart a img {
-	border: 0;
-}
-
-#menusmart p {
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
-
-#menusmart hr {
-	margin: 10px 0;
-	width: 50%;
-	padding: 0;
-}
-
-#menusmart h1 {
-	text-transform: uppercase;
-	font-size: 1em;
-	font-weight: bold;
-	margin: 1em 0 0 0;
-	padding: 0;
-}
-
-#menusmart ul {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	list-style-position: inherit;
-}
-
-#menusmart ul li {
-	margin: 0 0 0 0;
-	background: url(../imag10/bgris.gif) no-repeat center left;
-	padding-left: 14px;
-}
-
 .lang {
 	border: 0px solid #666666;
 	margin: 5px 0 5px 0;
@@ -309,57 +259,6 @@ a img {
 	font-size: 0.8em;
 	font-weight: lighter;
 	line-height: 105%;
-}
-
-#menusmart_pr {
-	width: 200px;
-	text-align: left;
-	font-size: 1em;
-	font-weight: bolder;
-	float: left;
-	height: 100%;
-	padding: 8px;
-	margin-top: 1px;
-	margin-right: 8px;
-	margin-left: 280px;
-}
-
-#menusmart_pr a img {
-	border: 0;
-}
-
-#menusmart_pr p {
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
-
-#menusmart_pr hr {
-	margin: 10px 0;
-	width: 50%;
-	padding: 0;
-}
-
-#menusmart_pr h1 {
-	text-transform: uppercase;
-	font-size: 1em;
-	font-weight: bold;
-	margin: 1em 0 0 0;
-	padding: 0;
-}
-
-#menusmart_pr ul {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	list-style-position: outside;
-}
-
-#menusmart_pr ul li {
-	margin: 0 0 0 0;
-	background: url(../imag10/bgris.gif) no-repeat center left;
-	padding-left: 14px;
 }
 
 .lang_pr {
