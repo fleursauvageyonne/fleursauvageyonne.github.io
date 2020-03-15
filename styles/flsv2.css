@@ -134,7 +134,7 @@ a img {
 }
 
 #menu {
-	width: 25%;
+	width: 50%;
 	height: auto;
 	text-align: left;
 	font-size: 1em;
@@ -166,7 +166,7 @@ a img {
 	font-size: 1em;
 	font-weight: bold;
 	margin: 1em 0 0 0;
-	padding: 0;
+	padding: inherit;
 }
 
 #menu ul {
@@ -432,7 +432,7 @@ a img {
 	padding: 17px;
 	line-height: 120%;
 	font-weight: normal;
-}
+	}
 
 .alert ul {
 	margin: 1em 0 0 17px;
