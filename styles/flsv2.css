@@ -195,14 +195,14 @@ a img {
 #menu_pr {
 	width: 400px;
 	text-align: left;
-	font-size: 1em;
-	font-weight: lighter;
+	font-size: 1.2em;
+	font-weight: normal;
 	float: right;
 	height: 100%;
 	padding: 8px;
 	margin-top: 1px;
 	margin-right: 8px;
-	margin-left: 280px;
+	margin-left: 150px;
 }
 
 #menu_pr a img {
