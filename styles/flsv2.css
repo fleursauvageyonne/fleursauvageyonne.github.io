@@ -226,22 +226,26 @@ a img {
 
 #menu_pr h1 {
 	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: left;
+	padding: 20;
+}
+
+#menu_pr h2 {
+	text-transform: uppercase;
 	font-size: 1em;
 	font-weight: bold;
 	text-align: left;
 	padding: 20;
 }
 
-#menu_pr ul {
-	position: relative;
+#menu_pr ul li {
+		position: relative;
 	margin: 0;
 	padding: 20;
 	list-style: none;
 	list-style-position: outside;
-}
-
-#menu_pr ul li {
-	margin: 0 0 0 0;
 	background: url(../imag10/bgris.gif) no-repeat center left;
 	padding-left: 20px;
 }
