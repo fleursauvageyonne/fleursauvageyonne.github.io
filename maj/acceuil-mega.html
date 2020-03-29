@@ -26,15 +26,18 @@
     <meta http-equiv="Cache-control" content="no-store">
     <!-- <link href="./FLSVY - MENU de Fleurs sauvages de l’Yonne_files/flsv2.css" rel="stylesheet" type="text/css" media="screen">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="lib/styles.css">
     <style type="text/css" media="all">
-        < !-- a:link {
-            color: #8c6830 !important;
+        < !-- 
+        a {color: #a06113 }
+        a:link {
+            color: #a06113 ;
         }
 
-    /*a:visited {
-			color: #8c6830;
-			color:#4a9bf3;
-			}*/
+a:visited {
+			color: #a06113 ;
+			
+			}
 
             a:active {
                 /*color: #768744;*/
@@ -45,120 +48,27 @@
                 background-color: #ece0d9;
             }
 
-            /* couleur menu*/
-            .bg-dark {
+             .bg-dark {
                 background-color: #bbaea7 !important;
                 /*background-color: #33251d !important;*/
             }
 
-            /* theme */
-
-            .tableaucouleur {
-                /* border: 1px outset;*/
-                text-align: center;
-                /*background-color: #ffffff22;*/
-                border-collapse: separate;
-                border-spacing: 2px;
-                color: white;
-            }
-
-
-            .tableaucouleur td {
-                width: 23px;
-                height: 23px;
-                text-align: center;
-                font-size: 1px;
-                padding: 0;
-                border-radius: 10px;
-                position: relative;
-                /* border: 1px solid #fff; */
-            }
-
-            .tableaucouleur td a {
-                width: 20px !important;
-
-                display: block;
-                border-radius: 10px;
-                height: 100%;
-            }
-
-            .tableaucouleur-large {
-                border-spacing: 15px;
-            }
-
-            .tableaucouleur-large td {
-                width: 40px;
-                height: 40px;
-            }
-
-            .tableaucouleur-large td a {
-                width: 100% !important;
-                min-width: 40px;
-            }
-
-            /**/
-            .cursor-pointer {
-                cursor: pointer;
-            }
-
-            .dropdown-caret-none::after {
-                display: none;
-            }
-
-            .breadcrumb-item+.breadcrumb-item {
-                padding-left: .2rem;
-            }
-
-            .breadcrumb {
-                background-color: #ffffff00 !important;
-                font-size: .8em;
-                padding-right: .2rem;
-            }
-
-            .breadcrumb-item+.breadcrumb-item::before {
-                content: ">";
-            }
-
-            @media (min-width: 768px) {
-                .flex-md-equal>* {
-                    -ms-flex: 1;
-                    -webkit-box-flex: 1;
-                    flex: 1;
-                }
-            }
-
-            .text-align-left {
-                text-align: left;
-            }
-            .bg-holder {
-                position: absolute;
-                width: 100%;
-                min-height: 100%;
-                top: 0;
-                left: 0;
-                background-size: cover;
-                background-position: center;
-                overflow: hidden;
-                will-change: transform,opacity,filter;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                background-repeat: no-repeat;
-            }
 
             -->
         </style>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="0" id="top">
+        <!-- Navigation -->
         <header role="banner">
             <nav class="navbar navbar-expand bd-navbar px-0 py-0  bg-dark ">
                 <div class="container-fluid w-100">
                     <ul class="navbar-nav bd-navbar-nav w-100 justify-content-left align-items-center">
                         <li class="nav-item flex-grow-1">
                             <div class="navbar-brand brand-unesco py-0">
-                                <a href="../index.html">
+                                <a href="/">
                                     <div class="p-3 d-inline-block brand-unesco-svg">
-                                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyMy44MSA2MS4zNSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxZDFkMWI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvLW5vaXI8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI4LjI2LDM0LjY0SDIzVjMzLjQybDEuNDUtLjE2VjE5TDIzLDE4Ljc4VjE3LjU3aDkuOTFhLjY0LjY0LDAsMCwxLC43My43MnYzLjE4SDMyLjQybC0uMTYtMi42MkgyNi4zNHY2LjcyaDYuMjR2MS4yOEgyNi4zNHY2LjQxbDEuOTIuMTlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzkuNDYsMTcuMzVWMzIuMTFjMCwuODYuMzMsMS4yOSwxLDEuMjlhNS4xNCw1LjE0LDAsMCwwLDEtLjE0bC4yMSwxLjRhNS41LDUuNSwwLDAsMS0xLjguMzFxLTIuMjUsMC0yLjI1LTIuNjRWMThsLTEuNC0uMThWMTYuNjNoMi41NUEuNjMuNjMsMCwwLDEsMzkuNDYsMTcuMzVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTUuMTYsMjguMzVINDUuOTRhNS44NSw1Ljg1LDAsMCwwLDEuMzEsNCwzLjYyLDMuNjIsMCwwLDAsMi44MiwxLjE0LDguNTcsOC41NywwLDAsMCwzLjg1LTFsLjU4LDEuMzZBMTAuMDgsMTAuMDgsMCwwLDEsNTAuMywzNWE2LjY4LDYuNjgsMCwwLDEtMy0uNiw0LjkzLDQuOTMsMCwwLDEtMS44Ni0xLjYsOC4zNiw4LjM2LDAsMCwxLTEuMzEtNC42MSw5LjQxLDkuNDEsMCwwLDEsMS4yNy01LDQuNTEsNC41MSwwLDAsMSwxLjc5LTEuNjEsNS42OSw1LjY5LDAsMCwxLDIuNjUtLjU5LDQuODEsNC44MSwwLDAsMSwzLjkyLDEuNzEsNyw3LDAsMCwxLDEuNDIsNC41NlptLTIuNzktNC43MWEzLjEzLDMuMTMsMCwwLDAtMi42OS0xLjI4QTMsMywwLDAsMCw0NywyMy42OSw3LDcsMCwwLDAsNDYsMjdoNy4zMkE1LjU3LDUuNTcsMCwwLDAsNTIuMzcsMjMuNjRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjkuNjgsMjJWMzIuMTFjMCwuODYuMzQsMS4yOSwxLDEuMjlhMi44NywyLjg3LDAsMCwwLDEtLjE0bC4yMywxLjRhNS43Nyw1Ljc3LDAsMCwxLTEuOC4zMSwyLDIsMCwwLDEtMi4yLTEuOEE3LjksNy45LDAsMCwxLDYzLjI2LDM1YTQsNCwwLDAsMS0zLjEyLTEsNC42Myw0LjYzLDAsMCwxLS45MS0zLjE3VjIyLjY2bC0xLjY0LS4xOFYyMS4yNmgyLjY5Yy41MywwLC43OS4yNC43OS43M3Y4Ljc5YTMuNDMsMy40MywwLDAsMCwuNTMsMi4xMywyLjE4LDIuMTgsMCwwLDAsMS44MS42NSw3LDcsMCwwLDAsNC40NS0xLjgyVjIyLjY2bC0xLjQxLS4xOFYyMS4yNkg2OUM2OS40NSwyMS4yNiw2OS42OCwyMS41LDY5LjY4LDIyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc3LjkyLDI4LjA5djUuMTdsMi4zMy4xNnYxLjIySDc0LjQzVjMzLjQybDEuNjQtLjE2VjIyLjY2bC0xLjY0LS4xOFYyMS4yNmgyLjQ4YS42NC42NCwwLDAsMSwuNzIuNzN2Mi45YTcuMTgsNy4xOCwwLDAsMSwxLjkxLTIuNzUsNC43Nyw0Ljc3LDAsMCwxLDMuMDgtMS4yMXYxLjYyYTQuNTcsNC41NywwLDAsMC0zLjM0LDEuNTlBNS42OCw1LjY4LDAsMCwwLDc3LjkyLDI4LjA5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTkyLjQyLDIzLjIzYTcuODcsNy44NywwLDAsMC0zLjM1LS44NywzLjgxLDMuODEsMCwwLDAtMi4yNS41NCwxLjcxLDEuNzEsMCwwLDAtLjc0LDEuNDhBMS45NCwxLjk0LDAsMCwwLDg2LjgzLDI2YTYuNjMsNi42MywwLDAsMCwxLjgyLDFjLjcyLjI4LDEuNDMuNTgsMi4xNC44OWE1LDUsMCwwLDEsMS44MSwxLjMzLDMuNDQsMy40NCwwLDAsMS0uNSw0LjgsNS4yOSw1LjI5LDAsMCwxLTMuMzEsMSw1LjIyLDUuMjIsMCwwLDEtMy4zMy0xLDQuNzksNC43OSwwLDAsMS0xLjctMi44MWwxLjYyLS4zOHEuODEsMi44LDMuMjcsMi44MUEzLjQsMy40LDAsMCwwLDkwLjc4LDMzYTEuODYsMS44NiwwLDAsMCwuNzUtMS41NSwxLjkzLDEuOTMsMCwwLDAtLjc1LTEuNTgsNi43Niw2Ljc2LDAsMCwwLTEuODItMWMtLjcyLS4yOC0xLjQ0LS41OC0yLjE2LS44OUE0Ljg3LDQuODcsMCwwLDEsODUsMjYuNTlhMy4yMiwzLjIyLDAsMCwxLS43NS0yLjE1LDMsMywwLDAsMSwxLjI2LTIuNTgsNS40Nyw1LjQ3LDAsMCwxLDMuMzEtLjkzLDEwLjUzLDEwLjUzLDAsMCwxLDQuMi45NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zMy42OSw3OEgyNy42Vjc2Ljc3bDIuMTEtLjE3VjcxLjkybC00LjI4LTkuNjEtMS4yOS0uMTlWNjAuOTFIMjYuM2EuODYuODYsMCwwLDEsLjg2LjUzbDMuNDksOC40MywzLjQzLTguNDNhLjg4Ljg4LDAsMCwxLC44Ny0uNTNoMi4xM3YxLjIxbC0xLjI5LjE5LTQuMjEsOS41NFY3Ni42bDIuMTEuMTdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTM2LjksNDhoMWMuMiwwLC4zLjEuMjguMjl2NmMwLC4zNS4xNC41Mi40MS41MmExLjU1LDEuNTUsMCwwLDAsLjQtLjA2bC4wOS41OGEyLjM5LDIuMzksMCwwLDEtLjc0LjEyLjgzLjgzLDAsMCwxLS45LS44NiwxLjg5LDEuODksMCwwLDEtMS41Ny44NiwxLjc5LDEuNzksMCwwLDEtMS0uMjYsMS42MiwxLjYyLDAsMCwxLS42My0uNjcsNC41LDQuNSwwLDAsMSwwLTMuODRBMS41OSwxLjU5LDAsMCwxLDEzNSw1MGEyLjI5LDIuMjksMCwwLDEsMS4xNC0uMjYsMy4wNywzLjA3LDAsMCwxLDEuMzguMzVWNDguNTdsLS41Ny0uMDhabS0uNzQsMi4zM2MtMSwwLTEuNTQuNzYtMS41NCwyLjI4YTMuNzYsMy43NiwwLDAsMCwuMjksMS41NSwxLjIsMS4yLDAsMCwwLC40NS41NCwxLjI4LDEuMjgsMCwwLDAsLjcxLjIsMS42NiwxLjY2LDAsMCwwLDEuNC0uODdWNTAuNjZBMi42MywyLjYzLDAsMCwwLDEzNi4xNiw1MC4zM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNDQuNjIsNTIuNzdoLTMuNzZhMi4zNCwyLjM0LDAsMCwwLC41NCwxLjY1LDEuNDYsMS40NiwwLDAsMCwxLjE0LjQ3LDMuNDIsMy40MiwwLDAsMCwxLjU3LS40M2wuMjQuNTVhNCw0LDAsMCwxLTEuNzEuNDYsMi43NSwyLjc1LDAsMCwxLTEuMjMtLjI0LDIsMiwwLDAsMS0uNzYtLjY2LDMuNCwzLjQsMCwwLDEtLjUzLTEuODcsMy44MiwzLjgyLDAsMCwxLC41MS0yLjA1LDEuODcsMS44NywwLDAsMSwuNzMtLjY2LDIuMzIsMi4zMiwwLDAsMSwxLjA4LS4yNCwyLDIsMCwwLDEsMS42LjcsMi44MywyLjgzLDAsMCwxLC41OCwxLjg2Wm0tMS4xNC0xLjkyYTEuMjgsMS4yOCwwLDAsMC0xLjA5LS41MiwxLjIyLDEuMjIsMCwwLDAtMS4wOC41NSwyLjg4LDIuODgsMCwwLDAtLjQzLDEuMzZoM0EyLjI3LDIuMjcsMCwwLDAsMTQzLjQ4LDUwLjg1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMyLjkzLDQwLjQ4YTkuMTIsOS4xMiwwLDAsMC00LTEuMTIsNCw0LDAsMCwwLTIuNjMuNzYsMi41NiwyLjU2LDAsMCwwLS45LDIuMDYsMi44LDIuOCwwLDAsMCwuODksMi4xNCw3LDcsMCwwLDAsMi4xNSwxLjM3Yy44NC4zNSwxLjY4LjcyLDIuNTEsMS4xMWE2LDYsMCwwLDEsMi4xNCwxLjY3QTQsNCwwLDAsMSwzNCw1MS4xM2E0LjA3LDQuMDcsMCwwLDEtMS40NywzLjMzLDUuODMsNS44MywwLDAsMS0zLjc5LDEuMkE1LjU0LDUuNTQsMCwwLDEsMjUsNTQuNDEsNi4xOSw2LjE5LDAsMCwxLDIzLDUwLjkybDEuNjQtLjRxMSwzLjcyLDMuOTMsMy43MmEzLjg1LDMuODUsMCwwLDAsMi42MS0uODIsMywzLDAsMCwwLS43OS00LjkxLDE1LjEyLDE1LjEyLDAsMCwwLTEuNjYtLjgxcS0uOTItLjM5LTEuODMtLjg0YTEyLDEyLDAsMCwxLTEuNjktMUE0LjMyLDQuMzIsMCwwLDEsMjQsNDQuMzdhNC41OSw0LjU5LDAsMCwxLS40Ny0yLjExQTMuODIsMy44MiwwLDAsMSwyNSwzOS4wN2E1LjgxLDUuODEsMCwwLDEsMy43Mi0xLjE0LDExLjcyLDExLjcyLDAsMCwxLDQuODEsMS4xNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00NC4zMiw1M3YtLjMzYTUsNSwwLDAsMS00Ljc4LDMsMy4zNSwzLjM1LDAsMCwxLTIuNS0xLDMuNTgsMy41OCwwLDAsMS0uOTMtMi42MkEzLjczLDMuNzMsMCwwLDEsMzgsNDguNjdjMS4yNS0uNzYsMy4zNi0xLjE1LDYuMzQtMS4xNXYtMWE0LDQsMCwwLDAtLjczLTIuNzZBMy4xNCwzLjE0LDAsMCwwLDQxLjI0LDQzYTcuNjMsNy42MywwLDAsMC0zLjY0LDEuMTNMMzcsNDIuNzVhMTAuOCwxMC44LDAsMCwxLDQuNTgtMS4xMnEzLjM5LDAsNC4yMywyLjM4YTcsNywwLDAsMSwuMzYsMi4zOXY2LjQxYzAsLjg2LjMyLDEuMjksMSwxLjI5YTUuMDksNS4wOSwwLDAsMCwxLS4xNGwuMjEsMS40YTUuNjgsNS42OCwwLDAsMS0xLjc4LjNRNDQuMzIsNTUuNjYsNDQuMzIsNTNabTAtNC4zcS02LjQ3LDAtNi40NiwzLjIyYTIuMDcsMi4wNywwLDAsMCwyLjI3LDIuMjdBMy43OCwzLjc4LDAsMCwwLDQzLDUyLjg2LDUuODgsNS44OCwwLDAsMCw0NC4zMiw0OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02Mi40LDQyLjY4VjUyLjgxYzAsLjg2LjM0LDEuMjksMSwxLjI5YTIuODcsMi44NywwLDAsMCwxLS4xNGwuMjMsMS40YTYuMDUsNi4wNSwwLDAsMS0xLjguMywyLDIsMCwwLDEtMi4yLTEuOEE3LjksNy45LDAsMCwxLDU2LDU1LjY2YTQuMDgsNC4wOCwwLDAsMS0zLjEzLTEsNC43LDQuNywwLDAsMS0uOTEtMy4xN1Y0My4zNmwtMS42My0uMTlWNDJINTNjLjUzLDAsLjc5LjI0Ljc5LjcydjguOGEzLjM4LDMuMzgsMCwwLDAsLjUzLDIuMTIsMi4xOCwyLjE4LDAsMCwwLDEuODEuNjYsNyw3LDAsMCwwLDQuNDQtMS44MlY0My4zNmwtMS40LS4xOVY0Mkg2MS43QS42My42MywwLDAsMSw2Mi40LDQyLjY4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc2LjYsNDJoMS44NHYxLjIxbC0xLjE0LjE5LTQuMTIsMTJoLTJMNjYuMDUsNDJINjcuOWw0LjI1LDExLjQ4LDMuNTgtMTAuODhBLjg0Ljg0LDAsMCwxLDc2LjYsNDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNODguMjksNTN2LS4zM2E1LDUsMCwwLDEtNC43NywzLDMuMzMsMy4zMywwLDAsMS0yLjUtMSwzLjU1LDMuNTUsMCwwLDEtLjk0LTIuNjJBMy43NSwzLjc1LDAsMCwxLDgyLDQ4LjY3YzEuMjUtLjc2LDMuMzYtMS4xNSw2LjM0LTEuMTV2LTFhNCw0LDAsMCwwLS43Mi0yLjc2QTMuMTcsMy4xNywwLDAsMCw4NS4yMiw0M2E3LjYsNy42LDAsMCwwLTMuNjQsMS4xM0w4MSw0Mi43NWExMC44NCwxMC44NCwwLDAsMSw0LjU5LTEuMTJxMy4zOSwwLDQuMjMsMi4zOGE3LjI2LDcuMjYsMCwwLDEsLjM1LDIuMzl2Ni40MWMwLC44Ni4zMywxLjI5LDEsMS4yOWE1LjA5LDUuMDksMCwwLDAsMS0uMTRsLjIxLDEuNGE1LjY4LDUuNjgsMCwwLDEtMS43OC4zUTg4LjI5LDU1LjY2LDg4LjI5LDUzWm0wLTQuM3EtNi40NSwwLTYuNDUsMy4yMmEyLjA2LDIuMDYsMCwwLDAsMi4yNiwyLjI3QTMuOCwzLjgsMCwwLDAsODcsNTIuODYsNS44Miw1LjgyLDAsMCwwLDg4LjI5LDQ5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEwMC4xNSw0MS42M2E1LjY1LDUuNjUsMCwwLDEsMS45NC4zM2gzLjd2MS4yOEgxMDRBNS4yMSw1LjIxLDAsMCwxLDEwNSw0Ni42Niw0LjQ3LDQuNDcsMCwwLDEsMTAzLjc5LDUwYTUsNSwwLDAsMS0zLjY0LDEuMjMsNS4zNSw1LjM1LDAsMCwxLTIuNDUtLjU0bC0xLjI0LDEuMjZhMS41OCwxLjU4LDAsMCwwLS41NCwxLjFjMCwuNTIuMzMuNzgsMSwuNzhIMTAyYTQuNDgsNC40OCwwLDAsMSwyLjgzLjg3LDIuODksMi44OSwwLDAsMSwxLjEyLDIuNEEzLjI2LDMuMjYsMCwwLDEsMTA0LjQ0LDYwYTcuNjEsNy42MSwwLDAsMS00LjI1LDEsOS40LDkuNCwwLDAsMS00LjM1LS44MywyLjc3LDIuNzcsMCwwLDEtMS42MS0yLjYzLDMuMzEsMy4zMSwwLDAsMSwuMzMtMS4zOEEzLDMsMCwwLDEsOTUuNDMsNTVhMS42MiwxLjYyLDAsMCwxLTEuMi0xLjZBMy40NSwzLjQ1LDAsMCwxLDk1LjUsNTFsMS4xMi0xLjA4YTQuNjksNC42OSwwLDAsMS0xLjM2LTMuNTYsNC43Miw0LjcyLDAsMCwxLDEuMjUtMy41QTUsNSwwLDAsMSwxMDAuMTUsNDEuNjNabTEuNzMsMTMuNTlIOTYuODFBMy4yNiwzLjI2LDAsMCwwLDk2LDU3LjM0LDEuODUsMS44NSwwLDAsMCw5Ny4xMSw1OWE2LjQsNi40LDAsMCwwLDMsLjZxNC4xNywwLDQuMTctMi41N2ExLjYxLDEuNjEsMCwwLDAtLjY0LTEuMzhBMi44NCwyLjg0LDAsMCwwLDEwMS44OCw1NS4yMlptMS40My04LjczYTMuNzUsMy43NSwwLDAsMC0uODUtMi41OCwzLjQsMy40LDAsMCwwLTQuNjUtLjA2QTMuNjQsMy42NCwwLDAsMCw5Nyw0Ni4zOSwzLjc1LDMuNzUsMCwwLDAsOTcuODcsNDlhMywzLDAsMCwwLDIuMzUsMUEyLjg5LDIuODksMCwwLDAsMTAyLjUsNDksMy42OCwzLjY4LDAsMCwwLDEwMy4zMSw0Ni40OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTkuMTcsNDlIMTEwYTUuODUsNS44NSwwLDAsMCwxLjMxLDQuMDUsMy42MywzLjYzLDAsMCwwLDIuODIsMS4xNSw4LjQzLDguNDMsMCwwLDAsMy44NS0xLjA2bC41OCwxLjM2YTkuOTIsOS45MiwwLDAsMS00LjE5LDEuMTIsNi43Niw2Ljc2LDAsMCwxLTMtLjU5LDQuNzIsNC43MiwwLDAsMS0xLjg2LTEuNjEsOC4yNCw4LjI0LDAsMCwxLTEuMzEtNC42LDkuMzYsOS4zNiwwLDAsMSwxLjI2LTUsNC41Myw0LjUzLDAsMCwxLDEuNzktMS42Miw1LjczLDUuNzMsMCwwLDEsMi42Ni0uNTgsNC44LDQuOCwwLDAsMSwzLjkxLDEuNzEsNi44Nyw2Ljg3LDAsMCwxLDEuNDIsNC41NlptLTIuNzktNC43MWEzLjExLDMuMTEsMCwwLDAtMi42OC0xLjI3LDMsMywwLDAsMC0yLjY1LDEuMzMsNyw3LDAsMCwwLTEsMy4zNGg3LjMyQTUuNTcsNS41NywwLDAsMCwxMTYuMzgsNDQuMzNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMwLjI2LDQzLjkyYTcuODgsNy44OCwwLDAsMC0zLjM1LS44Niw0LDQsMCwwLDAtMi4yNi41MywxLjc1LDEuNzUsMCwwLDAtLjczLDEuNDksMiwyLDAsMCwwLC43NSwxLjU3LDYuNDgsNi40OCwwLDAsMCwxLjgyLDFjLjcyLjI4LDEuNDMuNTcsMi4xNC44OWE1LDUsMCwwLDEsMS44MSwxLjMzLDMuNDMsMy40MywwLDAsMS0uNSw0Ljc5LDYuMTQsNi4xNCwwLDAsMS02LjY0LDAsNC43OSw0Ljc5LDAsMCwxLTEuNy0yLjgybDEuNjItLjM3cS44MSwyLjgxLDMuMjcsMi44YTMuNCwzLjQsMCwwLDAsMi4xMy0uNTgsMS44OCwxLjg4LDAsMCwwLC43NS0xLjU2LDIsMiwwLDAsMC0uNzUtMS41OCw2LjkzLDYuOTMsMCwwLDAtMS44My0xYy0uNzEtLjI5LTEuNDMtLjU4LTIuMTUtLjg5YTUsNSwwLDAsMS0xLjgyLTEuMzYsMy4yMiwzLjIyLDAsMCwxLS43NS0yLjE1LDMsMywwLDAsMSwxLjI2LTIuNTksNS41Miw1LjUyLDAsMCwxLDMuMzEtLjkyLDEwLjUxLDEwLjUxLDAsMCwxLDQuMi45M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMi4xMyw2OC44OHY2YzAsLjM1LjE0LjUzLjQxLjUzYTEuOTMsMS45MywwLDAsMCwuNC0uMDZsLjA4LjU3YTIuMzQsMi4zNCwwLDAsMS0uNzMuMTNjLS42MSwwLS45MS0uMzYtLjkxLTEuMDhWNjkuMTZsLS41OC0uMDh2LS40OWgxQS4yNS4yNSwwLDAsMSwyMi4xMyw2OC44OFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yNS4yMSw2OS4wOWEyLjMsMi4zLDAsMCwxLTEuMSwxLjgxbC0uMjMtLjI4YTEsMSwwLDAsMCwuNC0xLjE3LDEuMywxLjMsMCwwLDEtLjA1LS4zNy40Mi40MiwwLDAsMSwuMTMtLjMxLjQ2LjQ2LDAsMCwxLC4zNi0uMTUuNDYuNDYsMCwwLDEsLjQ5LjQ3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM4Ljc1LDcwLjE2YTcuNzcsNy43NywwLDAsMSwxLjQ5LTUuMDgsNS4xNSw1LjE1LDAsMCwxLDQuMjEtMS44LDUuMzcsNS4zNywwLDAsMSw0LjM0LDEuOTMsNy44OCw3Ljg4LDAsMCwxLDEuNjEsNS4yMSw3Ljc0LDcuNzQsMCwwLDEtMS41LDUuMDksNS4xNyw1LjE3LDAsMCwxLTQuMjIsMS44LDUuMzQsNS4zNCwwLDAsMS00LjMzLTEuOTNBOCw4LDAsMCwxLDM4Ljc1LDcwLjE2Wm05LjguMjRhNyw3LDAsMCwwLTEuMS00LjE3LDMuNDYsMy40NiwwLDAsMC0zLTEuNTMsMy4zNiwzLjM2LDAsMCwwLTIuODksMS40Myw3LDcsMCwwLDAtMSw0LjA1LDcsNywwLDAsMCwxLjExLDQuMTYsMy40NywzLjQ3LDAsMCwwLDMsMS41NCwzLjMyLDMuMzIsMCwwLDAsMi44Ny0xLjQyQTYuODQsNi44NCwwLDAsMCw0OC41NSw3MC40WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYzLjUyLDc0LjY3VjY3LjQ2QTMuMzMsMy4zMywwLDAsMCw2Myw2NS4zNWEyLjIzLDIuMjMsMCwwLDAtMS44Mi0uNjUsNi43Niw2Ljc2LDAsMCwwLTQuMzIsMS43M1Y3NS42bDEuNjMuMTdWNzdINTMuMzdWNzUuNzdMNTUsNzUuNlY2NWwtMS42NC0uMTlWNjMuNmgyLjQ4YS42NC42NCwwLDAsMSwuNzMuNzF2LjkxYTcuOTIsNy45MiwwLDAsMSw1LTEuOTQsMy43LDMuNywwLDAsMSwyLjkyLDEsNC42MSw0LjYxLDAsMCwxLC45MSwzLjE1djdjMCwuODUuMzQsMS4yOCwxLDEuMjhhMy43OCwzLjc4LDAsMCwwLDEtLjE0TDY3LjU3LDc3YTUuNzYsNS43NiwwLDAsMS0xLjguM1E2My41Miw3Ny4zMSw2My41Miw3NC42N1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC44IC0xNi42MykiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik04MC4yLDc0LjY3VjY3LjQ2YTMuMjYsMy4yNiwwLDAsMC0uNTMtMi4xMSwyLjIxLDIuMjEsMCwwLDAtMS44MS0uNjUsNi43Niw2Ljc2LDAsMCwwLTQuMzIsMS43M1Y3NS42bDEuNjMuMTdWNzdINzAuMDVWNzUuNzdsMS42NC0uMTdWNjVsLTEuNjQtLjE5VjYzLjZoMi40OGEuNjMuNjMsMCwwLDEsLjcyLjcxdi45MWE3Ljk0LDcuOTQsMCwwLDEsNS0xLjk0LDMuNzMsMy43MywwLDAsMSwyLjkzLDEsNC42MSw0LjYxLDAsMCwxLC45MSwzLjE1djdjMCwuODUuMzMsMS4yOCwxLDEuMjhhMy44NCwzLjg0LDAsMCwwLDEtLjE0TDg0LjI1LDc3YTUuNzYsNS43NiwwLDAsMS0xLjguM1E4MC4yLDc3LjMxLDgwLjIsNzQuNjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuOCAtMTYuNjMpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNOTcuNjgsNzAuNjlIODguNDZhNS44NSw1Ljg1LDAsMCwwLDEuMzEsNCwzLjYsMy42LDAsMCwwLDIuODIsMS4xNCw4LjU3LDguNTcsMCwwLDAsMy44NS0xTDk3LDc2LjE5YTkuOTMsOS45MywwLDAsMS00LjIsMS4xMiw2LjY4LDYuNjgsMCwwLDEtMy0uNiw0Ljg0LDQuODQsMCwwLDEtMS44Ni0xLjYsOC4zNCw4LjM0LDAsMCwxLTEuMzEtNC42MSw5LjQxLDkuNDEsMCwwLDEsMS4yNy01LDQuNTEsNC41MSwwLDAsMSwxLjc5LTEuNjEsNS42OSw1LjY5LDAsMCwxLDIuNjUtLjU4QTQuODMsNC44MywwLDAsMSw5Ni4yNiw2NWE3LDcsMCwwLDEsMS40Miw0LjU2Wk05NC44OSw2NkEzLjEzLDMuMTMsMCwwLDAsOTIuMiw2NC43LDMsMywwLDAsMCw4OS41Niw2NmE2Ljk0LDYuOTQsMCwwLDAtMSwzLjM0aDcuMzJBNS41Nyw1LjU3LDAsMCwwLDk0Ljg5LDY2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwLjggLTE2LjYzKSIvPjwvc3ZnPg==" width="110" />
+                                        <img alt="" src="images/logo-noir.svg" width="110" />
                                     </div>
                                 </a>
                             </div>
@@ -179,7 +89,7 @@
                                                                 <div class="input-group" style="min-width: 10rem">
                                                                     <input class="form-control form-control-dark" type="text" placeholder="Rechercher" aria-label="Rechercher" name="q">
                                                                     <div class="input-group-append">
-                                                                        <button class="btn btn-secondary bg-dark" type="button">
+                                                                        <button class="btn btn-secondary bg-dark text-white" type="button">
                                                                             <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNTA1IDQ0Mi43TDQwNS4zIDM0M2MtNC41LTQuNS0xMC42LTctMTctN0gzNzJjMjcuNi0zNS4zIDQ0LTc5LjcgNDQtMTI4QzQxNiA5My4xIDMyMi45IDAgMjA4IDBTMCA5My4xIDAgMjA4czkzLjEgMjA4IDIwOCAyMDhjNDguMyAwIDkyLjctMTYuNCAxMjgtNDR2MTYuM2MwIDYuNCAyLjUgMTIuNSA3IDE3bDk5LjcgOTkuN2M5LjQgOS40IDI0LjYgOS40IDMzLjkgMGwyOC4zLTI4LjNjOS40LTkuNCA5LjQtMjQuNi4xLTM0ek0yMDggMzM2Yy03MC43IDAtMTI4LTU3LjItMTI4LTEyOCAwLTcwLjcgNTcuMi0xMjggMTI4LTEyOCA3MC43IDAgMTI4IDU3LjIgMTI4IDEyOCAwIDcwLjctNTcuMiAxMjgtMTI4IDEyOHoiLz48L3N2Zz4=" style="width:1em;margin-top: -0.2em;" />
                                                                         </button>
                                                                     </div>
@@ -348,6 +258,7 @@
                 </div>
             </nav>
         </header>
+         <!-- fin Navigation -->
         <div class="main-container position-relative">
             <!--  -->
         <!-- <nav aria-label="breadcrumb">
@@ -374,27 +285,27 @@
                                    <div class="bg-holder" style="background-image: url(images/couverture2.jpg)">
 
                                    </div>
-                                   <div class="carousel-caption d-none d-md-block col-8 col-md-5 text-align-left" style="">
+                                   <div class="carousel-caption d-md-block col-8 col-md-5 text-align-left" style="">
                                      <div class="p-3 mb-3" style="background-color: rgba(0,0,0,0.4);">
                                     <h5>Connaissez-vous les saules de la famille des Salicaceae ?</h5>
                                     <p>
                                         Au début du XVIIe siècle, Jean-Baptiste Van Helmont (1579-1644) planta un jeune saule pour faire une expérience afin d'expliquer la croissance des végétaux. Après cinq ans d'arrosages et d'observations, il conclut que l'eau s'était changée en substance végétale
                                     </p>
-                                    <p><a href="https://fleursauvageyonne.github.io/flsv/fambot/ordmalpig.htm#saules" class="btn btn-secondary btn-small">Découvrir la famille des Salicaceae</a></p>
+                                    <p><a href="https://fleursauvageyonne.github.io/flsv/fambot/ordmalpig.htm#saules" class="btn btn-secondary btn-small text-white">Découvrir la famille des Salicaceae</a></p>
                                 </div>
                                 </div>
                             </div>
                             <div class="carousel-item"  style="min-height: 70vh;">
                                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
                                  <div class="bg-holder" style="background-image: url(images/betteravesauvage.jpg)"></div>
-                                <div class="carousel-caption d-md-block col-8 col-md-5 text-align-left offset-4"  style="top:2rem;right:2rem;">
+                                <div class="carousel-caption d-md-block col-8 col-md-5 text-align-left offset-md-4"  style="top:2rem;right:2rem;">
                                     <div class="p-3 mb-3" style="background-color: rgba(0,0,0,0.4);">
                                     <h5>La betterave sauvage</h5>
                                     <p>
                                         Bien que très rare dans l'Yonne, <em>Beta vulgaris</em>, <a href="https://www2.dijon.inra.fr/hyppa/hyppa-f/beavx_fh.htm">la betterave sauvage</a>, la plupart des végétaux produisent au moinstrois sucres différents : fructose, glucose et saccharose.
                                     </p>
                                     <p>
-                                        <a href="https://fleursauvageyonne.github.io/flsv/fambot/ordcaryo.htm#amar" class="btn btn-secondary btn-small">Découvrir la famille des Amaranthaceae</a>
+                                        <a href="https://fleursauvageyonne.github.io/flsv/fambot/ordcaryo.htm#amar" class="btn btn-secondary btn-small text-white">Découvrez les Amaranthaceae</a>
                                     </p>
                                 </div>
                                 </div>
@@ -403,12 +314,12 @@
                                  <div class="bg-holder" style="background-image: url(images/yonne.jpg)">
 
                                    </div>
-                                <div class="carousel-caption  d-md-block col-8 col-md-5 offset-4 text-align-left">
+                                <div class="carousel-caption  d-md-block col-8 col-md-5 offset-md-4 text-align-left">
                                    <div class="p-3 mb-4" style="background-color: rgba(0,0,0,0.4);">
                                     <h5>L'Yonne</h5>
                                    <p>L'Yonne est un département créé en <a href="https://www.lyonne.fr/auxerre-89000/actualites/le-4-mars-1790-le-departement-de-l-yonne-etait-cree-de-toutes-pieces-et-n-avait-pas-encore-sa-forme-actuelle_13509094/">1790</a>. Il fait partie de la région Bourgogne pour des raisons culturelles et historiques et  de la région Bourgogne-Franche-Comté pour des raisons administratives, mais il appartient géographiquement au Bassin parisien.Sa superficie est de 7 427 km2.</p>
                                     <p>
-                                        <a href="https://fleursauvageyonne.github.io/flsv/acc/yonne_2.htm"  class="btn btn-secondary btn-small" >Découvrez l'Yonne</a>
+                                        <a href="https://fleursauvageyonne.github.io/flsv/acc/yonne_2.htm"  class="btn btn-secondary btn-small text-white" >Découvrez l'Yonne</a>
 
                                     </p>
                                 </div>
@@ -427,7 +338,7 @@
                 </section>
                 <section class="container pt-3">
                     <div class="row pt-3 mt-30">
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
                             <div class="card bg-transparent">
                                 <div class="card-body">
                                     <h3 class="card-title pt-1"><a href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1_1.htm#phytovirus">Phytovirus</a></h3>
@@ -443,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
                             <div class="card bg-transparent">
                                 <div class="card-body">
                                     <h3 class="card-title pt-1"><a href="https://fleursauvageyonne.github.io/">Les plantes émettent des ultrasons</a></h3>
@@ -460,7 +371,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
                             <div class="card bg-transparent">
                                 <div class="card-body">
                                     <h3 class="card-title pt-1"><a href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm#misc">Miscellanea botanica</a></h3>
@@ -476,9 +387,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="container">
+                <section class="container pt-2">
                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                        <div class="bg-dark mr-md-3 pt-2 px-2 pt-md-2 px-md-2 text-white overflow-hidden">
+                        <div class="bg-dark mr-md-3 pt-2 px-1 pt-md-2 px-md-2 overflow-hidden">
                             <div class="my-3 p-3">
                                 <h2 class="display-5">Couleurs</h2>
                                 <p class="lead">Trouver des fleurs par couleur approximative</p>
@@ -530,7 +441,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="bg-light mr-md-3 pt-2 px-2 pt-md-2 px-md-2 overflow-hidden">
+                        <div class="bg-light mr-md-3 pt-2 px-1 pt-md-2 px-md-2 overflow-hidden">
                             <div class="my-3 p-3">
                                 <h2 class="display-5">Fleurs classées</h2>
                                 <p class="lead">Trouver des fleurs ou plantes</p>
@@ -620,7 +531,7 @@
                     <a href="flsv/arbres/castanea.htm">Castanea sativa</a><br>
                     Réserve forestière de la Forêt communale de Joigny, 3/8/2017
                 </p>
-                <a href="flsv/arbres/castanea.htm" role="button" class="btn btn-secondary">En savoir plus »</a>
+                <a href="flsv/arbres/castanea.htm" role="button" class="btn btn-secondary text-white">En savoir plus »</a>
             </div>
         </div>
     </div>
