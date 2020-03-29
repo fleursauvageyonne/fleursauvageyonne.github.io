@@ -1,0 +1,99 @@
+  /* couleur menu*/
+            .bg-dark {
+                background-color: #bbaea7 !important;
+                /*background-color: #33251d !important;*/
+            }
+
+            /* theme */
+
+            .tableaucouleur {
+                /* border: 1px outset;*/
+                text-align: center;
+                /*background-color: #ffffff22;*/
+                border-collapse: separate;
+                border-spacing: 2px;
+                color: white;
+            }
+
+
+            .tableaucouleur td {
+                width: 23px;
+                height: 23px;
+                text-align: center;
+                font-size: 1px;
+                padding: 0;
+                border-radius: 10px;
+                position: relative;
+                /* border: 1px solid #fff; */
+            }
+
+            .tableaucouleur td a {
+                width: 20px !important;
+
+                display: block;
+                border-radius: 10px;
+                height: 100%;
+            }
+
+            .tableaucouleur-large {
+                border-spacing: 15px;
+            }
+
+            .tableaucouleur-large td {
+                width: 40px;
+                height: 40px;
+            }
+
+            .tableaucouleur-large td a {
+                width: 100% !important;
+                min-width: 40px;
+            }
+
+            /**/
+            .cursor-pointer {
+                cursor: pointer;
+            }
+
+            .dropdown-caret-none::after {
+                display: none;
+            }
+
+            .breadcrumb-item+.breadcrumb-item {
+                padding-left: .2rem;
+            }
+
+            .breadcrumb {
+                background-color: #ffffff00 !important;
+                font-size: .8em;
+                padding-right: .2rem;
+            }
+
+            .breadcrumb-item+.breadcrumb-item::before {
+                content: ">";
+            }
+
+            @media (min-width: 768px) {
+                .flex-md-equal>* {
+                    -ms-flex: 1;
+                    -webkit-box-flex: 1;
+                    flex: 1;
+                }
+            }
+
+            .text-align-left {
+                text-align: left;
+            }
+            .bg-holder {
+                position: absolute;
+                width: 100%;
+                min-height: 100%;
+                top: 0;
+                left: 0;
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+                will-change: transform,opacity,filter;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                background-repeat: no-repeat;
+            }
