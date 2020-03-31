@@ -69,6 +69,7 @@
         min-width: 2.8rem;
     }
 
+    #lexique table tr td:first-of-type { min-width:10rem;} 
     -->
     </style>
 </head>
@@ -300,7 +301,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-2">
-                <nav class="sticky-top sidebar py-3" id="myPills">
+                <nav class="sticky-top sidebar py-4" id="myPills">
                     <ul class="nav nav-pills flex-wrap">
                         <li class="nav-item ">
                             <a class="nav-link" href="#aa" data-toggle="zzzzzzz">A</a>
@@ -2818,9 +2819,13 @@
             /*console.log(value);*/
             if (!input_content) {
                 $('#lexique tr').show();
+                /*$('#lexique h2').show();*/
             } else {
                 $('#lexique tr').show().not(':contains(' + input_content + ')').hide();
+                /*$('#lexique h2').not("parent>tr:visible").hide();*/
             }
+
+
         });
     });
     </script>
