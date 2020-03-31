@@ -42,7 +42,6 @@
     }
 
     a:active {
-        /*color: #768744;*/
         color: #4a9bf3;
     }
 
@@ -64,43 +63,13 @@
 
     .bg-dark {
         background-color: #e6d2c6 !important;
-        /*background-color: #33251d !important;*/
     }
 
-    /**/
-    /* Sidebar */
-    /*    .sidebar {
-        position: relative;
-
-        z-index: 1000;
-        padding: 20px;
-        overflow-x: hidden;
-        overflow-y: auto;
-
+    .sidebar ul li a {
+        min-width: 2.8rem;
     }
 
-    @media (min-width: 576px) {
-        .sidebar {
-            position: fixed;
-            top: 200px;
-            bottom: 0;
-            left: 0;
-            z-index: 1000;
-            padding: 20px;
-            overflow-x: hidden;
-            overflow-y: auto;
-
-        }
-    }
-*/
-
-
-
-
-
-
-
-
+    #lexique table tr td:first-of-type { min-width:10rem;} 
     -->
     </style>
 </head>
@@ -114,7 +83,7 @@
                 <ul class="navbar-nav bd-navbar-nav w-100 justify-content-left align-items-center">
                     <li class="nav-item flex-grow-1">
                         <div class="navbar-brand brand-unesco py-0">
-                            <a href="/">
+                            <a href="https://fleursauvageyonne.github.io/">
                                 <div class="p-3 d-inline-block brand-unesco-svg">
                                     <img alt="" src="images/logo-noir.svg" width="110" />
                                 </div>
@@ -123,7 +92,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="dropdown navbar p-0 m-0 align-items-center position-static toggleArrow show" id="menuFLSV">
-                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="../index.html" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
+                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="https://fleursauvageyonne.github.io/" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
                                 <img alt="" id="img-burger" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTYgMTMyaDQxNmM4LjgzNyAwIDE2LTcuMTYzIDE2LTE2Vjc2YzAtOC44MzctNy4xNjMtMTYtMTYtMTZIMTZDNy4xNjMgNjAgMCA2Ny4xNjMgMCA3NnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2eiIvPjwvc3ZnPg==" style="width:1.3em" />
                             </a>
                             <div class="dropdown-menu w-100 pt-3 m-0 border-right-0 border-left-0 " aria-labelledby="navmenuFLSV" style="z-index:2000">
@@ -315,17 +284,24 @@
             <li class="breadcrumb-item active" aria-current="page">Lexique de mots latins</li>
         </ol>
     </nav>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-9  col-md-10  pt-3 offset-0 offset-sm-3 offset-md-2">
+            <div class="col-12 col-sm-9 col-md-10  pt-3 offset-0 offset-sm-3 offset-md-2">
                 <h1>Lexique de mots latins</h1>
+                <div class="form-group py-3">
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="chercher" placeholder="Filtrer la liste">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-2">
-                <nav class="sticky-top sidebar py-3" id="myPills">
+                <nav class="sticky-top sidebar py-4" id="myPills">
                     <ul class="nav nav-pills flex-wrap">
                         <li class="nav-item ">
                             <a class="nav-link" href="#aa" data-toggle="zzzzzzz">A</a>
@@ -408,7 +384,7 @@
                     </ul>
                 </nav>
             </div>
-            <main class="col-12 col-sm-9  col-md-10  pt-3" data-spy="scroll" data-target="#myPills" data-offset="0">
+            <main class="col-12 col-sm-9  col-md-10  pt-3" data-spy="scroll" data-target="#myPills" data-offset="0" id="lexique">
                 <h2 id="aa">A</h2>
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -2650,9 +2626,6 @@
     </div>
     <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white" id="footer">
         <div class="container">
-            <p class="text-align-center center">
-                <a href="https://www.nature.com/articles/d41586-018-01075-5">“We know more now, but we don’t necessarily know the answers.”</a><br><em>Nous en savons plus maintenant, mais nous ne connaissons pas forcément les réponses</em>.
-            </p>
             <div class="card-columns columns-lg-4  px-3 py-3">
                 <div class="card bg-transparent border-0">
                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
@@ -2834,32 +2807,26 @@
                 });
             }
         });
-
-        /*sidebar*/
-        /*  var sOffset = $(".sidebar").offset().top;
-var headerFooter = $("#footer").height() ;
-        var headerHeight = $("#header").height() + 43;
-        $(window).scroll(function() {
-            var scrollYpos = $(document).scrollTop();
-            console.log(scrollYpos);
-            console.log(sOffset);
-            if (scrollYpos > headerFooter) {
-                $(".sidebar").css({
-                    'bottom': '0',
-                    'position': 'absolute'
-                });
-            } else if (scrollYpos > sOffset - headerHeight) {
-                $(".sidebar").css({
-                    'top': '0px',
-                    'position': 'fixed'
-                });
+        /* filtre*/
+        $.expr[":"].contains = $.expr.createPseudo(function(arg) {
+            return function(elem) {
+                return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+            };
+        });
+        $("#chercher").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            var input_content = $.trim(value);
+            /*console.log(value);*/
+            if (!input_content) {
+                $('#lexique tr').show();
+                /*$('#lexique h2').show();*/
             } else {
-                $(".sidebar").css({
-                    'top': 'auto'
-                   
-                });
+                $('#lexique tr').show().not(':contains(' + input_content + ')').hide();
+                /*$('#lexique h2').not("parent>tr:visible").hide();*/
             }
-        });*/
+
+
+        });
     });
     </script>
 </body>
