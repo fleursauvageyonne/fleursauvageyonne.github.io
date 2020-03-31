@@ -65,6 +65,10 @@
         background-color: #e6d2c6 !important;
     }
 
+    .sidebar ul li a {
+        min-width: 2.8rem;
+    }
+
     -->
     </style>
 </head>
@@ -279,14 +283,21 @@
             <li class="breadcrumb-item active" aria-current="page">Lexique de mots latins</li>
         </ol>
     </nav>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-9  col-md-10  pt-3 offset-0 offset-sm-3 offset-md-2">
+            <div class="col-12 col-sm-9 col-md-10  pt-3 offset-0 offset-sm-3 offset-md-2">
                 <h1>Lexique de mots latins</h1>
+                <div class="form-group py-3">
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="chercher" placeholder="Filtrer la liste">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-2">
                 <nav class="sticky-top sidebar py-3" id="myPills">
@@ -372,7 +383,7 @@
                     </ul>
                 </nav>
             </div>
-            <main class="col-12 col-sm-9  col-md-10  pt-3" data-spy="scroll" data-target="#myPills" data-offset="0">
+            <main class="col-12 col-sm-9  col-md-10  pt-3" data-spy="scroll" data-target="#myPills" data-offset="0" id="lexique">
                 <h2 id="aa">A</h2>
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -2795,32 +2806,22 @@
                 });
             }
         });
-
-        /*sidebar*/
-        /*  var sOffset = $(".sidebar").offset().top;
-var headerFooter = $("#footer").height() ;
-        var headerHeight = $("#header").height() + 43;
-        $(window).scroll(function() {
-            var scrollYpos = $(document).scrollTop();
-            console.log(scrollYpos);
-            console.log(sOffset);
-            if (scrollYpos > headerFooter) {
-                $(".sidebar").css({
-                    'bottom': '0',
-                    'position': 'absolute'
-                });
-            } else if (scrollYpos > sOffset - headerHeight) {
-                $(".sidebar").css({
-                    'top': '0px',
-                    'position': 'fixed'
-                });
+        /* filtre*/
+        $.expr[":"].contains = $.expr.createPseudo(function(arg) {
+            return function(elem) {
+                return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+            };
+        });
+        $("#chercher").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            var input_content = $.trim(value);
+            /*console.log(value);*/
+            if (!input_content) {
+                $('#lexique tr').show();
             } else {
-                $(".sidebar").css({
-                    'top': 'auto'
-                   
-                });
+                $('#lexique tr').show().not(':contains(' + input_content + ')').hide();
             }
-        });*/
+        });
     });
     </script>
 </body>
