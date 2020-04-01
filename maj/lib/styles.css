@@ -156,3 +156,15 @@
           column-count: 4;
       }
   }
+
+      .text-white a {
+        color: #f5c080;
+    }
+
+    .text-white a:visited {
+        color: #f5c080;
+    }
+
+    .text-white a:link {
+        color: #f5c080;
+    }

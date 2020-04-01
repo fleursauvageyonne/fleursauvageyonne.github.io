@@ -10,7 +10,7 @@
             ['Ordre', 'Sapindales']
         ],
         'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acercamp.htm',
-        'vignette': '',
+        'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg',
         'couleurNom': '',
         'couleurCode': '',
 
@@ -82,7 +82,7 @@
     },
     {
         'latin': 'Arctium minus',
-        'autorité': '(Hill) Bernh., 1800',
+        'autorité': '(Hill) Bernh. 1800 not Schkuhr 1803',
         'français': 'Grande bardane',
         'vernaculaire': 'Bardane à petites têtes, petite bardane, bardane à petits capitules',
         'famille': 'Asteraceae (Compositae)',
