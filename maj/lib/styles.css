@@ -3,7 +3,11 @@
       background-color: #e6d2c6 !important;
       /*background-color: #bbaea7 !important;*/
   }
-
+.table .thead-dark th {
+    /*color: #fff;*/
+    background-color: #8c6751;
+    border-color: #32383e;
+}
   .bg-nav {
       background-color: #d4b19f !important;
   }
