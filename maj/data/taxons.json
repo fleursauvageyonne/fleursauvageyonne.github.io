@@ -1,139 +1,139 @@
 ﻿[
     {
-        'latin': 'Acer campestre',
-        'autorité': 'L., 1753',
-        'français': 'Érable champêtre',
-        'vernaculaire': '',
-        'famille': 'Sapindaceae',
-        'apgIII': [
-            ['Famille', 'Sapindaceae'],
-            ['Ordre', 'Sapindales']
+        "latin": "Acer campestre",
+        "autorité": "L., 1753",
+        "français": "Érable champêtre",
+        "vernaculaire": "",
+        "famille": "Sapindaceae",
+        "apgIII": [
+            ["Famille", "Sapindaceae"],
+            ["Ordre", "Sapindales"]
         ],
-        'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm',
-         'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg',
-        'couleurNom': '',
-        'couleurCode': ''
+        "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm",
+         "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg",
+        "couleurNom": "",
+        "couleurCode": ""
 
     },
     {
-        'latin': 'Acer platanoides',
-        'autorité': 'L., 1753',
-        'français': 'Érable plane',
-        'vernaculaire': '',
-        'famille': 'Sapindaceae',
-        'apgIII': [
-            ['Famille', 'Sapindaceae'],
-            ['Ordre', 'Sapindales']
+        "latin": "Acer platanoides",
+        "autorité": "L., 1753",
+        "français": "Érable plane",
+        "vernaculaire": "",
+        "famille": "Sapindaceae",
+        "apgIII": [
+            ["Famille", "Sapindaceae"],
+            ["Ordre", "Sapindales"]
         ],
-        'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm',
-        'vignette': '',
-        'couleurNom': '',
-        'couleurCode': ''
+        "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm",
+        "vignette": "",
+        "couleurNom": "",
+        "couleurCode": ""
     },
     {
-        'latin': 'Ambrosia artemisiifolia',
-        'autorité': 'L., 1753',
-        'français': 'Ambroisie à feuilles d\'armoise',
-        'vernaculaire': 'ambroisie élevée, ambroisie annuelle',
-        'famille': 'Asteraceae (Compositae)',
-        'apgIII': [
-            ['Genre', 'Ambrosia'],
-            ['Tribu', 'Heliantheae'],
-            ['Sous-famille', 'Asteroideae'],
-            ['Famille', 'Asteraceae']
+        "latin": "Ambrosia artemisiifolia",
+        "autorité": "L., 1753",
+        "français": "Ambroisie à feuilles d'armoise",
+        "vernaculaire": "ambroisie élevée, ambroisie annuelle",
+        "famille": "Asteraceae (Compositae)",
+        "apgIII": [
+            ["Genre", "Ambrosia"],
+            ["Tribu", "Heliantheae"],
+            ["Sous-famille", "Asteroideae"],
+            ["Famille", "Asteraceae"]
         ],
-        'url': 'https://fleursauvageyonne.github.io/flsv/vert/ambrartemis.htm',
-        'vignette': '',
-        'couleurNom': '',
-        'couleurCode': ''
+        "url": "https://fleursauvageyonne.github.io/flsv/vert/ambrartemis.htm",
+        "vignette": "",
+        "couleurNom": "",
+        "couleurCode": ""
     },
     {
-        'latin': 'Aethusa cynapium',
-        'autorité': 'L., 1753',
-        'français': 'Petite ciguë',
-        'vernaculaire': 'faux-persil, ciguë des moissons, éthuse, ache de chien',
-        'famille': 'Apiaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/blanc/aethusa.htm',
-        'vignette': '',
-        'couleurNom': '',
-        'couleurCode': ''
+        "latin": "Aethusa cynapium",
+        "autorité": "L., 1753",
+        "français": "Petite ciguë",
+        "vernaculaire": "faux-persil, ciguë des moissons, éthuse, ache de chien",
+        "famille": "Apiaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/blanc/aethusa.htm",
+        "vignette": "",
+        "couleurNom": "",
+        "couleurCode": ""
     },
     {
-        'latin': 'Acer pseudoplatanus',
-        'autorité': 'L., 1753',
-        'français': 'Érable sycomore',
-        'vernaculaire': '',
-        'famille': 'Sapindaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acerpseudop.htm',
-        'vignette': '',
-        'couleurNom': '',
-        'couleurCode': ''
+        "latin": "Acer pseudoplatanus",
+        "autorité": "L., 1753",
+        "français": "Érable sycomore",
+        "vernaculaire": "",
+        "famille": "Sapindaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerpseudop.htm",
+        "vignette": "",
+        "couleurNom": "",
+        "couleurCode": ""
     },
     {
-        'latin': 'Solanum nigrum',
-        'autorité': 'L., 1753',
-        'français': 'Morelle noire',
-        'vernaculaire': 'herbe à gale, crève-chien',
-        'famille': 'Solanaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/blanc/solanigr.htm',
-        'vignette': '',
-        'couleurNom': '',
-        'couleurCode': ''
+        "latin": "Solanum nigrum",
+        "autorité": "L., 1753",
+        "français": "Morelle noire",
+        "vernaculaire": "herbe à gale, crève-chien",
+        "famille": "Solanaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/blanc/solanigr.htm",
+        "vignette": "",
+        "couleurNom": "",
+        "couleurCode": ""
     },
     {
-        'latin': 'Arctium minus',
-        'autorité': '(Hill) Bernh. 1800 not Schkuhr 1803',
-        'français': 'Grande bardane',
-        'vernaculaire': 'Bardane à petites têtes, petite bardane, bardane à petits capitules',
-        'famille': 'Asteraceae (Compositae)',
-        'url': 'https://fleursauvageyonne.github.io/flsv/violet/arctiumin.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/imag02/arctlappap.jpg',
-        'couleurNom': ['Violette'],
-        'couleurCode': ['#be64b6']
+        "latin": "Arctium minus",
+        "autorité": "(Hill) Bernh. 1800 not Schkuhr 1803",
+        "français": "Grande bardane",
+        "vernaculaire": "Bardane à petites têtes, petite bardane, bardane à petits capitules",
+        "famille": "Asteraceae (Compositae)",
+        "url": "https://fleursauvageyonne.github.io/flsv/violet/arctiumin.htm",
+        "vignette": "https://fleursauvageyonne.github.io/imag02/arctlappap.jpg",
+        "couleurNom": ["Violette"],
+        "couleurCode": ["#be64b6"]
     },
     {
-        'latin': 'Arctium minus',
-        'autorité': '',
-        'français': 'Aubrietie deltoïde, aubriétia à delta',
-        'vernaculaire': '',
-        'famille': 'Brassicaceae (Cruciferae)',
-        'url': 'https://fleursauvageyonne.github.io/flsv/mauve/aubrietadel.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/imag02/aubrietadp.jpg',
-        'couleurNom': ['Violette'],
-        'couleurCode': ['#9858C5']
+        "latin": "Arctium minus",
+        "autorité": "",
+        "français": "Aubrietie deltoïde, aubriétia à delta",
+        "vernaculaire": "",
+        "famille": "Brassicaceae (Cruciferae)",
+        "url": "https://fleursauvageyonne.github.io/flsv/mauve/aubrietadel.htm",
+        "vignette": "https://fleursauvageyonne.github.io/imag02/aubrietadp.jpg",
+        "couleurNom": ["Violette"],
+        "couleurCode": ["#9858C5"]
     },
     {
-        'latin': 'Agrimonia eupatoria',
-        'autorité': 'L., 1753',
-        'français': 'Aigremoine eupatoire',
-        'vernaculaire': 'herbe de Saint Guillaume',
-        'famille': 'Rosaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/jaune/agrimonia.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/agrimonia-eupatoria-v-140.jpg',
-        'couleurNom': ['Jaune'],
-        'couleurCode': ['#feff00']
+        "latin": "Agrimonia eupatoria",
+        "autorité": "L., 1753",
+        "français": "Aigremoine eupatoire",
+        "vernaculaire": "herbe de Saint Guillaume",
+        "famille": "Rosaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/jaune/agrimonia.htm",
+        "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/agrimonia-eupatoria-v-140.jpg",
+        "couleurNom": ["Jaune"],
+        "couleurCode": ["#feff00"]
     },
     {
-        'latin': 'Centranthus ruber',
-        'autorité': '(L.) DC., 1805',
-        'français': 'Centranthe rouge',
-        'vernaculaire': 'valériane rouge',
-        'famille': 'Caprifoliaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/rouge/centran.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/imag02/centrubp.jpg',
-        'couleurNom': ['Rouge', 'Blanc', 'Rose'],
-        'couleurCode': ['#fe0000', '#ffffff', '#ffbfcd']
+        "latin": "Centranthus ruber",
+        "autorité": "(L.) DC., 1805",
+        "français": "Centranthe rouge",
+        "vernaculaire": "valériane rouge",
+        "famille": "Caprifoliaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/rouge/centran.htm",
+        "vignette": "https://fleursauvageyonne.github.io/imag02/centrubp.jpg",
+        "couleurNom": ["Rouge", "Blanc", "Rose"],
+        "couleurCode": ["#fe0000", "#ffffff", "#ffbfcd"]
     },
     {
-        'latin': 'Viola tricolor',
-        'autorité': 'L., 1753',
-        'français': 'Violette tricolore',
-        'vernaculaire': 'pensée sauvage, pensée des champs',
-        'famille': 'Violaceae',
-        'url': 'https://fleursauvageyonne.github.io/flsv/jaune/viola.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/imag02/pvioltri.jpg',
-        'couleurNom': ['Jaune', 'Violet', 'Violette', 'Bleu'],
-        'couleurCode': ['#ffff80', '#a601fe', '#cc99fe', '#007fff']
+        "latin": "Viola tricolor",
+        "autorité": "L., 1753",
+        "français": "Violette tricolore",
+        "vernaculaire": "pensée sauvage, pensée des champs",
+        "famille": "Violaceae",
+        "url": "https://fleursauvageyonne.github.io/flsv/jaune/viola.htm",
+        "vignette": "https://fleursauvageyonne.github.io/imag02/pvioltri.jpg",
+        "couleurNom": ["Jaune", "Violet", "Violette", "Bleu"],
+        "couleurCode": ["#ffff80", "#a601fe", "#cc99fe", "#007fff"]
     }
 
 
