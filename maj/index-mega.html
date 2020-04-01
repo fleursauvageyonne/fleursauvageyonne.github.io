@@ -26,6 +26,7 @@
     <meta http-equiv="Cache-control" content="no-store">
     <!-- <link href="./FLSVY - MENU de Fleurs sauvages de l’Yonne_files/flsv2.css" rel="stylesheet" type="text/css" media="screen">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="lib/styles.css">
     <style type="text/css" media="all">
     < !-- a {
@@ -294,10 +295,15 @@
         <table id="table" class="table" 
         data-classes="table table-hover table-striped table-borderless" 
         data-sortable="true" data-search="true" 
+        data-sort-priority='[{"sortName": "latin","sortOrder":"asc"}]'
         data-row-style="rowStyle"  
         data-thead-classes="thead-dark" 
         data-show-multi-sort="true"
+        data-show-multi-sort-button="true"
+
         data-search-accent-neutralise="true">
+        >
+        <!-- data-url="index.json" -->
   <thead>
     <tr>
       <th data-field="latin" data-sortable="true">Nom Latin</th>
@@ -467,6 +473,7 @@
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $(function() {
