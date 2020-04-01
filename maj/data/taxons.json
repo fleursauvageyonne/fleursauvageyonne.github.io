@@ -1,4 +1,4 @@
- [
+﻿[
     {
         'latin': 'Acer campestre',
         'autorité': 'L., 1753',
@@ -9,10 +9,10 @@
             ['Famille', 'Sapindaceae'],
             ['Ordre', 'Sapindales']
         ],
-        'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acercamp.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg',
+        'url': 'https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm',
+         'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg',
         'couleurNom': '',
-        'couleurCode': '',
+        'couleurCode': ''
 
     },
     {
@@ -109,7 +109,7 @@
         'vernaculaire': 'herbe de Saint Guillaume',
         'famille': 'Rosaceae',
         'url': 'https://fleursauvageyonne.github.io/flsv/jaune/agrimonia.htm',
-        'vignette': 'https://fleursauvageyonne.github.io/imag02/pagrim.jpg',
+        'vignette': 'https://fleursauvageyonne.github.io/maj/taxons/images/agrimonia-eupatoria-v-140.jpg',
         'couleurNom': ['Jaune'],
         'couleurCode': ['#feff00']
     },
