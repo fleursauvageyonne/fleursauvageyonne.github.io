@@ -53,7 +53,7 @@
         "français": "Petite ciguë",
         "vernaculaire": "faux-persil, ciguë des moissons, éthuse, ache de chien",
         "famille": "Apiaceae",
-        "url": "https://fleursauvageyonne.github.io/flsv/blanc/aethusa.htm",
+        "url": "https://fleursauvageyonne.github.io/maj/taxons/images/aethusa-cynapium-v-140.jpg",
         "vignette": "",
         "couleurNom": "",
         "couleurCode": ""
@@ -64,6 +64,10 @@
         "français": "Érable sycomore",
         "vernaculaire": "",
         "famille": "Sapindaceae",
+                "apgIII": [
+            ["Famille", "Sapindaceae"],
+            ["Ordre", "Sapindales"]
+        ],
         "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerpseudop.htm",
         "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/acer-pseudoplatanus-v-140.jpg",
         "couleurNom": "",
@@ -75,7 +79,7 @@
         "français": "Morelle noire",
         "vernaculaire": "herbe à gale, crève-chien",
         "famille": "Solanaceae",
-        "url": "https://fleursauvageyonne.github.io/flsv/blanc/solanigr.htm",
+        "url": "https://fleursauvageyonne.github.io/maj/taxons/images/solanum-nigrum-v-140.jpg",
         "vignette": "",
         "couleurNom": "",
         "couleurCode": ""
