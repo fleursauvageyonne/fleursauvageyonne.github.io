@@ -26,7 +26,7 @@
             ["Ordre", "Sapindales"]
         ],
         "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerplat.htm",
-        "vignette": "",
+        "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/acer-platanoides-v-140.jpg",
         "couleurNom": "",
         "couleurCode": ""
     },
@@ -43,7 +43,7 @@
             ["Famille", "Asteraceae"]
         ],
         "url": "https://fleursauvageyonne.github.io/flsv/vert/ambrartemis.htm",
-        "vignette": "",
+        "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/ambrosia-artemisiifolia-v-140.jpg",
         "couleurNom": "",
         "couleurCode": ""
     },
@@ -65,7 +65,7 @@
         "vernaculaire": "",
         "famille": "Sapindaceae",
         "url": "https://fleursauvageyonne.github.io/flsv/arbres/acerpseudop.htm",
-        "vignette": "",
+        "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/acer-pseudoplatanus-v-140.jpg",
         "couleurNom": "",
         "couleurCode": ""
     },
