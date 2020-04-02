@@ -68,6 +68,15 @@
         /*background-color: #33251d !important;*/
     }
 
+    .couleur-span {
+        vertical-align: text-top;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -5px;
+    }
 
     -->
     </style>
@@ -289,13 +298,33 @@
         <!-- -->
         <div class="container py-3">
             <h1>Index des fleurs</h1>
-            <table id="table" class="table" data-mobile-responsive="true" data-classes="table table-hover table-striped table-borderless" data-sortable="true" data-search="true" data-sort-priority='[{"sortName": "latin","sortOrder":"asc"}]' data-row-style="rowStyle" data-thead-classes="thead-dark" data-show-multi-sort="true" data-show-multi-sort-button="true" data-search-accent-neutralise="true">
+            <div id="toolbar" class="">
+                <div class="form-inline" role="form">
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary ml-1 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Couleurs
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" id="selectcolor">
+                                <button class="dropdown-item active" type="button" value="">Tout / effacer</button>
+                                <button class="dropdown-item " type="button" value="Noir"><span class="couleur-span" style="background-color: #000000;"></span> Noir</button>
+                                <button class="dropdown-item" type="button" value="Blanc"><span class="couleur-span" style="background-color: #fff;"></span> Blanc</button>
+                                <button class="dropdown-item" type="button" value="Bleu"><span class="couleur-span" style="background-color: #007fff;"></span> Bleu</button>
+                                <button class="dropdown-item" type="button" value="Violette"><span class="couleur-span" style="background-color: #be64b6"></span> Violette</button>
+                                <button class="dropdown-item" type="button" value="Violet"><span class="couleur-span" style="background-color: #9858C5;"></span> Violet</button>
+                                <button class="dropdown-item" type="button" value="Jaune"><span class="couleur-span" style="background-color: #feff00;"></span> Jaune</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="table" class="table" data-classes="table table-hover table-striped table-borderless" data-thead-classes="thead-dark">
                 <!-- -->
                 <thead>
                     <tr>
-                        <th data-field="latin" data-sortable="true" data-formatter="nameFormatter" data-valign="middle"><span class="d-none d-md-inline">Nom </span>Latin</th>
+                        <th data-field="latin" data-sortable="true" data-formatter="nameFormatter" data-valign="middle" data-width-unit="%" data-width="25"><span class="d-none d-md-inline">Nom </span>Latin</th>
                         <th data-field="français" data-sortable="true"><span class="d-none d-md-inline">Nom </span>Français</th>
-                        <th data-field="vernaculaire" data-sortable="true"><span class="d-none d-md-inline">Nom </span>Vernaculaire</th>
+                        <th data-field="vernaculaire" data-sortable="true" data-width-unit="%" data-width="15"><span class="d-none d-md-inline">Nom </span>Vernaculaire</th>
                         <th data-field="famille" data-sortable="true" data-formatter="familleFormatter">Famille</th>
                         <th data-field="couleurNom" data-sortable="true" data-formatter="colorFormatter">Couleurs</th>
                     </tr>
@@ -460,13 +489,14 @@
     <script src="../lib/lib.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script> -->
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <script src="../lib/bootstrap-table-accent-neutralise.js"></script>
     <script type="text/javascript">
     var data;
     /*var dataUrl = 'https://fleursauvageyonne.github.io/maj/data/taxons.json';*/
-    /* pour voir les data en locale avec chrome il faut lancer chrome avec les variables "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files*/
+    /* pour voir les data en locale avec chrome il faut lancer chrome avec les variables "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files  --disable-web-security*/
     var dataUrl = '../data/taxons.json';
     /*var dataUrl = 'https://api.myjson.com/bins/flocw';*/
     $(document).ready(function() {
@@ -474,7 +504,18 @@
             var $table = $('#table');
             /* $table.bootstrapTable({ data: data });*/
             $table.bootstrapTable({
-
+                searchAlign: 'left',
+                mobileResponsive: true,
+                sortable: true,
+                sortPriority: [{ "sortName": "latin", "sortOrder": "asc" }],
+                search: true,
+                showMultiSortButton: true,
+                showMultiSort: true,
+                searchAccentNeutralise: true,
+                showSearchClearButton: true,
+                toolbar: "#toolbar",
+                toolbarAlign: "right",
+                /*rowStyle:function(row,index){},*/
                 url: dataUrl,
                 cache: false,
                 responseHandler: function(res) {
@@ -484,11 +525,44 @@
                     return res;
                 }
             });
+
+
+
+
+            $('#selectcolor').find('button').on('click', function() {
+                $('#selectcolor').find('button').removeClass("active");
+                $(this).addClass("active");
+                var searchcoul = $(this).val();
+
+                if (searchcoul !== "") {
+                    $("#dropdownMenu2").removeClass("btn-secondary");
+                    $("#dropdownMenu2").addClass("btn-primary");
+                } else {
+                    $("#dropdownMenu2").removeClass("btn-primary");
+                    $("#dropdownMenu2").addClass("btn-secondary");
+                }
+
+                $('#table').bootstrapTable('filterBy', { couleurNom: [searchcoul] }, {
+                    'filterAlgorithm': function(row, filters) {
+                        if (filters.couleurNom[0] === "") {
+                            return true;
+                        } else if ($.inArray(filters.couleurNom[0], row.couleurNom) !== -1) { return true; } else { return false; }
+                    }
+                });
+                $('#table').bootstrapTable('refreshOptions', { 'filterAlgorithm': 'and' });
+            });
+
+
+
+            /**/
             /* $table.bootstrapTable();*/
             /* $('#table').on('click-row.bs.table', function(row, element, field) {
                  window.location.href = element.url;
              });*/
-        })
+
+
+        });
+
     });
 
     function nameFormatter(value, row, index) {
