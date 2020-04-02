@@ -8,8 +8,9 @@
         "apgIII": [
             ["Famille", "Sapindaceae"],
             ["Ordre", "Sapindales"]
-        ],
-        "url": "https://fleursauvageyonne.github.io/flsv/arbres/acercamp.htm",
+        ],  
+        "url": "https://fleursauvageyonne.github.io/maj/taxons/acer-campestre.html",
+       
          "vignette": "https://fleursauvageyonne.github.io/maj/taxons/images/acer-campestre-v-140.jpg",
         "couleurNom": "",
         "couleurCode": ""
