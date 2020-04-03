@@ -131,8 +131,6 @@ $.BootstrapTable = class extends $.BootstrapTable {
       }
 
 if (this.options.searchAccentNeutralise) {
-                console.log(this.searchText)
-             
              this.searchText = removeDiacritics(this.searchText)
             }
       const s = this.searchText && (this.fromHtml
