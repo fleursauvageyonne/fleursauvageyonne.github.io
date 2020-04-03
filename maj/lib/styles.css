@@ -25,6 +25,7 @@
       border-collapse: separate;
       border-spacing: 2px;
       color: white;
+       width: fit-content;
   }
 
 
@@ -113,7 +114,11 @@
     .text-align-center {
       text-align: center;
   }
+.text-wrap {
+      
+    white-space: normal !important;
 
+  }
   /* pour image en background*/
   .bg-holder {
       position: absolute;
