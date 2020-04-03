@@ -61,19 +61,19 @@
 
   .tableaucouleur-large td.multi img {
       border-radius: 9px;
-      width: 60px;
-      height: 60px;
+      width: 2rem;
+      height: 2rem;
 
   }
 
   .tableaucouleur-large td {
-      width: 60px;
-      height: 60px;
+      width: 2rem;
+      height: 2rem;
   }
 
   .tableaucouleur-large td a {
       width: 100% !important;
-      min-width: 60px;
+      min-width: 2rem;
   }
 
   /**/
