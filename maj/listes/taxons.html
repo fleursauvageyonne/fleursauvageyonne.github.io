@@ -498,6 +498,15 @@
     /*var dataUrl = 'https://fleursauvageyonne.github.io/maj/data/taxons.json';*/
     /* pour voir les data en locale avec chrome il faut lancer chrome avec les variables "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files  --disable-web-security*/
     var dataUrl = '../data/taxons.json';
+
+    function getUrlParameter(ParamName) {
+        name = ParamName.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(window.location.href);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+
     /*var dataUrl = 'https://api.myjson.com/bins/flocw';*/
     $(document).ready(function() {
         $(function() {
@@ -521,6 +530,26 @@
                 responseHandler: function(res) {
                     /*console.log(res);*/
                     /* filtre pour une famille */
+                    var queryFamille = getUrlParameter('famille');
+                    var queryCouleur = getUrlParameter('couleur');
+                    if (queryFamille) {
+                        res = $.grep(res, function(n, i) { return n.famille.toLowerCase() === queryFamille.toLowerCase(); });
+                    }
+                    if (queryCouleur) {
+                        console.log(queryCouleur);
+                        res = $.grep(res, function(n, i) {
+
+                            var coulBool = true;
+                            if (Array.isArray(n.couleurNom)) {
+                                var lwrMyArr = n.couleurNom.map(function(ele) { return ele.toLowerCase(); })
+                                if ($.inArray(queryCouleur.toLowerCase(), lwrMyArr) !== -1) { coulBool = true; } else { coulBool = false; };
+                            } else {
+                                coulBool = false;
+                            }
+                            return coulBool;
+                        });
+                    }
+
                     /* res = $.grep(res, function(n, i) { return n.famille === 'Violaceae'; });*/
                     return res;
                 }
