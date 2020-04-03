@@ -27,6 +27,7 @@
     <!-- <link href="./FLSVY - MENU de Fleurs sauvages de l’Yonne_files/flsv2.css" rel="stylesheet" type="text/css" media="screen">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../lib/styles.css">
     <style type="text/css" media="all">
     < !-- a {
@@ -598,17 +599,18 @@
     });
 
     function nameFormatter(value, row, index) {
-        var content = '<a href="' + row.url + '"><span class="font-weight-bold">' + value + '</span>';
-        if (row.vignette != "") {
-            content = '<div class="mr-2 float-left" style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>' + content;
-        }
-        if (row.autorité != "") {
+        var content = '<span class="font-weight-bold">' + value + '</span>';
+         if (row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
-        content = content + "</a>";
+          content = '<div class="flex-fill">'+content+"</div>";
+        if (row.vignette != "") {
+            content =   content +'<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
+        }
+       
+        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">'+content + '</a>';
         return content;
     }
-
     function colorFormatter(value, row, index) {
         var content = "";
         if (Array.isArray(row.couleurCode)) {
