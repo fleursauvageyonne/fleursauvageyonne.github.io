@@ -636,20 +636,19 @@
 
     });
 
-    function nameFormatter(value, row, index) {
-        var content = '<span class="font-weight-bold">' + value + '</span>';
-         if (row.autorité != "") {
+     function nameFormatter(value, row, index) {
+        var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
+         if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
           content = '<div class="flex-fill">'+content+"</div>";
-        if (row.vignette != "") {
+        if (row.vignette && row.vignette != "") {
             content =   content +'<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
         }
        
         content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">'+content + '</a>';
         return content;
     }
-
     function colorFormatter(value, row, index) {
         var content = "";
         if (Array.isArray(row.couleurCode)) {
@@ -661,7 +660,10 @@
     }
 
     function familleFormatter(value, row, index) {
-        var content = value;
+        var content = "";
+        if (value){
+            content = value;
+        }
         var contentArbre = "";
         if (row.apgIII && Array.isArray(row.apgIII)) {
             for (var i = 0; i < row.apgIII.length; i++) {

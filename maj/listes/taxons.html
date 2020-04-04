@@ -536,6 +536,13 @@
                     /* filtre pour une famille */
                     var queryFamille = getUrlParameter('famille');
                     var queryCouleur = getUrlParameter('couleur');
+                    var queryLatin = getUrlParameter('latin');
+                       if (queryLatin) {
+                        res = $.grep(res, function(n, i) { 
+                            var str = n.latin.toLowerCase()
+                            return  (str.indexOf(queryLatin.toLowerCase()) != -1);
+                             });
+                    }
                     if (queryFamille) {
                         res = $.grep(res, function(n, i) { return n.famille.toLowerCase() === queryFamille.toLowerCase(); });
                     }
@@ -599,12 +606,12 @@
     });
 
     function nameFormatter(value, row, index) {
-        var content = '<span class="font-weight-bold">' + value + '</span>';
-         if (row.autorité != "") {
+        var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
+         if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
           content = '<div class="flex-fill">'+content+"</div>";
-        if (row.vignette != "") {
+        if (row.vignette && row.vignette != "") {
             content =   content +'<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
         }
        
@@ -622,7 +629,10 @@
     }
 
     function familleFormatter(value, row, index) {
-        var content = value;
+        var content = "";
+        if (value){
+            content = value;
+        }
         var contentArbre = "";
         if (row.apgIII && Array.isArray(row.apgIII)) {
             for (var i = 0; i < row.apgIII.length; i++) {
