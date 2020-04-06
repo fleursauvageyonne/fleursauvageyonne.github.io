@@ -332,6 +332,47 @@
                 </thead>
             </table>
         </div>
+        <div class=" bg-dark section">
+            <div class="container py-3">
+                <h3>Remarques</h3>
+                <div class="card-columns">
+                    <div class="card ">
+                        <div class="card-header ">Noms latins</div>
+                        <div class="card-body ">
+                            <p>
+                                Dans sa Division&nbsp;II, chapitre&nbsp;VIII, section&nbsp;1, article&nbsp;60.7, le <a href="https://www.iapt-taxon.org/nomen/pages/main/art_60.html#Art60.7"><strong>Code de Shenzhen (ICN)</strong></a> stipule que :
+                            </p>
+                            <p>
+                                «Diacritical signs are not used in scientific names. When names (either new or old) are drawn from words in which such signs appear, the signs are to be suppressed with the necessary transcription of the letters so modified; for example&nbsp;<em>ä,</em>&nbsp;<em>ö,</em>&nbsp;<em>ü</em>&nbsp;become, respectively,&nbsp;<em>ae,</em>&nbsp;<em>oe,</em>&nbsp;<em>ue</em>&nbsp;(not&nbsp;<em>æ</em>or&nbsp;<em>œ,</em>&nbsp;see below);<br><em>é,</em>&nbsp;<em>è,</em>&nbsp;<em>ê</em>&nbsp;become&nbsp;<em>e;</em>&nbsp;<em>ñ</em>&nbsp;becomes&nbsp;<em>n;</em> <em>ø</em>&nbsp;becomes&nbsp;<em>oe</em>&nbsp;(not&nbsp;<em>œ</em>);&nbsp;<em>å</em>&nbsp;becomes&nbsp;<em>ao.</em><br>The diaeresis, indicating that a vowel is to be pronounced separately from the preceding vowel (as in&nbsp;<em>Cephaëlis,</em>&nbsp;<em>Isoëtes</em>), is a phonetic device that is not considered to alter the spelling; as such, its use is optional.<br>The ligatures&nbsp;<em>æ</em>&nbsp;and&nbsp;<em>œ,</em>&nbsp;indicating that the letters are pronounced together, are to be replaced by the separate letters&nbsp;<em>ae</em>&nbsp;and&nbsp;<em>oe</em>.»</p>
+                            <p>
+                                C'est la raison pour laquelle nous avons modifié ci-après quelques noms comme<br>par ex. : <em>Æsculus hippocastanum</em>, <em>Æthusa cynapium</em> ou <em>Allium sphærocephalum</em>, <em>Centaurium erythræa</em>, <em>Anagallis fœmina</em>, <em>Fœniculum vulgare</em>, etc... des noms que vous pouvez toujours trouver dans de vieilles flores encore parfois intéressantes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header ">Noms français</div>
+                        <div class="card-body ">
+                            <p>
+                                Noms français pas encore <a href="https://fr.wikipedia.org/wiki/Nom_normalis%C3%A9#Noms_normalis.C3.A9s_en_botanique">standardisés.</a>
+                            </p>
+                            <p>
+                                Le dispositif mental de la classification et de l'attribution des noms n'a pas de tout temps été celui de Linné, raison pour laquelle nous vous présentons ci-dessus, <font color="#9c4245"><strong>entre parenthèses</strong></font> après les noms français et grâce aux <a href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm#bili"><strong><em>Grandes Heures d'Anne de Bretagne</em></strong></a>, quelques noms français du XVIe siècle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header ">synonymes</div>
+                        <div class="card-body ">
+                            Selon le glossaire du <a href="https://www.iapt-taxon.org/nomen/pages/main/glossary.html">Code de Shenzhen</a>, est dit synonyme : <em>one of two or more names that apply to the same taxon.</em> (l'un de deux ou plusieurs noms qui s'appliquent à un même taxon.)<br><br>Il existe
+                            <ul>
+                                <li>des synonymes taxonomiques (<em>heterotypic synonym</em>) et</li>
+                                <li>des synonymes nomenclaturaux (<em>homotypic synonym</em>).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white">
         <div class="container">
@@ -537,11 +578,11 @@
                     var queryFamille = getUrlParameter('famille');
                     var queryCouleur = getUrlParameter('couleur');
                     var queryLatin = getUrlParameter('latin');
-                       if (queryLatin) {
-                        res = $.grep(res, function(n, i) { 
+                    if (queryLatin) {
+                        res = $.grep(res, function(n, i) {
                             var str = n.latin.toLowerCase()
-                            return  (str.indexOf(queryLatin.toLowerCase()) != -1);
-                             });
+                            return (str.indexOf(queryLatin.toLowerCase()) != -1);
+                        });
                     }
                     if (queryFamille) {
                         res = $.grep(res, function(n, i) { return n.famille.toLowerCase() === queryFamille.toLowerCase(); });
@@ -607,17 +648,18 @@
 
     function nameFormatter(value, row, index) {
         var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
-         if (row.autorité && row.autorité != "") {
+        if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
-          content = '<div class="flex-fill">'+content+"</div>";
+        content = '<div class="flex-fill">' + content + "</div>";
         if (row.vignette && row.vignette != "") {
-            content =   content +'<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
+            content = content + '<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
         }
-       
-        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">'+content + '</a>';
+
+        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">' + content + '</a>';
         return content;
     }
+
     function colorFormatter(value, row, index) {
         var content = "";
         if (Array.isArray(row.couleurCode)) {
@@ -630,7 +672,7 @@
 
     function familleFormatter(value, row, index) {
         var content = "";
-        if (value){
+        if (value) {
             content = value;
         }
         var contentArbre = "";
