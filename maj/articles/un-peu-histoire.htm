@@ -24,21 +24,21 @@
     <meta name="robots" content="index, follow">
     <meta name="robots" content="noarchive">
     <meta http-equiv="Cache-control" content="no-store">
-    <!-- <link href="./FLSVY - MENU de Fleurs sauvages de l’Yonne_files/flsv2.css" rel="stylesheet" type="text/css" media="screen">-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css"><!-- version 4.1.3 -->
     <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="../lib/styles.css">
-    <style type="text/css" media="all">
+      <style type="text/css" media="all">
     < !-- a {
-        color: #7d4500
+        color: #007d77
     }
 
     a:link {
-        color: #7d4500;
+        color: #007d77;
     }
 
     a:visited {
-        color: #7d4500;
+        color: #007d77;
 
     }
 
@@ -48,26 +48,34 @@
     }
 
     .text-white a {
-        color: #f5c080;
+        color: #89c1f1;
     }
 
     .text-white a:visited {
-        color: #f5c080;
+        color: #89c1f1;
     }
 
     .text-white a:link {
-        color: #f5c080;
+        color: #89c1f1;
     }
 
     body {
-        background-color: #ece0d9;
+        background-color: #d9ece6;
     }
 
     .bg-dark {
-        background-color: #e6d2c6 !important;
-        /*background-color: #33251d !important;*/
+        background-color: #9cc8b387 !important;
     }
 
+    .bg-nav {
+        background-color: #9fc4d4 !important;
+        background-image: url(images/nav-background.jpg);
+        background-size: cover;
+    }
+
+    .bg-footer {
+        background-color: #213831;
+    }
 
     -->
     </style>
@@ -84,7 +92,7 @@
                         <div class="navbar-brand brand-unesco py-0">
                             <a href="https://fleursauvageyonne.github.io/">
                                 <div class="p-3 d-inline-block brand-unesco-svg">
-                                    <img alt="" src="../images/logo2-noir.svg" width="110" />
+                                    <img alt="" src="../images/logo2-noir.svg" width="200" />
                                 </div>
                             </a>
                         </div>
@@ -101,7 +109,7 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="input-group input-group-dark input-group-round">
-                                                        <form class="form-inline pt-3" action="http://www.google.com/cse" id="google-cse-results-searchbox-form" method="get" accept-charset="UTF-8">
+                                                        <form class="form-inline pt-3" action="https://www.google.com/cse" id="google-cse-results-searchbox-form" method="get" accept-charset="UTF-8">
                                                             <div class="input-group" style="min-width: 10rem">
                                                                 <input class="form-control form-control-dark" type="text" placeholder="Rechercher" aria-label="Rechercher" name="q">
                                                                 <div class="input-group-append">
@@ -121,8 +129,7 @@
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Nouvelles</div>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Météo en Bourgogne" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Météo en Bourgogne</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Météo dans l’Yonne" href="http://www.meteofrance.com/previsions-meteo-france/yonne/89">Météo dans l’Yonne</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
@@ -131,7 +138,7 @@
                                                     <a class="dropdown-item pl-1 text-truncate" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Nommer les végétaux" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Nommer les végétaux</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Code de nomenclature" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Code de nomenclature</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
@@ -140,11 +147,12 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
-                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Fleurs classées</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="https://fleursauvageyonne.github.io/flsv/noms/noms1.htm">Noms latins </a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="https://fleursauvageyonne.github.io/flsv/noms/noms2.htm">Noms français</a>
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Trouver des fleurs ou plantes</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="maj/listes/especes.htm">Noms latins </a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms français</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms vernaculaires</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" href="">Couleurs approximatives</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="">Couleurs</a>
                                                     <table summary="index colorimétrique" class="tableaucouleur">
                                                         <tbody>
                                                             <tr>
@@ -176,9 +184,9 @@
                                                                 <td bgcolor="#57D53B">
                                                                     <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
                                                                 </td>
-                                                                <td bgcolor="#8cad1f">
+                                                                <!--  <td bgcolor="#8cad1f">
                                                                     <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
-                                                                </td>
+                                                                </td> -->
                                                                 <td bgcolor="#e4ec0b">
                                                                     <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
                                                                 </td>
@@ -194,6 +202,7 @@
                                                                 <td bgcolor="#ffa500">
                                                                     <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
                                                                 </td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td bgcolor="#ffbfcb">
@@ -217,7 +226,7 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs, des prés et des prairies" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs, des prés et des prairies</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs et des prés</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
@@ -239,8 +248,9 @@
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
-                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Divers</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_3.htm">Un peu d'histoire</a>
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Articles</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
@@ -257,8 +267,8 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">A propos</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
@@ -287,26 +297,26 @@
             <div class="row justify-content-center">
                 <div class="col-lg-11 col-xl-9">
                     <section class="py-2 py-lg-2">
-                        <h1 class="display-4 mb-3">Un peu d'Histoire et de sculpture florale</h1>
+                        <h1 class="display-4 mb-3 serif">Un peu d'Histoire et de sculpture florale</h1>
                         <p class="lead">
-                            <em>Fleurs sauvages de l'Yonne</em> a bien entendu pour objet <a title="Herboriser dans l'Yonne au XXIe siècle" href="../../flsv/acc/yonne_2.htm#herb">les fleurs de l'Yonne actuelle</a> où vous pourrez herboriser.
+                           C'est sur les terres de ce département qui n'existait pas encore <a title="Formation de la France métropolitaine" href="https://fr.wikipedia.org/wiki/Formation_territoriale_de_la_France_m%C3%A9tropolitaine">au XVIIe siècle</a>, qu'un barbier-chirurgien, Thomas Montsainct, rédigea le premier inventaire floristique
+                            français intitulé : <a href="http://bibliotheque-numerique.hortalia.org/items/show/66"><em>Le jardin senonois cultivé naturellement d'environ six cents plantes diverses, qui croissent à moins d'une lieue de la ville et cité de Sens</em></a>.
                         </p>
                         <figure class="figure float-right my-2 ml-4 mr-md-n5" style="width:40%">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Yonne-Position.svg" title="Carte de France avec le département de l'Yonne" class=" img-thumbnail figure-img w-100">
                             <figcaption class="figure-caption">Carte de France avec <br>le département de l'Yonne.</figcaption>
                         </figure>
                         <p>
-                            C'est sur les terres de ce département qui n'existait pas encore <a title="Formation de la France métropolitaine" href="https://fr.wikipedia.org/wiki/Formation_territoriale_de_la_France_m%C3%A9tropolitaine">au XVIIe siècle</a>, qu'un barbier-chirurgien, <strong>Thomas Montsainct</strong>, rédigea le premier inventaire floristique
-                            français intitulé : <a href="http://bibliotheque-numerique.hortalia.org/items/show/66"><em>Le jardin senonois cultivé naturellement d'environ six cents plantes diverses, qui croissent à moins d'une lieue de la ville et cité de Sens</em></a>. Imprimé à Sens, en 1604, chez George Niverd, imprimeur devant la Prevosté, <em>ce catalogue très-sec des plantes observées par l'auteur (...) eut deux éditions successives</em> selon Eugène Ravin qui nous indique également, aux pages 17 à 20 de l'Introduction de son ouvrage <a title="A lire en ligne" href="http://www.biodiversitylibrary.org/item/44287">Catalogue raisonné des plantes du département de l'Yonne</a> (édité à Auxerre en 1861), qu'en 1660 ce sont <em>un apothicaire et deux médecins</em> qui écrivent une <em>Historia plantarum senonensium...</em>.
+                             Imprimé à Sens, en 1604, chez George Niverd, imprimeur devant la Prevosté, <em>ce catalogue très-sec des plantes observées par l'auteur </em> (...) eut deux éditions successives selon Eugène Ravin qui nous indique également, aux pages 17 à 20 de l'Introduction de son ouvrage <a title="A lire en ligne" href="http://www.biodiversitylibrary.org/item/44287">Catalogue raisonné des plantes du département de l'Yonne</a> (édité à Auxerre en 1861), qu'en 1660 ce sont <em>un apothicaire et deux médecins</em> qui écrivent une <em>Historia plantarum senonensium...</em>.
                         </p>
                         <p>
-                            Si le département de l'Yonne n'existait pas encore au XVIIe siècle et encore moins au Moyen-Age, dans ces mêmes terres aujourd'hui icaunaises, des hommes avaient déjà observé les bourgeons, les petites fleurs, les feuilles et les fruits, objets des pages de notre herbier.
+                            Au Moyen-Age, dans ces mêmes terres aujourd'hui icaunaises, des hommes avaient déjà observé les bourgeons, les petites fleurs, les feuilles et les fruits, objets des pages de notre herbier.
                         </p>
                         <p>
                             <a name="obs"></a>Ces observateurs vivaient au XIIe siècle, certes très longtemps avant ceux qui ont précisé les mécanismes cellulaires de la <a href="https://fr.wikipedia.org/wiki/Morphogen%C3%A8se_v%C3%A9g%C3%A9tale">morphogénèse végétale</a> mais pas longtemps avant ceux qui ont étudié d'une façon «&nbsp;moderne&nbsp;» la <a href="https://fr.wikipedia.org/wiki/Phyllotaxie">phyllotaxie</a>.
                         </p>
                         <p>
-                            Et, comme l'a si bien remarqué l'architecte Eugène Viollet-le-Duc (1814-1879) dans le <a href="https://fr.wikisource.org/wiki/Dictionnaire_raisonn%C3%A9_de_l%E2%80%99architecture_fran%C3%A7aise_du_XIe_au_XVIe_si%C3%A8cle/Flore">Tome 5</a> de son <em>Dictionnaire raisonné de l’architecture française du XIe au XVIe siècle</em>, au mot <em><strong>Flore</strong></em>, ces hommes qui étaient des artistes laïques ont présenté, <em>dans certains édifices romans, une tendance manifeste à chercher les modèles de l'ornementation sculptée parmi les plantes des bois et des champs. [...]</em> tout en profitant de ce que leur offrait <a href="https://journals.openedition.org/cem/11446">le sous-sol</a>.
+                            Comme l'a si bien remarqué l'architecte Eugène Viollet-le-Duc (1814-1879) dans le <a href="https://fr.wikisource.org/wiki/Dictionnaire_raisonn%C3%A9_de_l%E2%80%99architecture_fran%C3%A7aise_du_XIe_au_XVIe_si%C3%A8cle/Flore">Tome 5</a> de son <em>Dictionnaire raisonné de l’architecture française du XIe au XVIe siècle</em>, au mot <em><strong>Flore</strong></em>, ces hommes qui étaient des artistes laïques ont présenté, <em>dans certains édifices romans, une tendance manifeste à chercher les modèles de l'ornementation sculptée parmi les plantes des bois et des champs. [...]</em> tout en profitant de ce que leur offrait <a href="https://journals.openedition.org/cem/11446">le sous-sol</a>.
                         </p>
                         <p>
                             Viollet-le-Duc poursuit en écrivant :
@@ -314,14 +324,14 @@
                         <blockquote class="blockquote" style="font-size:1rem">
                             <em>
                                 <p class="mb-0">
-                                    Les chapiteaux de la nef de l'église abbatiale de <a href="http://whc.unesco.org/fr/list/84">Vézelay</a>... ne sont plus déjà des imitations [...]&nbsp;: leur végétation sculptée possède une physionomie qui lui est propre, qui a l'âpreté d'un art neuf [...] ils vont dans les bois, dans les champs; ils cherchent, sous l'herbe, les plus petites plantes; ils examinent leurs bourgeons, leurs boutons, leurs fleurs et leurs fruits, ...
+                                    Les chapiteaux de la nef de l'église abbatiale de <a href="http://whc.unesco.org/fr/list/84">Vézelay</a>... ne sont plus déjà des imitations [...]&nbsp;: leur végétation sculptée possède une physionomie qui lui est propre, qui a l'âpreté d'un art neuf [...] ils vont dans les bois, dans les champs; ils cherchent, sous l'herbe, les plus petites plantes; ils examinent leurs bourgeons, leurs boutons, leurs fleurs et leurs fruits, [...] 
                                 </p>
                                 <figure class="figure float-right my-2 ml-4 mr-md-n5" style="width:40%">
-                                    <img src="https://fleursauvageyonne.github.io/imag03/clinopod.jpg" title="Clinopodium vulgare" class=" img-thumbnail figure-img w-100">
-                                    <figcaption class="figure-caption"><a href="https://fleursauvageyonne.github.io/flsv/fuchsia/clinopod.htm">Clinopode commun</a></figcaption>
+                                    <img src="../../imag03/clinopod.jpg" title="Clinopodium vulgare" class=" img-thumbnail figure-img w-100">
+                                    <figcaption class="figure-caption"><a href="../../flsv/fuchsia/clinopod.htm">Clinopode commun</a></figcaption>
                                 </figure>
                                 <p>
-                                    ... et les voilà qui, avec cette humble flore, composent
+                                   et les voilà qui, avec cette humble flore, composent
                                     une variété infinie d'ornements d'une grandeur de style, d'une
                                     fermeté d'exécution qui laissent bien loin les meilleurs exemples
                                     de la sculpture romane. Soit instinct, soit raisonnement, ces
@@ -356,7 +366,7 @@
                             <em>L'<a href="https://fleursauvageyonne.github.io/flsv/vert/arum.htm">Arum</a> et l'<a href="../../flsv/jaune/irispseudacor.htm">Iris</a> sont les premiers signes du retour des beaux jours.</em> dit encore Viollet-le-Duc. <em>Est-ce pour cela que les sculpteurs romans paraissent avoir affectionné ces plantes, comme le réveil de la nature ?</em>
                         </p>
                         <figure class="figure float-right my-2 ml-4 mr-md-n5" style="width:40%">
-                            <a href="../../flsv/blanc/convolsep.htm"><img src="https://fleursauvageyonne.github.io/imag03/liseron.jpg" title="Calystegia sepium" class=" img-thumbnail figure-img w-100"></a>
+                            <a href="../../flsv/blanc/convolsep.htm"><img src="../../imag03/liseron.jpg" title="Calystegia sepium" class=" img-thumbnail figure-img w-100"></a>
                             <figcaption class="figure-caption">Liseron des haies</figcaption>
                         </figure>
                         <p>
@@ -366,7 +376,8 @@
                             <strong>Les botanistes, eux, s'intéressent à l'architecture des fleurs</strong> car, comme l'écrivait <a href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm#dpm">J.-M.&nbsp;Pelt</a>&nbsp;: <em>l'architecture d'une fleur raconte l'histoire de la plante toute entière et voilà pourquoi les botanistes, en fin de compte, ont préféré classer les plantes en fonction des fleurs parce que leur structure est beaucoup plus stable que celle des feuilles qui varie selon les conditions climatiques</em>.
                         </p>
                         <p>
-                            Cependant, les fleurs des arbres sont si petites et les arbres souvent si grands, que, bien plus que leurs fleurs, ce sont leurs modèles architecturaux qui doivent retenir notre attention comme l'exprime clairement <a href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm#hal">F.&nbsp;Hallé</a> dans ses ouvrages, et il est temps que nous leur portions un autre regard, d'autant plus que, comme l'écrit Heidi Ledford :
+                            Les fleurs des arbres sont si petites et les arbres souvent si grands, que, bien plus que leurs fleurs, ce sont leurs modèles architecturaux qui doivent retenir notre attention comme l'exprime clairement <a href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm#hal">F.&nbsp;Hallé</a> dans ses ouvrages, et il est temps que nous leur portions un autre regard, d'autant plus que, comme l'écrit Heidi Ledford : 
+                            <em><a href="https://www.nature.com/articles/d41586-018-01075-5">“We know more now, but we don’t necessarily know the answers.”</a> (Nous en savons plus maintenant, mais nous ne connaissons pas forcément les réponses).</em>
                         </p>
                     </section>
                 </div>
@@ -378,11 +389,12 @@
             <div class="card-columns columns-lg-4  px-3 py-3">
                 <div class="card bg-transparent border-0">
                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
-                    <div class="d-block font-weight-bold">Fleurs classées</div>
-                    <a class="d-block" title="Noms latins" href="https://fleursauvageyonne.github.io/flsv/noms/noms1.htm">Noms latins </a>
-                    <a class="d-block" title="Noms français et vernaculaires" href="https://fleursauvageyonne.github.io/flsv/noms/noms2.htm">Noms français</a>
+                    <div class="d-block font-weight-bold">Trouver des fleurs ou plantes</div>
+                    <a class="d-block" title="Noms latins" href="maj/listes/especes.htm">Noms latins </a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms français</a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms vernaculaires</a>
                     <a class="d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                    <a class="d-block" title="Fleurs des champs, des prés et des prairies" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs, des prés et des prairies</a>
+                    <a class="d-block" title="Fleurs des champs et des prés" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs et des prés</a>
                     <a class="d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
                     <a class="d-block" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
                     <a class="d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
@@ -396,7 +408,6 @@
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Couleurs</div>
-                    <a class="d-block" href="">Couleurs approximatives</a>
                     <table summary="index colorimétrique" class="tableaucouleur">
                         <tbody>
                             <tr>
@@ -428,9 +439,9 @@
                                 <td bgcolor="#57D53B">
                                     <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
                                 </td>
-                                <td bgcolor="#8cad1f">
+                                <!--   <td bgcolor="#8cad1f">
                                     <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
-                                </td>
+                                </td> -->
                                 <td bgcolor="#e4ec0b">
                                     <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
                                 </td>
@@ -446,6 +457,7 @@
                                 <td bgcolor="#ffa500">
                                     <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
                                 </td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td bgcolor="#ffbfcb">
@@ -472,8 +484,8 @@
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block  font-weight-bold">A propos</div>
-                    <a class="d-block" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                     <a class="d-block" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                    <a class="d-block" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                     <a class="d-block" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
                     <a class="d-block" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
                     <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
@@ -482,8 +494,7 @@
                     <div class="d-block font-weight-bold">Nouvelles</div>
                     <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
                     <a class="d-block" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
-                    <a class="d-block" title="Météo en Bourgogne" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Météo en Bourgogne</a>
-                    <a class="d-block" title="Météo dans l’Yonne" href="http://www.meteofrance.com/previsions-meteo-france/yonne/89">Météo dans l’Yonne</a>
+                    <a class="d-block" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Bibliographies</div>
@@ -495,14 +506,15 @@
                     <a class="d-block" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
                     <a class="d-block" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
                     <a class="d-block" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                    <a class="d-block" title="Nommer les végétaux" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Nommer les végétaux</a>
+                    <a class="d-block" title="Code de nomenclature" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Code de nomenclature</a>
                     <a class="d-block" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                     <a class="d-block" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                     <a class="d-block" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
                 </div>
                 <div class="card bg-transparent border-0">
-                    <div class="d-block font-weight-bold">Divers</div>
-                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_3.htm">Un peu d'histoire</a>
+                    <div class="d-block font-weight-bold">Articles</div>
+                    <a class="d-block" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                     <a class="d-block" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                     <a class="d-block" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                     <a class="d-block" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
@@ -527,9 +539,9 @@
         </div>
     </footer>
     <a href="#" class="back-top text-white" data-tooltip="tooltip" data-placement="left" data-trigger="hover" title="" data-original-title="Haut de la page">Haut</a>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../lib/jquery-3.4.1.min.js"></script>
+    <script src="../lib/popper.min.js"></script><!-- 1.16 -->
+    <script src="../lib/bootstrap.min.js"></script><!-- 4.4.1 -->
     <script src="../lib/lib.js"></script>
 </body>
 
