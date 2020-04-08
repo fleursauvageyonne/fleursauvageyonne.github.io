@@ -565,15 +565,16 @@
         },
         {
             "latin": "Anchusa italica",
-            "autorité": "",
+            "autorité": "Retz., 1779",
             "français": "Buglosse d'Italie, buglosse azurée",
             "vernaculaire": "",
-            "famille": "",
+            "famille": " Boraginaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/anchital.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/anchitap.jpg",
+            "couleurNom": ["Bleu"],
+            "couleurCode": ["#0901ba"],
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Andryala integrifolia",
@@ -1279,9 +1280,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/boragoffi.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/pborago.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Brachypodium sylvaticum",
@@ -1495,9 +1497,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/pink/caluv.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/pcaluvulg.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Caltha palustris",
@@ -2173,15 +2176,16 @@
         },
         {
             "latin": "Cichorium intybus",
-            "autorité": "",
-            "français": "Chicorée sauvage, Chicorée intube<font color=\"#9c4245\">(siccoree)</font>",
+            "autorité": "L., 1753",
+            "français": "Chicorée sauvage, Chicorée intube <font color=\"#9c4245\">(siccoree)</font>",
             "vernaculaire": "",
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/cichorium.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/past1.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Circaea lutetiana",
@@ -2539,9 +2543,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/arbres/crat.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/aub1styp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Crepis capillaris",
@@ -2587,9 +2592,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/centcyan.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/pcentcya1.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Cymbalaria muralis",
@@ -3019,9 +3025,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/fuchsia/epilobang.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/epilangp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Epilobium hirsutum",
@@ -3175,9 +3182,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/pourpre/ericacinerea.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/perica.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Erica tetralix",
@@ -4147,9 +4155,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/vert/heder.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/hedhelixp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Helianthemum apenninum",
@@ -4795,9 +4804,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/arbres/labana.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/laburnump.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Lactuca muralis",
@@ -5449,15 +5459,16 @@
         },
         {
             "latin": "Lycopsis arvensis",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Lycopside des champs, Petit buglosse",
             "vernaculaire": "",
-            "famille": "",
+            "famille": "Boraginaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/lycopsis.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/ancharvp.jpg",
+            "couleurNom": ["Bleu"],
+            "couleurCode": ["#1d03b7"],
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Lycopus europaeus",
@@ -5791,9 +5802,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/pink/mel.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/melitp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Mentha aquatica",
@@ -5827,9 +5839,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/violet/menthapul.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/menthpulp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Mentha suaveolens",
@@ -6661,15 +6674,16 @@
         },
         {
             "latin": "Papaver dubium",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Pavot douteux",
             "vernaculaire": "Petit coquelicot",
-            "famille": "",
+            "famille": "Papaveraceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/rouge/papavdub.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/papv1p.jpg",
+            "couleurNom": ["Rouge"],
+            "couleurCode": ["#e93940"],
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Papaver rhoeas",
@@ -6679,9 +6693,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/rouge/papavrhoeas.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/papv1p.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Papaver somniferum",
@@ -6847,9 +6862,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/phaceliatana.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/phaceliap.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Phalaris arundinacea",
@@ -7879,9 +7895,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/arbres/robinia.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/probinia.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Rorippa amphibia",
@@ -8071,9 +8088,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/arbres/salixcaprea.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/salixcapp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Salix cinerea",
@@ -8539,9 +8557,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/jaune/sinap.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/psinapis.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Sison amomum",
@@ -9403,9 +9422,11 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/jaune/tusfarfa.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/ptusfar1.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
+            
         },
         {
             "latin": "Typha latifolia",
@@ -9487,9 +9508,10 @@
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/pink/vaccimyr.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/pvacmyr.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Abeilles"]
         },
         {
             "latin": "Valeriana officinalis",
