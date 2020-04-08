@@ -329,6 +329,7 @@
                         <th data-field="français" data-sortable="true"><span class="d-none d-md-inline">Nom </span>Français</th>
                         <th data-field="vernaculaire" data-sortable="true" data-width-unit="%" data-width="15"><span class="d-none d-md-inline">Nom </span>Vernaculaire</th>
                         <th data-field="famille" data-sortable="true" data-formatter="familleFormatter">Famille</th>
+                        <th data-field="classement" data-sortable="true" data-formatter="classementFormatter">Classements</th>
                         <th data-field="couleurNom" data-sortable="true" data-formatter="colorFormatter">Couleurs</th>
                     </tr>
                 </thead>
@@ -536,8 +537,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="../lib/lib.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
-    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script> -->
+     <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script> -->
+   <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
     <script src="../lib/bootstrap-table-accent-neutralise.js"></script>
@@ -555,7 +556,6 @@
     };
 
 
-    /*var dataUrl = 'https://api.myjson.com/bins/flocw';*/
     $(document).ready(function() {
         $(function() {
             var $table = $('#table');
@@ -668,6 +668,18 @@
         if (Array.isArray(row.couleurCode)) {
             for (var i = 0; i < row.couleurCode.length; i++) {
                 content = content + '<div class="d-inline-block mr-1" style="background-color:' + row.couleurCode[i] + ';width:20px;height:20px;border:1px solid #ccc" title="' + row.couleurNom[i] + '"></div>';
+            }
+        }
+        return content;
+    }
+
+        function classementFormatter(value, row, index) {
+        var content = "";
+        var separator = "";
+        if (Array.isArray(row.classement)) {
+            for (var i = 0; i < row.classement.length; i++) {
+                content = separator + row.classement[i] ;
+                separator = ", ";
             }
         }
         return content;
