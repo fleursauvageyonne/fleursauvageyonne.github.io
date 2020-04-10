@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../lib/bootstrap.min.css"><!-- version 4.1.3 -->
     <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../lib/styles.css">
     <style type="text/css" media="all">
     < !-- a {
@@ -86,7 +87,10 @@
         height: 20px;
         margin-bottom: -5px;
     }
-
+    .card-view-title {
+        font-weight: bold;
+        margin-right: 1rem
+    }
     -->
     </style>
 </head>
@@ -236,7 +240,7 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs et des prés</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
@@ -454,6 +458,7 @@
                             <button class="dropdown-item " type="button" value="Noir"><span class="couleur-span" style="background-color: #000000;"></span> Noir</button>
                             <button class="dropdown-item" type="button" value="Blanc"><span class="couleur-span" style="background-color: #fff;"></span> Blanc</button>
                             <button class="dropdown-item" type="button" value="Bleu"><span class="couleur-span" style="background-color: #007fff;"></span> Bleu</button>
+                            <button class="dropdown-item" type="button" value="Rose"><span class="couleur-span" style="background-color: #f5d1f7"></span> Rose</button>
                             <button class="dropdown-item" type="button" value="Violette"><span class="couleur-span" style="background-color: #be64b6"></span> Violette</button>
                             <button class="dropdown-item" type="button" value="Violet"><span class="couleur-span" style="background-color: #9858C5;"></span> Violet</button>
                             <button class="dropdown-item" type="button" value="Jaune"><span class="couleur-span" style="background-color: #feff00;"></span> Jaune</button>
@@ -605,7 +610,7 @@
                     <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
                     <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                     <a class="d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                    <a class="d-block" title="Fleurs des champs et des prés" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs et des prés</a>
+                    <a class="d-block" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                     <a class="d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
                     <a class="d-block" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
                     <a class="d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
@@ -885,7 +890,7 @@
         }
         content = '<div class="flex-fill">' + content + "</div>";
         if (row.vignette && row.vignette != "") {
-            content = content + '<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
+            content = content + '<div class="mr-2 " style="width:70px;"><img  width="70" src="' + row.vignette + '"></div>';
         }
 
         content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">' + content + '</a>';
@@ -907,7 +912,7 @@
         var separator = "";
         if (Array.isArray(row.classement)) {
             for (var i = 0; i < row.classement.length; i++) {
-                content = separator + row.classement[i];
+                content = content + separator + row.classement[i];
                 separator = ", ";
             }
         }
