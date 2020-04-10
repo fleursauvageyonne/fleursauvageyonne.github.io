@@ -1954,15 +1954,16 @@
         },
         {
             "latin": "Centaurea jacea subsp. jacea",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Barbeau",
             "vernaculaire": "Tête de moineau",
-            "famille": "",
+            "famille": "Asteraceae (Compositae)",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/violet/centjacea.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/pcentjac.jpg",
+            "couleurNom": ["Violette"],
+            "couleurCode": ["#ac56a9"],
+            "classement" : ["Champs"]
         },
         {
             "latin": "Centaurea jacea subsp. angustifolia",
@@ -2183,14 +2184,14 @@
         {
             "latin": "Cichorium intybus",
             "autorité": "L., 1753",
-            "français": "Chicorée sauvage, Chicorée intube <font color=\"#9c4245\">(siccoree)</font>",
+            "français": "Chicorée sauvage, Chicorée intube (siccoree)",
             "vernaculaire": "",
             "famille": "",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/cichorium.htm",
             "vignette": "https://fleursauvageyonne.github.io/imag02/past1.jpg",
-            "couleurNom": "",
-            "couleurCode": "",
+            "couleurNom": ["#Violette"],
+            "couleurCode": ["#dedbff"],
             "classement" : ["Abeilles"]
         },
         {
@@ -5348,24 +5349,26 @@
             "autorité": "",
             "français": "Chèvrefeuille des bois",
             "vernaculaire": "",
-            "famille": "",
+            "famille": "Caprifoliaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/blanc/lonicerp.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/loniper2p.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Toxique"]
         },
         {
             "latin": "Lonicera xylosteum",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Chèvrefeuille à balais",
             "vernaculaire": "Camerisier",
-            "famille": "",
+            "famille": "Caprifoliaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/black/lonicerxylo.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/loniceraxylop.jpg",
+            "couleurNom": ["Blanc","Jaune"],
+            "couleurCode": ["#ffffff","#f7eabe"],
+            "classement" : ["Toxique"]
         },
         {
             "latin": "Lotus corniculatus",
@@ -9422,15 +9425,15 @@
         },
         {
             "latin": "Tussilago farfara",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Tussilage",
             "vernaculaire": "Pas-d'âne",
-            "famille": "",
+            "famille": "Asteraceae (Compositae)",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/jaune/tusfarfa.htm",
             "vignette": "https://fleursauvageyonne.github.io/imag02/ptusfar1.jpg",
-            "couleurNom": "",
-            "couleurCode": "",
+            "couleurNom": ["Jaune"],
+            "couleurCode": ["#e8e06f"],
             "classement" : ["Abeilles"]
 
         },
