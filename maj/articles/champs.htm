@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <script async="" src="./FLSVY - MENU de Fleurs sauvages de l'Yonne_files/js"></script> -->
+    <!--    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-63048403-1');
+    </script> -->
+    <title>Fleurs des champs, des prés et des prairies - FLSVY - Fleurs sauvages de l'Yonne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://fleursauvageyonne.github.io/favicon.ico">
+    <meta name="Description" content="Intelligence des plantes / FLSVY pour reconnaître une fleur sauvage par différents aspects.">
+    <meta http-equiv="Content-script-type" content="text/javascript">
+    <meta http-equiv="Content-style-type" content="text/css">
+    <meta http-equiv="Content-language" content="fr">
+    <meta name="keywords" content="Botanique dans l’Yonne en Bourgogne, s’initier à la botanique, nommer les fleurs sauvages, herbier, connaître et reconnaître une fleur sauvage, flores selvagens de França, fiori spontanee nell’Yonne Borgogna Francia, wilde blumen von Yonne Burgund Frankreich, wilde bloemen van Yonne Bourgondië Frankrijk">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noarchive">
+    <meta http-equiv="Cache-control" content="no-store">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css"><!-- version 4.1.3 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../lib/styles.css">
+    <style type="text/css" media="all">
+    < !-- a {
+        color: #369bd6
+    }
+
+    a:link {
+        color: #369bd6;
+    }
+
+    a:visited {
+        color: #369bd6;
+
+    }
+
+    a:active {
+        /*color: #768744;*/
+        color: #369bd6;
+    }
+
+    .text-white a {
+        color: #e1e286;
+    }
+
+    .text-white a:visited {
+        color: #e1e286;
+    }
+
+    .text-white a:link {
+        color: #e1e286;
+    }
+
+    body {
+        background-color: #ebe7b9;
+    }
+
+    .bg-dark {
+        background-color: #cac58a99 !important;
+    }
+
+    .bg-nav {
+        background-color: #FFE773 !important;
+        background-image: url(images/champs-nav-background.jpg);
+        background-size: cover;
+    }
+
+    .bg-footer {
+        background-color: #55533e;
+    }
+
+    .couleur-span {
+        vertical-align: text-top;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .card-view-title {
+        font-weight: bold;
+        margin-right: 1rem
+    }
+
+    -->
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="0" id="top">
+    <!-- Navigation -->
+    <header role="banner">
+        <nav class="navbar navbar-expand bd-navbar px-0 py-0  bg-nav ">
+            <div class="container">
+                <!-- -fluid w-100 -->
+                <ul class="navbar-nav bd-navbar-nav w-100 justify-content-left align-items-center">
+                    <li class="nav-item flex-grow-1">
+                        <div class="navbar-brand brand-unesco py-0">
+                            <a href="../index.htm">
+                                <div class="p-3 d-inline-block brand-unesco-svg">
+                                    <img alt="" src="../images/logo2-noir.svg" width="200" />
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown navbar p-0 m-0 align-items-center position-static toggleArrow show" id="menuFLSV">
+                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="../index.htm" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
+                                <img alt="" id="img-burger" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTYgMTMyaDQxNmM4LjgzNyAwIDE2LTcuMTYzIDE2LTE2Vjc2YzAtOC44MzctNy4xNjMtMTYtMTYtMTZIMTZDNy4xNjMgNjAgMCA2Ny4xNjMgMCA3NnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2eiIvPjwvc3ZnPg==" style="width:1.3em" />
+                            </a>
+                            <div class="dropdown-menu w-100 pt-3 m-0 border-right-0 border-left-0 " aria-labelledby="navmenuFLSV" style="z-index:2000">
+                                <div class="container-fluid">
+                                    <div class="container" id="megaNav">
+                                        <div class="card-columns columns-lg-4 ">
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <div class="input-group input-group-dark input-group-round">
+                                                        <form class="form-inline pt-3" action="https://www.google.com/cse" id="google-cse-results-searchbox-form" method="get" accept-charset="UTF-8">
+                                                            <div class="input-group" style="min-width: 10rem">
+                                                                <input class="form-control form-control-dark" type="text" placeholder="Rechercher" aria-label="Rechercher" name="q">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-secondary bg-dark text-white" type="button">
+                                                                        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNTA1IDQ0Mi43TDQwNS4zIDM0M2MtNC41LTQuNS0xMC42LTctMTctN0gzNzJjMjcuNi0zNS4zIDQ0LTc5LjcgNDQtMTI4QzQxNiA5My4xIDMyMi45IDAgMjA4IDBTMCA5My4xIDAgMjA4czkzLjEgMjA4IDIwOCAyMDhjNDguMyAwIDkyLjctMTYuNCAxMjgtNDR2MTYuM2MwIDYuNCAyLjUgMTIuNSA3IDE3bDk5LjcgOTkuN2M5LjQgOS40IDI0LjYgOS40IDMzLjkgMGwyOC4zLTI4LjNjOS40LTkuNCA5LjQtMjQuNi4xLTM0ek0yMDggMzM2Yy03MC43IDAtMTI4LTU3LjItMTI4LTEyOCAwLTcwLjcgNTcuMi0xMjggMTI4LTEyOCA3MC43IDAgMTI4IDU3LjIgMTI4IDEyOCAwIDcwLjctNTcuMiAxMjgtMTI4IDEyOHoiLz48L3N2Zz4=" style="width:1em;margin-top: -0.2em;" />
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <input type="hidden" name="safe" value="medium">
+                                                            <input type="hidden" name="cx" value="015490402823331931679:mi_xxt6kjlg">
+                                                            <input type="hidden" name="ie" value="UTF-8">
+                                                            <input type="hidden" name="cof" value="FORID:0">
+                                                            <!-- <input type="submit" name="sa" value="Clic"> -->
+                                                        </form>
+                                                    </div>
+                                                    <!-- <div class="primary text-primary font-weight-bold">In brief</div> -->
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Nouvelles</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
+                                                </div>
+                                            </div>
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Vocabulaire</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Code de nomenclature" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Code de nomenclature</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
+                                                </div>
+                                            </div>
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Trouver des fleurs ou plantes</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="">Couleurs</a>
+                                                    <table summary="index colorimétrique" class="tableaucouleur">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td bgcolor="#fffcd6" class="multi">
+                                                                    <a href="https://fleursauvageyonne.github.io/flsv/var/LF15.htm">
+                                                                        <img src="../images/couleurs.jpg" title="fleurs multicolores">
+                                                                    </a>
+                                                                </td>
+                                                                <td bgcolor="#000000">
+                                                                    <a title="fleurs noires" href="https://fleursauvageyonne.github.io/flsv/black/LF12.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#8000b0">
+                                                                    <a title="fleurs violettes ou violet-pourpre" href="https://fleursauvageyonne.github.io/flsv/violet/LF2.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#e399ff">
+                                                                    <a title="fleurs mauves" href="https://fleursauvageyonne.github.io/flsv/mauve/LF14.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#1308e1">
+                                                                    <a title="fleurs bleu foncé" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_3.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#6473c8">
+                                                                    <a title="Fleurs bleues" href="https://fleursauvageyonne.github.io/flsv/azur/LF3.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#dbe4ff">
+                                                                    <a title="fleurs bleu clair" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_2.htm">&nbsp;</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#57D53B">
+                                                                    <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
+                                                                </td>
+                                                                <!--  <td bgcolor="#8cad1f">
+                                                                    <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
+                                                                </td> -->
+                                                                <td bgcolor="#e4ec0b">
+                                                                    <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#ffff21">
+                                                                    <a title="fleurs jaunes" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#ffea05">
+                                                                    <a title="fleurs jaune-orangé" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_3.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#965f00">
+                                                                    <a title="fleurs brunes, beiges ou marron" href="https://fleursauvageyonne.github.io/flsv/marron/LF11.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#ffa500">
+                                                                    <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#ffbfcb">
+                                                                    <a title="fleurs roses, r. violacé, r. purpurin et rose verdâtre" href="https://fleursauvageyonne.github.io/flsv/pink/LF9.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#f400a0">
+                                                                    <a title="fleurs fuchsia" href="https://fleursauvageyonne.github.io/flsv/fuchsia/LF8.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#af007e">
+                                                                    <a title="fleurs pourpres" href="https://fleursauvageyonne.github.io/flsv/pourpre/LF4.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#fe0000">
+                                                                    <a title="fleurs rouges" href="https://fleursauvageyonne.github.io/flsv/rouge/LF10.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#fbf9c0">
+                                                                    <a title="fleurs blanc crème" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1_2.htm">&nbsp;</a>
+                                                                </td>
+                                                                <td bgcolor="#ffffff" style="border:1px solid #eee">
+                                                                    <a title="fleurs blanches" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1.htm">&nbsp;</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les graminées" href="https://fleursauvageyonne.github.io/flsv/poac/Lipoac.htm">Poaceae (une famille)</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Arbres, arbustes, arbrisseaux..." href="https://fleursauvageyonne.github.io/flsv/arbres/LArbres.htm">Plantes ligneuses</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs petites ou cachées" href="https://fleursauvageyonne.github.io/flsv/pftd/LI_plfd.htm">Fleurs très discrètes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Espèces végétales protégées" href="https://fleursauvageyonne.github.io/flsv/esprot/esprotegees.htm">Espèces protégées</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Sphaignes, hépatiques, prêles, fougères, lycopodes" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">Végétaux sans fleurs</a>
+                                                </div>
+                                            </div>
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Bibliographies</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Ouvrages consultés" href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm">pour les grands</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Ouvrages consultés pour les enfants" href="https://fleursauvageyonne.github.io/flsv/acc/biblio2.htm">pour les petits</a>
+                                                </div>
+                                            </div>
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Articles</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
+                                                </div>
+                                            </div>
+                                            <div class="card border-0">
+                                                <div class="card-body p-2">
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">A propos</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- fin Navigation -->
+    <div class="main-container position-relative">
+        <!-- -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7 offset-lg-2">
+                    <h1 class="serif display-4 pt-4">Fleurs des champs, des prés et des prairies</h1>
+                    <p class="lead">
+                        Les fleurs des champs ont la vie dure malgré la suppression des jachères de l'agriculture d'antan. L'agriculture est apparue au Néolithique, neuf siècles avant notre ère. Au XVIIIe siècle elle commence à avoir un impact sur le vivant pouvant être considéré comme négatif.
+                    </p>
+                </div>
+                <div class="col-lg-3 float-right">
+                </div>
+                <div class="col-12 col-md-10 col-lg-7 offset-lg-2">
+                    <p>
+                        Les fleurs des champs sont bien petites face aux machines agricoles de plus en plus puissantes et de plus en plus larges, comme les épandeurs de pesticides par exemple, qui ont transformé les champs devenus de plus en plus grands, de plus en plus plats et de moins en moins caillouteux grâce à des <a href="http://www.bugnot.com/broyeurs-de-pierres-et-aligneuses/broyeurs-mixtes/13-broyeur-mixte-pierre-et-bois.html">broyeurs</a>.
+                    </p>
+                    <p>
+                        Paradoxalement d'autres machines agricoles sont équipées de capteurs, fruits de <a href="https://www.actuia.com/dossiers/sera-limpact-de-lintelligence-artificielle-lagriculture/">l'Intelligence Artificielle</a>, permettant de manipuler la matière vivante des plantes à l'échelle à laquelle se déroule leur vie : celle du nanomètre.
+                    </p>
+                    <!-- digression -->
+                    <!-- <p>
+                        Ces machines agricoles n'ont donc rien à envier aux 4x4 des villes et des villages, totalement inadaptées à la largeur des rues, des routes, des parkings et autres infrastructures routières ou non.
+                    </p> -->
+                    <p>
+                        Depuis quelques années des bandes enherbées doivent être aménagées entre certains champs et les cours d'eau. Ce sont pour les fleurs sauvages des refuges où vous les retrouverez, même si ce sont les <a href="../../flsv/jaune/taraxa.htm">pissenlits</a> y dominent.
+                    </p>
+                    <p>
+                        Les fleurs des prés et des prairies, aimées des botanistes, le sont parfois moins des éleveurs car <a href="../../flsv/var/LFtx.htm">certaines d'entre elles</a> contiennent des&nbsp;<strong>substances toxiques</strong>&nbsp;pour les bovins, les ovins ou les chevaux.
+                    </p>
+                </div>
+                <div class="col-lg-3 float-right">
+                    <div class=" bg-dark p-3 m-0 ml-lg-3 my-3 text-center">
+                        <figure class="figure w-100">
+                            <img src="../especes/images/Legousia-speculum-veneris-1.jpg" class="img-fluid img-thumbnail figure-img w-100" title="   Legousia speculum-veneris" style="max-width:450px">
+                            <figcaption class="figure-caption"> Miroir de Vénus, <em>Legousia speculum-veneris</em> (L.) Chaix, 1785</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-3">
+        <div class="row justify-content-center pb-3">
+            <div class="col-12 col-md-8">
+                <h2 class="serif">Fleurs sauvages</h2>
+                <p>Voici quelques-unes de ces fleurs des champs, des prés et des prairies que vous pourriez croiser dans l'Yonne.</p>
+            </div>
+        </div>
+        <div id="toolbar" class="">
+            <div class="form-inline" role="form">
+                <div class="form-group mb-2">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary ml-1 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Couleurs
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" id="selectcolor" style="min-width: 300px">
+                            <div class="row m-0">
+                                <div class="col-6 p-0">
+                                    <button class="dropdown-item active" type="button" value="">Tout / effacer</button>
+                                    <button class="dropdown-item" type="button" value="Noir"><span class="couleur-span" style="background-color: #000000;"></span> Noir</button>
+                                    <button class="dropdown-item" type="button" value="Blanc"><span class="couleur-span" style="background-color: #fff;"></span> Blanc</button>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <button class="dropdown-item" type="button" value="Bleu"><span class="couleur-span" style="background-color: #007fff;"></span> Bleu</button>
+                                    <button class="dropdown-item" type="button" value="Rose"><span class="couleur-span" style="background-color: #f5d1f7"></span> Rose</button>
+                                    <button class="dropdown-item" type="button" value="Violette"><span class="couleur-span" style="background-color: #be64b6"></span> Violette</button>
+                                    <button class="dropdown-item" type="button" value="Violet"><span class="couleur-span" style="background-color: #9858C5;"></span> Violet</button>
+                                    <button class="dropdown-item" type="button" value="Jaune"><span class="couleur-span" style="background-color: #feff00;"></span> Jaune</button>
+                                    <button class="dropdown-item" type="button" value="Rouge"><span class="couleur-span" style="background-color: #e93940;"></span> Rouge</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="table" class="table" data-classes="table table-hover table-striped table-borderless" data-thead-classes="thead-dark">
+            <!-- -->
+            <thead>
+                <tr>
+                    <th data-field="latin" data-sortable="true" data-formatter="nameFormatter" data-valign="middle" data-width-unit="%" data-width="25"><span class="d-none d-md-inline">Nom </span>Latin</th>
+                    <th data-field="français" data-sortable="true"><span class="d-none d-md-inline">Nom </span>Français</th>
+                    <th data-field="vernaculaire" data-sortable="true" data-width-unit="%" data-width="15"><span class="d-none d-md-inline">Nom </span>Vernaculaire</th>
+                    <th data-field="famille" data-sortable="true" data-formatter="familleFormatter">Famille</th>
+                    <th data-field="classement" data-sortable="true" data-formatter="classementFormatter">Classements</th>
+                    <th data-field="couleurNom" data-sortable="true" data-formatter="colorFormatter">Couleurs</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="container-fluid bg-dark py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="card-columns">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                Vidéo <br>La naissance des osmies au mois de mars dans l'Yonne
+                                <a href="https://youtu.be/NHxLewrWn60" class="d-block position-relative">
+                                    <i class="fab fa-youtube position-absolute p-2 text-white h2"></i>
+                                    <img src="http://img.youtube.com/vi/NHxLewrWn60/mqdefault.jpg" class="img-fluid" />
+                                </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://youtu.be/NHxLewrWn60"><i class="fas fa-photo-video"></i> Voir et écouter</a>
+                            </div>
+                        </div>
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                Pour en savoir plus<br />
+                                <ul>
+                                    <li>sur la <a href="https://fr.wikipedia.org/wiki/Flore_mellif%C3%A8re">flore mellifère</a></li>
+                                    <li>sur le <a href="https://fr.wikipedia.org/wiki/Apis_%28genre%29">genre <em>Apis</em></a></li>
+                                    <li>sur l'<a href="http://www.ceillac.com/abeilles-page.html">apiculture</a></li>
+                                    <li>ou découvrir quelques <a href="http://www.flickr.com/photos/90408805@N00/collections/72157622508048613/">abeilles solitaires</a> ou non.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                Article<br>
+                                Une étude révèle les secrets de fabrication des apiculteurs étrusques
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://nicolas-constans.net/2017-08-19-une-etude-revele-les-secrets-de-fabrication-des-apiculteurs-etrusques/"><i class="fas fa-book-reader"></i> Lire</a>
+                            </div>
+                        </div>
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                Bibliographie<br>
+                                <em>Tout ce que vous avez toujours voulu savoir sur les abeilles></em><br>
+                                <em>Guide visuel à destination des esprits curieux et pressés</em><br>
+                                Yves Le Conte, Jacques Gout<br>
+                                © Agence Media et Hatier, Paris, 2012.
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.librairie-gallimard.com/livre/9782218958236-tout-ce-que-vous-avez-toujours-voulu-savoir-sur-les-abeilles-yves-le-conte-jacques-gout/"><i class="fas fa-book"></i> Lire</a>
+                            </div>
+                        </div>
+                        <!--         <div class="card bg-transparent">
+                                <div class="card-body">
+                                    Articles<br>
+                                    Les plantes sont-elles des animaux comme les autres&nbsp;?<br>
+                                    <a href="https://www.letemps.ch/sciences/plantes-sontelles-animaux-autres">Le Temps</a>, Suisse
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://www.letemps.ch/sciences/plantes-sontelles-animaux-autres"><i class="far fa-newspaper"></i> Lire</a>
+                                </div>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white">
+        <div class="container">
+            <div class="card-columns columns-lg-4  px-3 py-3">
+                <div class="card bg-transparent border-0">
+                    <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
+                    <div class="d-block font-weight-bold">Trouver des fleurs ou plantes</div>
+                    <a class="d-block" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
+                    <a class="d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
+                    <a class="d-block" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
+                    <a class="d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
+                    <a class="d-block" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
+                    <a class="d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
+                    <a class="d-block" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
+                    <a class="d-block" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
+                    <a class="d-block" title="Les graminées" href="https://fleursauvageyonne.github.io/flsv/poac/Lipoac.htm">Poaceae (une famille)</a>
+                    <a class="d-block" title="Arbres, arbustes, arbrisseaux..." href="https://fleursauvageyonne.github.io/flsv/arbres/LArbres.htm">Plantes ligneuses</a>
+                    <a class="d-block" title="Fleurs petites ou cachées" href="https://fleursauvageyonne.github.io/flsv/pftd/LI_plfd.htm">Fleurs très discrètes</a>
+                    <a class="d-block" title="Espèces végétales protégées" href="https://fleursauvageyonne.github.io/flsv/esprot/esprotegees.htm">Espèces protégées</a>
+                    <a class="d-block" title="Sphaignes, hépatiques, prêles, fougères, lycopodes" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">Végétaux sans fleurs</a>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block font-weight-bold">Couleurs</div>
+                    <table summary="index colorimétrique" class="tableaucouleur">
+                        <tbody>
+                            <tr>
+                                <td bgcolor="#fffcd6" class="multi">
+                                    <a href="https://fleursauvageyonne.github.io/flsv/var/LF15.htm">
+                                        <img src="../images/couleurs.jpg" title="fleurs multicolores">
+                                    </a>
+                                </td>
+                                <td bgcolor="#000000">
+                                    <a title="fleurs noires" href="https://fleursauvageyonne.github.io/flsv/black/LF12.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#8000b0">
+                                    <a title="fleurs violettes ou violet-pourpre" href="https://fleursauvageyonne.github.io/flsv/violet/LF2.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#e399ff">
+                                    <a title="fleurs mauves" href="https://fleursauvageyonne.github.io/flsv/mauve/LF14.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#1308e1">
+                                    <a title="fleurs bleu foncé" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_3.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#6473c8">
+                                    <a title="Fleurs bleues" href="https://fleursauvageyonne.github.io/flsv/azur/LF3.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#dbe4ff">
+                                    <a title="fleurs bleu clair" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_2.htm">&nbsp;</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#57D53B">
+                                    <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
+                                </td>
+                                <!--   <td bgcolor="#8cad1f">
+                                    <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
+                                </td> -->
+                                <td bgcolor="#e4ec0b">
+                                    <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#ffff21">
+                                    <a title="fleurs jaunes" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#ffea05">
+                                    <a title="fleurs jaune-orangé" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_3.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#965f00">
+                                    <a title="fleurs brunes, beiges ou marron" href="https://fleursauvageyonne.github.io/flsv/marron/LF11.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#ffa500">
+                                    <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffbfcb">
+                                    <a title="fleurs roses, r. violacé, r. purpurin et rose verdâtre" href="https://fleursauvageyonne.github.io/flsv/pink/LF9.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#f400a0">
+                                    <a title="fleurs fuchsia" href="https://fleursauvageyonne.github.io/flsv/fuchsia/LF8.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#af007e">
+                                    <a title="fleurs pourpres" href="https://fleursauvageyonne.github.io/flsv/pourpre/LF4.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#fe0000">
+                                    <a title="fleurs rouges" href="https://fleursauvageyonne.github.io/flsv/rouge/LF10.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#fbf9c0">
+                                    <a title="fleurs blanc crème" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1_2.htm">&nbsp;</a>
+                                </td>
+                                <td bgcolor="#ffffff" style="border:1px solid #eee">
+                                    <a title="fleurs blanches" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1.htm">&nbsp;</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block  font-weight-bold">A propos</div>
+                    <a class="d-block" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                    <a class="d-block" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
+                    <a class="d-block" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
+                    <a class="d-block" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
+                    <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block font-weight-bold">Nouvelles</div>
+                    <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
+                    <a class="d-block" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
+                    <a class="d-block" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block font-weight-bold">Bibliographies</div>
+                    <a class="d-block" title="Ouvrages consultés" href="https://fleursauvageyonne.github.io/flsv/acc/biblio.htm">pour les grands</a>
+                    <a class="d-block" title="Ouvrages consultés pour les enfants" href="https://fleursauvageyonne.github.io/flsv/acc/biblio2.htm">pour les petits</a>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block font-weight-bold">Vocabulaire</div>
+                    <a class="d-block" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
+                    <a class="d-block" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
+                    <a class="d-block" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
+                    <a class="d-block" title="Code de nomenclature" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Code de nomenclature</a>
+                    <a class="d-block" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
+                    <a class="d-block" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
+                    <a class="d-block" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="d-block font-weight-bold">Articles</div>
+                    <a class="d-block" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
+                    <a class="d-block" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
+                    <a class="d-block" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
+                    <a class="d-block" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
+                    <a class="d-block" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
+                    <a class="d-block" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
+                    <a class="d-block" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
+                    <a class="d-block" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
+                    <a class="d-block" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
+                    <a class="d-block" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
+                    <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center d-block pt-4 w-100">
+            <a href="../index.htm"><img src="../images/logo-simple-blanc.svg" style="width:80px"></a>
+        </div>
+        <div class="text-center align-items-center justify-content-center w-100 pt-2 px-4 d-sm-flex">
+            <div class="mr-3"><span class="badge badge-info"> Mise à jour :&nbsp;mars 2020</span></div>
+            <div class="mr-3"><img alt="" src="../images/copyleft-blanc.svg" width="16" height="16">&nbsp;2005 à 2020&nbsp;&nbsp;</div>
+            <div class="mr-3"><a title="page d’accueil en ligne" href="https://fleursauvageyonne.github.io/">fleursauvageyonne</a></div>
+        </div>
+    </footer>
+    <a href="#" class="back-top text-white" data-tooltip="tooltip" data-placement="left" data-trigger="hover" title="" data-original-title="Haut de la page">Haut</a>
+    <script src="../lib/jquery-3.4.1.min.js"></script>
+    <script src="../lib/popper.min.js"></script><!-- 1.16 -->
+    <script src="../lib/bootstrap.min.js"></script><!-- 4.4.1 -->
+    <script src="../lib/lib.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script> -->
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script> -->
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <script src="../lib/bootstrap-table-accent-neutralise.js"></script>
+    <script type="text/javascript">
+    var data;
+    /*var dataUrl = 'https://fleursauvageyonne.github.io/maj/data/taxons.json';*/
+    /* pour voir les data en locale avec chrome il faut lancer chrome avec les variables "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files  --disable-web-security*/
+    var dataUrl = '../data/taxons.json';
+
+    function getUrlParameter(ParamName) {
+        name = ParamName.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(window.location.href);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+
+    $(document).ready(function() {
+        $(function() {
+            var $table = $('#table');
+            /* $table.bootstrapTable({ data: data });*/
+            $table.bootstrapTable({
+                searchAlign: 'left',
+                mobileResponsive: true,
+                sortable: true,
+                sortPriority: [{ "sortName": "latin", "sortOrder": "asc" }],
+                search: true,
+                /*showMultiSortButton: true,*/
+                showMultiSort: true,
+                searchAccentNeutralise: true,
+                showSearchClearButton: true,
+                toolbar: "#toolbar",
+                toolbarAlign: "right",
+                /*rowStyle:function(row,index){},*/
+                url: dataUrl,
+                cache: false,
+                responseHandler: function(res) {
+                    /*console.log(res);*/
+                    /* filtre pour une famille */
+                    var queryFamille = getUrlParameter('famille');
+                    var queryCouleur = getUrlParameter('couleur');
+                    var queryLatin = getUrlParameter('latin');
+                    if (queryLatin) {
+                        res = $.grep(res, function(n, i) {
+                            var str = n.latin.toLowerCase()
+                            return (str.indexOf(queryLatin.toLowerCase()) != -1);
+                        });
+                    }
+                    if (queryFamille) {
+                        res = $.grep(res, function(n, i) { return n.famille.toLowerCase() === queryFamille.toLowerCase(); });
+                    }
+                    if (queryCouleur) {
+
+                        res = $.grep(res, function(n, i) {
+
+                            var coulBool = true;
+                            if (Array.isArray(n.couleurNom)) {
+                                var lwrMyArr = n.couleurNom.map(function(ele) { return ele.toLowerCase(); })
+                                if ($.inArray(queryCouleur.toLowerCase(), lwrMyArr) !== -1) { coulBool = true; } else { coulBool = false; };
+                            } else {
+                                coulBool = false;
+                            }
+                            return coulBool;
+                        });
+                    }
+                    /* afficher uniquement une famille, clade ou ordre, tout en minuscule*/
+                    res = $.grep(res, function(n, i) {
+
+                        var coulBool = false;
+                        if (n.classement && Array.isArray(n.classement)) {
+
+                            var lwrMyArr = n.classement.map(function(ele) { console.log(ele); return ele.toLowerCase(); });
+                            if ($.inArray("champs", lwrMyArr) !== -1) {
+                                coulBool = true;
+                            };
+                        }
+                        return coulBool;
+                    });
+                    /* res = $.grep(res, function(n, i) { return n.famille === 'Violaceae'; });*/
+                    return res;
+                }
+            });
+
+
+
+
+            $('#selectcolor').find('button').on('click', function() {
+                $('#selectcolor').find('button').removeClass("active");
+                $(this).addClass("active");
+                var searchcoul = $(this).val();
+
+                if (searchcoul !== "") {
+                    $("#dropdownMenu2").removeClass("btn-secondary");
+                    $("#dropdownMenu2").addClass("btn-primary");
+                } else {
+                    $("#dropdownMenu2").removeClass("btn-primary");
+                    $("#dropdownMenu2").addClass("btn-secondary");
+                }
+
+                $('#table').bootstrapTable('filterBy', { couleurNom: [searchcoul] }, {
+                    'filterAlgorithm': function(row, filters) {
+                        if (filters.couleurNom[0] === "") {
+                            return true;
+                        } else if ($.inArray(filters.couleurNom[0], row.couleurNom) !== -1) { return true; } else { return false; }
+                    }
+                });
+                $('#table').bootstrapTable('refreshOptions', { 'filterAlgorithm': 'and' });
+            });
+
+
+
+            /**/
+            /* $table.bootstrapTable();*/
+            /* $('#table').on('click-row.bs.table', function(row, element, field) {
+                 window.location.href = element.url;
+             });*/
+
+
+        });
+
+    });
+
+    function nameFormatter(value, row, index) {
+        var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
+        if (row.autorité && row.autorité != "") {
+            content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
+        }
+        content = '<div class="flex-fill">' + content + "</div>";
+        if (row.vignette && row.vignette != "") {
+            content = content + '<div class="mr-2 " style="width:70px;"><img  width="70" src="' + row.vignette + '"></div>';
+        }
+
+        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">' + content + '</a>';
+        return content;
+    }
+
+    function colorFormatter(value, row, index) {
+        var content = "";
+        if (Array.isArray(row.couleurCode)) {
+            for (var i = 0; i < row.couleurCode.length; i++) {
+                content = content + '<div class="d-inline-block mr-1" style="background-color:' + row.couleurCode[i] + ';width:20px;height:20px;border:1px solid #ccc" title="' + row.couleurNom[i] + '"></div>';
+            }
+        }
+        return content;
+    }
+
+    function classementFormatter(value, row, index) {
+        var content = "";
+        var separator = "";
+        if (Array.isArray(row.classement)) {
+            for (var i = 0; i < row.classement.length; i++) {
+                content = content + separator + row.classement[i];
+                separator = ", ";
+            }
+        }
+        return content;
+    }
+
+    function familleFormatter(value, row, index) {
+        var content = "";
+        if (value) {
+            content = value;
+        }
+        var contentArbre = "";
+        if (row.apgIII && Array.isArray(row.apgIII)) {
+            for (var i = 0; i < row.apgIII.length; i++) {
+
+                contentArbre = contentArbre + '<div class="d-block small text-secondary text-nowrap" >' + new Array(i + 1).join('&nbsp;') + '└ ' + row.apgIII[i][0] + ' : ' + row.apgIII[i][1] + '</div>';
+            }
+        }
+        content = content + contentArbre;
+        return content;
+    }
+    </script>
+</body>
+
+</html>

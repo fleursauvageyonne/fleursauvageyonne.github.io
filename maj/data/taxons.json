@@ -457,15 +457,16 @@
         },
         {
             "latin": "Alopecurus myosuroides",
-            "autorité": "",
+            "autorité": "Huds., 1762",
             "français": "Vulpin des champs",
             "vernaculaire": "",
-            "famille": "",
+            "famille": "Poaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/poac/alop.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/poa_11.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Champs"]
         },
         {
             "latin": "Althaea officinalis",
@@ -710,15 +711,16 @@
         },
         {
             "latin": "Anthoxanthum odoratum",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Flouve odorante",
             "vernaculaire": "",
-            "famille": "",
+            "famille": "Poaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/poac/anthox.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/poac22.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement": ["Champs"]
         },
         {
             "latin": "Anthriscus sylvestris",
@@ -1624,15 +1626,16 @@
         },
         {
             "latin": "Cardamine pratensis",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Cardamine des prés",
             "vernaculaire": "Cressonnette",
-            "famille": "",
+            "famille": "Brassicaceae (Cruciferae)",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/mauve/cardaprat.htm",
-            "vignette": "",
-            "couleurNom": "",
-            "couleurCode": ""
+            "vignette": "https://fleursauvageyonne.github.io/imag02/carpratp2.jpg",
+            "couleurNom":[ "Rose"],
+            "couleurCode":[ "#f5d1f7"],
+            "classement" : ["Champs"]
         },
         {
             "latin": "Carduus crispus",
@@ -1768,39 +1771,42 @@
         },
         {
             "latin": "Carex hirta",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Laiche hérissée",
             "vernaculaire": "Laiche velue",
-            "famille": "",
+            "famille": "Cyperaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/carex/crxhta.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/crxhirtap.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Champs"]
         },
         {
             "latin": "Carex leporina",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Laiche patte de lièvre",
             "vernaculaire": "Laiche des lièvres",
-            "famille": "",
+            "famille": "Cyperaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/carex/crxov.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/crxovalisp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Champs"]
         },
         {
             "latin": "Carex pallescens",
-            "autorité": "",
+            "autorité": "L., 1753",
             "français": "Laiche pâle",
             "vernaculaire": "",
-            "famille": "",
+            "famille": "Cyperaceae",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/carex/crxpall.htm",
-            "vignette": "",
+            "vignette": "https://fleursauvageyonne.github.io/imag02/crxpcensp.jpg",
             "couleurNom": "",
-            "couleurCode": ""
+            "couleurCode": "",
+            "classement" : ["Champs"]
         },
         {
             "latin": "Carex pendula",
@@ -2586,16 +2592,16 @@
         },
         {
             "latin": "Cyanus segetum",
-            "autorité": "",
+            "autorité": "Hill., 1762",
             "français": "Bleuet <font color=\"#9c4245\">(aubefin, botecornille)</font>",
             "vernaculaire": "Bluet des champs, Casse lunettes",
-            "famille": "",
+            "famille": "Asteraceae (Compositae)",
             "apgIII": "",
             "url": "https://fleursauvageyonne.github.io/flsv/azur/centcyan.htm",
             "vignette": "https://fleursauvageyonne.github.io/imag02/pcentcya1.jpg",
-            "couleurNom": "",
-            "couleurCode": "",
-            "classement" : ["Abeilles"]
+            "couleurNom": ["Bleu"],
+            "couleurCode": ["#5c63c6"],
+            "classement" : ["Abeilles","Champs"]
         },
         {
             "latin": "Cymbalaria muralis",
@@ -9426,7 +9432,7 @@
             "couleurNom": "",
             "couleurCode": "",
             "classement" : ["Abeilles"]
-            
+
         },
         {
             "latin": "Typha latifolia",
