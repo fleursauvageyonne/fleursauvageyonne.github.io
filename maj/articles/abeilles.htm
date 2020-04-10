@@ -827,7 +827,7 @@
                         var coulBool = false;
                         if (n.classement && Array.isArray(n.classement)) {
 
-                            var lwrMyArr = n.classement.map(function(ele) { console.log(ele); return ele.toLowerCase(); });
+                            var lwrMyArr = n.classement.map(function(ele) {  return ele.toLowerCase(); });
                             if ($.inArray("abeilles", lwrMyArr) !== -1) {
                                 coulBool = true;
                             };

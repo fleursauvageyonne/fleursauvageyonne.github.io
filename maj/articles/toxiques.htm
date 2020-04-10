@@ -601,9 +601,9 @@
                 sortPriority: [{ "sortName": "latin", "sortOrder": "asc" }],
                 search: true,
                 /*showMultiSortButton: true,*/
-                showMultiSort: true,
+                /*showMultiSort: true,*/
                 searchAccentNeutralise: true,
-                showSearchClearButton: true,
+                /*showSearchClearButton: true,*/
                 toolbar: "#toolbar",
                 toolbarAlign: "right",
                 /*rowStyle:function(row,index){},*/
@@ -644,7 +644,7 @@
                         var coulBool = false;
                         if (n.classement && Array.isArray(n.classement)) {
 
-                            var lwrMyArr = n.classement.map(function(ele) { console.log(ele); return ele.toLowerCase(); });
+                            var lwrMyArr = n.classement.map(function(ele) { return ele.toLowerCase(); });
                             if ($.inArray("toxique", lwrMyArr) !== -1) {
                                 coulBool = true;
                             };
