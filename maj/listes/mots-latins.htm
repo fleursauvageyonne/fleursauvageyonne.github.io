@@ -30,30 +30,53 @@
     <link rel="stylesheet" href="../lib/styles.css">
     <style type="text/css" media="all">
     < !-- a {
-        color: #7d4500
+        color: #369bd6
     }
 
     a:link {
-        color: #7d4500;
+        color: #369bd6;
     }
 
     a:visited {
-        color: #7d4500;
+        color: #369bd6;
 
     }
 
     a:active {
-        color: #4a9bf3;
+        /*color: #768744;*/
+        color: #369bd6;
     }
 
+    .text-white a {
+        color: #e1e286;
+    }
+
+    .text-white a:visited {
+        color: #e1e286;
+    }
+
+    .text-white a:link {
+        color: #e1e286;
+    }
 
     body {
-        background-color: #ece0d9;
+        background-color: #ebe7b9;
     }
 
     .bg-dark {
-        background-color: #e6d2c6 !important;
+        background-color: #cac58a99 !important;
     }
+
+    .bg-nav {
+        background-color: #FFE773 !important;
+        background-image: url(images/champs-nav-background.jpg);
+        background-size: cover;
+    }
+
+    .bg-footer {
+        background-color: #55533e;
+    }
+
 
     .sidebar ul li a {
         min-width: 2.8rem;
@@ -69,23 +92,23 @@
 
 <body data-spy="scroll" data-target="#myPills" data-offset="0" id="top">
     <!-- Navigation -->
-    <header role="banner" id="header">
+    <header role="banner">
         <nav class="navbar navbar-expand bd-navbar px-0 py-0  bg-nav ">
             <div class="container">
                 <!-- -fluid w-100 -->
                 <ul class="navbar-nav bd-navbar-nav w-100 justify-content-left align-items-center">
                     <li class="nav-item flex-grow-1">
                         <div class="navbar-brand brand-unesco py-0">
-                            <a href="https://fleursauvageyonne.github.io/">
+                            <a href="../index.htm">
                                 <div class="p-3 d-inline-block brand-unesco-svg">
-                                    <img alt="" src="../images/logo2-noir.svg" width="110" />
+                                    <img alt="" src="../images/logo2-noir.svg" width="200" />
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown navbar p-0 m-0 align-items-center position-static toggleArrow show" id="menuFLSV">
-                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="https://fleursauvageyonne.github.io/" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
+                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="../index.htm" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
                                 <img alt="" id="img-burger" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTYgMTMyaDQxNmM4LjgzNyAwIDE2LTcuMTYzIDE2LTE2Vjc2YzAtOC44MzctNy4xNjMtMTYtMTYtMTZIMTZDNy4xNjMgNjAgMCA2Ny4xNjMgMCA3NnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2eiIvPjwvc3ZnPg==" style="width:1.3em" />
                             </a>
                             <div class="dropdown-menu w-100 pt-3 m-0 border-right-0 border-left-0 " aria-labelledby="navmenuFLSV" style="z-index:2000">
@@ -95,7 +118,7 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="input-group input-group-dark input-group-round">
-                                                        <form class="form-inline pt-3" action="http://www.google.com/cse" id="google-cse-results-searchbox-form" method="get" accept-charset="UTF-8">
+                                                        <form class="form-inline pt-3" action="https://www.google.com/cse" id="google-cse-results-searchbox-form" method="get" accept-charset="UTF-8">
                                                             <div class="input-group" style="min-width: 10rem">
                                                                 <input class="form-control form-control-dark" type="text" placeholder="Rechercher" aria-label="Rechercher" name="q">
                                                                 <div class="input-group-append">
@@ -115,8 +138,7 @@
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Nouvelles</div>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Météo en Bourgogne" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Météo en Bourgogne</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Météo dans l’Yonne" href="http://www.meteofrance.com/previsions-meteo-france/yonne/89">Météo dans l’Yonne</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
@@ -125,7 +147,7 @@
                                                     <a class="dropdown-item pl-1 text-truncate" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Nommer les végétaux" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Nommer les végétaux</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Code de nomenclature" href="../articles/code-nomenclature.htm">Code de nomenclature</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
@@ -134,11 +156,12 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
-                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Fleurs classées</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="https://fleursauvageyonne.github.io/flsv/noms/noms1.htm">Noms latins </a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="https://fleursauvageyonne.github.io/flsv/noms/noms2.htm">Noms français</a>
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Trouver des fleurs ou plantes</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" href="">Couleurs approximatives</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" href="">Couleurs</a>
                                                     <table summary="index colorimétrique" class="tableaucouleur">
                                                         <tbody>
                                                             <tr>
@@ -170,9 +193,9 @@
                                                                 <td bgcolor="#57D53B">
                                                                     <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
                                                                 </td>
-                                                                <td bgcolor="#8cad1f">
+                                                                <!--  <td bgcolor="#8cad1f">
                                                                     <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
-                                                                </td>
+                                                                </td> -->
                                                                 <td bgcolor="#e4ec0b">
                                                                     <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
                                                                 </td>
@@ -188,6 +211,7 @@
                                                                 <td bgcolor="#ffa500">
                                                                     <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
                                                                 </td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td bgcolor="#ffbfcb">
@@ -211,9 +235,9 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs, des prés et des prairies" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs, des prés et des prairies</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="../articles/toxiques.htm">Végétaux toxiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
@@ -233,26 +257,26 @@
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
-                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Divers</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_3.htm">Un peu d'histoire</a>
+                                                    <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Articles</div>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="https://fleursauvageyonne.github.io/flsv/apis/abeilles.htm">Fleurs et abeilles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/intelligence.htm">Intelligence des plantes</a>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">A propos</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
@@ -272,8 +296,7 @@
     <!--  -->
     <nav class="container" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-            <li class="breadcrumb-item"><a href="/">Vocabulaire</a></li>
+            <li class="breadcrumb-item"><a href="../index.htm">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">Lexique de mots latins</li>
         </ol>
     </nav>
@@ -281,20 +304,27 @@
         <div class="row">
             <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10 pt-3 offset-0 offset-sm-4 offset-md-3 offset-lg-3 offset-xl-2">
                 <h1>Lexique de mots latins</h1>
-                <div class="form-group pt-3">
-                    <div class="form-row">
-                        <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" id="chercher" placeholder="Chercher dans la liste">
-                        </div>
-                    </div>
-                </div>
+                <p>
+                    Le latin, <a href="https://www.editionsdefallois.com/livre/vive-le-latin/">une langue inutile</a> mais utile <a href="https://www.youtube.com/watch?v=fONvBBa1Xb8">aux botanistes</a> avec ses noms de couleurs <a href="Lexi4.htm"><em>Latini colores</em></a>,<br>ses <a href="#tg">termes géographiques</a> et d'autres <a href="#pm">petits mots</a>. <a href="https://www.youtube.com/watch?v=BNyBifndy0c"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="Un peu de botanique, chanté par Pascal HENI"></a>
+                </p>
+                <p>
+                    Même si le latin utilisé par les botanistes pour nommer les plantes est un peu particulier, ce latin reste proche du <a href="https://fr.wikipedia.org/wiki/Latin_classique">latin classique</a> en ce qui concerne la grammaire, la <a href="https://fr.wikipedia.org/wiki/Syntaxe">syntaxe</a> et le vocabulaire. Souvent des mots grecs sont également utilisés car ils sont <em>considérés comme latins</em> par le <a href="https://www.iapt-taxon.org/nomen/main.php">Code de Nomenclature International (ICN)</a> <em>International Code of Nomenclature for algae, fungi,</em>&nbsp;<em>and plants</em>
+                    (Shenzhen Code, 2018). Et comme nous aimons l'Histoire de la Botanique et le jeu des idées, vous trouverez également, ci-dessous, quelques mots latins utiles dans ce domaine.</p>
+                    <p>Omnibus semitis Scientiam botanicam pervenitur</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-3">
                 <nav class="sticky-top sidebar py-2 py-md-4" id="myPills">
+                    <div class="form-group pt-3">
+                        <div class="form-row">
+                            <div class="col-12 ">
+                                <input type="text" class="form-control" id="chercher" placeholder="Chercher dans la liste">
+                            </div>
+                        </div>
+                    </div>
                     <ul class="nav nav-pills flex-wrap">
                         <li class="nav-item ">
                             <a class="nav-link active" href="#aa" data-toggle="zzzzzzz">A</a>
@@ -377,10 +407,10 @@
                     </ul>
                 </nav>
             </div>
-            <main class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10 pt-3" data-spy="scroll" data-target="#myPills" data-offset="0" id="lexique">
+            <main class="col-12 col-sm-8 col-md-9 col-lg-8 col-xl-9 pt-3" data-spy="scroll" data-target="#myPills" data-offset="0" id="lexique">
                 <h2 id="aa">A</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -535,7 +565,7 @@
                 </div>
                 <h2 id="bb">B</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -558,7 +588,7 @@
                 </div>
                 <h2 id="cc">C</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -857,7 +887,7 @@
                 </div>
                 <h2 id="dd">D</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -913,7 +943,7 @@
                 </div>
                 <h2 id="ee">E</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -936,7 +966,7 @@
                 </div>
                 <h2 id="ff">F</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -1111,7 +1141,7 @@
                 </div>
                 <h2 id="gg">G</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1191,7 +1221,7 @@
                 </div>
                 <h2 id="hh">H</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -1271,7 +1301,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    a name="hum"></a><b>Humilis, -e</b>
+                                    <a name="hum"></a><b>Humilis, -e</b>
                                 </td>
                                 <td>
                                     Bas, près du sol, peu élevé.
@@ -1294,7 +1324,7 @@
                 </div>
                 <h2 id="ii">I</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -1351,7 +1381,7 @@
                 </div>
                 <h2 id="jj">J</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1366,7 +1396,7 @@
                 </div>
                 <h2 id="ll">L</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1456,7 +1486,7 @@
                 </div>
                 <h2 id="mm">M</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1529,7 +1559,7 @@
                 </div>
                 <h2 id="nn">N</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -1606,7 +1636,7 @@
                 </div>
                 <h2 id="oo">O</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1698,7 +1728,7 @@
                 </div>
                 <h2 id="pp">P</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1892,7 +1922,7 @@
                 </div>
                 <h2 id="qq">Q</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -1907,7 +1937,7 @@
                 </div>
                 <h2 id="rr">R</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2041,7 +2071,7 @@
                 </div>
                 <h2 id="ss">S</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2274,7 +2304,7 @@
                 </div>
                 <h2 id="tt">T</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2367,7 +2397,7 @@
                 </div>
                 <h2 id="uu">U</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td>
@@ -2418,7 +2448,7 @@
                 </div>
                 <h2 id="vv">V</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2487,7 +2517,7 @@
                 </div>
                 <h2 id="zz">Z</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2502,7 +2532,7 @@
                 </div>
                 <h2 id="mp">Petits mots latins utiles en botanique</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-borderless">
                         <tbody>
                             <tr>
                                 <td class="tdlxlat">
@@ -2617,18 +2647,19 @@
             </main>
         </div>
     </div>
-    <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white" id="footer">
+    <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white">
         <div class="container">
             <div class="card-columns columns-lg-4  px-3 py-3">
                 <div class="card bg-transparent border-0">
                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
-                    <div class="d-block font-weight-bold">Fleurs classées</div>
-                    <a class="d-block" title="Noms latins" href="https://fleursauvageyonne.github.io/flsv/noms/noms1.htm">Noms latins </a>
-                    <a class="d-block" title="Noms français et vernaculaires" href="https://fleursauvageyonne.github.io/flsv/noms/noms2.htm">Noms français</a>
+                    <div class="d-block font-weight-bold">Trouver des fleurs ou plantes</div>
+                    <a class="d-block" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                     <a class="d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                    <a class="d-block" title="Fleurs des champs, des prés et des prairies" href="https://fleursauvageyonne.github.io/flsv/var/LIchpr.htm">Fleurs des champs, des prés et des prairies</a>
+                    <a class="d-block" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                     <a class="d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
-                    <a class="d-block" title="Végétaux toxiques et mortels" href="https://fleursauvageyonne.github.io/flsv/var/LFtx.htm">Végétaux toxiques</a>
+                    <a class="d-block" title="Végétaux toxiques et mortels" href="../articles/toxiques.htm">Végétaux toxiques</a>
                     <a class="d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
                     <a class="d-block" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
                     <a class="d-block" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
@@ -2640,7 +2671,6 @@
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Couleurs</div>
-                    <a class="d-block" href="">Couleurs approximatives</a>
                     <table summary="index colorimétrique" class="tableaucouleur">
                         <tbody>
                             <tr>
@@ -2672,9 +2702,9 @@
                                 <td bgcolor="#57D53B">
                                     <a title="fleurs vertes ou paraissant l’être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a>
                                 </td>
-                                <td bgcolor="#8cad1f">
+                                <!--   <td bgcolor="#8cad1f">
                                     <a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a>
-                                </td>
+                                </td> -->
                                 <td bgcolor="#e4ec0b">
                                     <a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a>
                                 </td>
@@ -2690,6 +2720,7 @@
                                 <td bgcolor="#ffa500">
                                     <a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a>
                                 </td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td bgcolor="#ffbfcb">
@@ -2716,8 +2747,8 @@
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block  font-weight-bold">A propos</div>
-                    <a class="d-block" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                     <a class="d-block" title="Liens internet" href="https://fleursauvageyonne.github.io/flsv/acc/liens.htm">Liens</a>
+                    <a class="d-block" title="Remerciements" href="https://fleursauvageyonne.github.io/flsv/acc/merci.htm">Remerciements</a>
                     <a class="d-block" title="Crédits photos" href="https://fleursauvageyonne.github.io/flsv/acc/crphot.htm">Crédits photos</a>
                     <a class="d-block" title="Utilisation des cookies" href="https://fleursauvageyonne.github.io/flsv/acc/cookies.htm">Cookies et RGPD</a>
                     <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil2.htm">Mode d'emploi</a>
@@ -2726,8 +2757,7 @@
                     <div class="d-block font-weight-bold">Nouvelles</div>
                     <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/acc/accueil1.htm">Notre actualité</a>
                     <a class="d-block" title="Présentation d’un département bourguignon" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">L'Yonne</a>
-                    <a class="d-block" title="Météo en Bourgogne" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Météo en Bourgogne</a>
-                    <a class="d-block" title="Météo dans l’Yonne" href="http://www.meteofrance.com/previsions-meteo-france/yonne/89">Météo dans l’Yonne</a>
+                    <a class="d-block" title="Prévision météo" href="http://www.meteofrance.com/previsions-meteo-france/bourgogne-franche-comte/regin08">Prévision météo</a>
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Bibliographies</div>
@@ -2739,30 +2769,30 @@
                     <a class="d-block" title="Glossaire des termes botaniques" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1.htm">Glossaire</a>
                     <a class="d-block" title="Mots latins" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi5.htm">Mots latins</a>
                     <a class="d-block" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                    <a class="d-block" title="Nommer les végétaux" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">Nommer les végétaux</a>
+                    <a class="d-block" title="Code de nomenclature" href="../articles/code-nomenclature.htm">Code de nomenclature</a>
                     <a class="d-block" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                     <a class="d-block" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                     <a class="d-block" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
                 </div>
                 <div class="card bg-transparent border-0">
-                    <div class="d-block font-weight-bold">Divers</div>
-                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="https://fleursauvageyonne.github.io/flsv/acc/yonne_3.htm">Un peu d'histoire</a>
+                    <div class="d-block font-weight-bold">Articles</div>
+                    <a class="d-block" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                     <a class="d-block" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                     <a class="d-block" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                     <a class="d-block" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                    <a class="d-block" title="Fleurs et abeilles" href="https://fleursauvageyonne.github.io/flsv/apis/abeilles.htm">Fleurs et abeilles</a>
+                    <a class="d-block" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
                     <a class="d-block" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
                     <a class="d-block" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
                     <a class="d-block" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
                     <a class="d-block" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
                     <a class="d-block" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
                     <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
-                    <a class="d-block" href="https://fleursauvageyonne.github.io/flsv/var/intelligence.htm">Intelligence des plantes</a>
                 </div>
             </div>
         </div>
         <div class="text-center d-block pt-4 w-100">
-            <img src="../images/logo-simple-blanc.svg" style="width:80px">
+            <a href="../index.htm"><img src="../images/logo-simple-blanc.svg" style="width:80px"></a>
         </div>
         <div class="text-center align-items-center justify-content-center w-100 pt-2 px-4 d-sm-flex">
             <div class="mr-3"><span class="badge badge-info"> Mise à jour :&nbsp;mars 2020</span></div>
@@ -2771,9 +2801,9 @@
         </div>
     </footer>
     <a href="#" class="back-top text-white" data-tooltip="tooltip" data-placement="left" data-trigger="hover" title="" data-original-title="Haut de la page">Haut</a>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../lib/jquery-3.4.1.min.js"></script>
+    <script src="../lib/popper.min.js"></script><!-- 1.16 -->
+    <script src="../lib/bootstrap.min.js"></script><!-- 4.4.1 -->
     <script src="../lib/lib.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
