@@ -597,8 +597,6 @@
             });
 
 
-
-
             $('#selectcolor').find('button').on('click', function() {
                 $('#selectcolor').find('button').removeClass("active");
                 $(this).addClass("active");
@@ -635,17 +633,22 @@
 
     });
 
-     function nameFormatter(value, row, index) {
+    function nameFormatter(value, row, index) {
         var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
-         if (row.autorité && row.autorité != "") {
+        if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
-          content = '<div class="flex-fill">'+content+"</div>";
-        if (row.vignette && row.vignette != "") {
-            content =   content +'<div class="mr-2 " style="width:70px;height:70px"><img  height="70" src="' + row.vignette + '"></div>';
+          if (row.synonyme  && Array.isArray(row.synonyme)) {
+              for (var i = 0; i < row.synonyme.length; i++) {
+            content = content + '<div class="small">' + row.synonyme[i] + ' <span class="text-secondary">syn.</span></div>'
         }
-       
-        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">'+content + '</a>';
+        }
+        content = '<div class="flex-fill">' + content + "</div>";
+        if (row.vignette && row.vignette != "") {
+            content = content + '<div class="mr-2 " style="width:70px;"><img  width="70" src="' + row.vignette + '"></div>';
+        }
+
+        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">' + content + '</a>';
         return content;
     }
     function colorFormatter(value, row, index) {

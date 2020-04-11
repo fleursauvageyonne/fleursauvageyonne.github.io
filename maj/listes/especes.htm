@@ -142,9 +142,9 @@
                                                 <div class="card-body p-2">
                                                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Trouver des fleurs ou plantes</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="maj/listes/especes.htm">Noms latins </a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms français</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="maj/listes/especes.htm">Noms vernaculaires</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="">Couleurs</a>
                                                     <table summary="index colorimétrique" class="tableaucouleur">
@@ -248,14 +248,13 @@
                                                     <a class="dropdown-item pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="https://fleursauvageyonne.github.io/flsv/apis/abeilles.htm">Fleurs et abeilles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/intelligence.htm">Intelligence des plantes</a>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
@@ -646,6 +645,11 @@
         var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
         if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
+        }
+          if (row.synonyme  && Array.isArray(row.synonyme)) {
+              for (var i = 0; i < row.synonyme.length; i++) {
+            content = content + '<div class="small">' + row.synonyme[i] + ' <span class="text-secondary">syn.</span></div>'
+        }
         }
         content = '<div class="flex-fill">' + content + "</div>";
         if (row.vignette && row.vignette != "") {

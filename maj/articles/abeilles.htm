@@ -883,6 +883,11 @@
         if (row.autorité && row.autorité != "") {
             content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
         }
+          if (row.synonyme  && Array.isArray(row.synonyme)) {
+              for (var i = 0; i < row.synonyme.length; i++) {
+            content = content + '<div class="small">' + row.synonyme[i] + ' <span class="text-secondary">syn.</span></div>'
+        }
+        }
         content = '<div class="flex-fill">' + content + "</div>";
         if (row.vignette && row.vignette != "") {
             content = content + '<div class="mr-2 " style="width:70px;"><img  width="70" src="' + row.vignette + '"></div>';
