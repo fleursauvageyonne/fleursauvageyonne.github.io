@@ -12,10 +12,10 @@
         gtag('js', new Date());
         gtag('config', 'UA-63048403-1');
     </script> -->
-    <title>FLSVY - Fleurs sauvages de l'Yonne</title>
+    <title>Végétaux toxiques et mortels</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://fleursauvageyonne.github.io/favicon.ico">
-    <meta name="Description" content="Bienvenue sur FLSVY / FLSVY pour reconnaître une fleur sauvage par différents aspects.">
+    <meta name="Description" content="Intelligence des plantes / FLSVY pour reconnaître une fleur sauvage par différents aspects.">
     <meta http-equiv="Content-script-type" content="text/javascript">
     <meta http-equiv="Content-style-type" content="text/css">
     <meta http-equiv="Content-language" content="fr">
@@ -24,58 +24,61 @@
     <meta name="robots" content="index, follow">
     <meta name="robots" content="noarchive">
     <meta http-equiv="Cache-control" content="no-store">
-    <link rel="stylesheet" href="lib/bootstrap.min.css"><!-- version 4.1.3 -->
+    <link rel="stylesheet" href="../lib/bootstrap.min.css"><!-- version 4.1.3 -->
     <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="lib/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../lib/styles.css">
     <style type="text/css" media="all">
     < !-- a {
-        color: #007d77
+        color: #369bd6
     }
 
     a:link {
-        color: #007d77;
+        color: #369bd6;
     }
 
     a:visited {
-        color: #007d77;
+        color: #369bd6;
 
     }
 
     a:active {
         /*color: #768744;*/
-        color: #4a9bf3;
+        color: #369bd6;
     }
 
     .text-white a {
-        color: #89c1f1;
+        color: #fdb6da;
     }
 
     .text-white a:visited {
-        color: #89c1f1;
+        color: #fdb6da;
     }
 
     .text-white a:link {
-        color: #89c1f1;
+        color: #fdb6da;
     }
 
     body {
-        background-color: #d9ece6;
+        background-color: #feecec;
     }
 
     .bg-dark {
-        background-color: #9cc8b387 !important;
+        background-color: #f87a7a22 !important;
     }
 
     .bg-nav {
-        background-color: #9fc4d4 !important;
-        background-image: url(images/nav-background.jpg);
+        background-color: #f87a7a !important;
+        background-image: url(images/toxiques-nav-background.jpg);
         background-size: cover;
     }
 
     .bg-footer {
-        background-color: #213831;
+        background-color: #682828;
     }
+
+
 
     -->
     </style>
@@ -90,16 +93,16 @@
                 <ul class="navbar-nav bd-navbar-nav w-100 justify-content-left align-items-center">
                     <li class="nav-item flex-grow-1">
                         <div class="navbar-brand brand-unesco py-0">
-                            <a href="https://fleursauvageyonne.github.io/">
+                            <a href="../index.htm">
                                 <div class="p-3 d-inline-block brand-unesco-svg">
-                                    <img alt="" src="images/logo2-noir.svg" width="200" />
+                                    <img alt="" src="../images/logo2-noir.svg" width="200" />
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown navbar p-0 m-0 align-items-center position-static toggleArrow show" id="menuFLSV">
-                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="https://fleursauvageyonne.github.io/" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
+                            <a class="navbar-text br-1 dropdown-toggle dropdown-caret-none mr-0  cursor-pointer py-3 px-4" href="../index.htm" id="navmenuFLSV" data-toggle="dropdown" data-boundary="viewport" data-placement="right" data-trigger="hover" aria-haspopup="true" aria-expanded="false">
                                 <img alt="" id="img-burger" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMTYgMTMyaDQxNmM4LjgzNyAwIDE2LTcuMTYzIDE2LTE2Vjc2YzAtOC44MzctNy4xNjMtMTYtMTYtMTZIMTZDNy4xNjMgNjAgMCA2Ny4xNjMgMCA3NnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2eiIvPjwvc3ZnPg==" style="width:1.3em" />
                             </a>
                             <div class="dropdown-menu w-100 pt-3 m-0 border-right-0 border-left-0 " aria-labelledby="navmenuFLSV" style="z-index:2000">
@@ -135,10 +138,10 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Vocabulaire</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Glossaire des termes botaniques" href="listes/glossaire.htm">Glossaire</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Mots latins" href="listes/mots-latins.htm">Mots latins</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Glossaire des termes botaniques" href="../listes/glossaire.htm">Glossaire</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Mots latins" href="../listes/mots-latins.htm">Mots latins</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Code de nomenclature" href="articles/code-nomenclature.htm">Code de nomenclature</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Code de nomenclature" href="../articles/code-nomenclature.htm">Code de nomenclature</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
@@ -148,9 +151,9 @@
                                                 <div class="card-body p-2">
                                                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Trouver des fleurs ou plantes</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="listes/especes.htm">Noms latins </a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="listes/especes.htm">Noms français</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="listes/especes.htm">Noms vernaculaires</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" href="">Couleurs</a>
                                                     <table summary="index colorimétrique" class="tableaucouleur">
@@ -158,7 +161,7 @@
                                                             <tr>
                                                                 <td bgcolor="#fffcd6" class="multi">
                                                                     <a href="https://fleursauvageyonne.github.io/flsv/var/LF15.htm">
-                                                                        <img src="images/couleurs.jpg" title="fleurs multicolores">
+                                                                        <img src="../images/couleurs.jpg" title="fleurs multicolores">
                                                                     </a>
                                                                 </td>
                                                                 <td bgcolor="#000000">
@@ -226,9 +229,9 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="articles/champs.htm">Fleurs des champs et des prés</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="articles/toxiques.htm">Végétaux toxiques</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Végétaux toxiques et mortels" href="../articles/toxiques.htm">Végétaux toxiques</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
@@ -249,12 +252,12 @@
                                             <div class="card border-0">
                                                 <div class="card-body p-2">
                                                     <div class="dropdown-item mt-2 pl-1 text-truncate font-weight-bold">Articles</div>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="L'intelligence des plantes" href="articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="articles/un-peu-histoire.htm">Un peu d'histoire</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="articles/abeilles.htm">Fleurs et abeilles</a>
+                                                    <a class="dropdown-item pl-1 text-truncate" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
                                                     <a class="dropdown-item pl-1 text-truncate" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
@@ -285,284 +288,129 @@
     </header>
     <!-- fin Navigation -->
     <div class="main-container position-relative">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pl-0 my-0">
+                    <li class="breadcrumb-item"><a href="../index.htm">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Végétaux toxiques et mortels</li>
+                </ol>
+            </nav>
+        </div>
         <!-- -->
-        <div class="layout layout-nav-side">
-            <!--  -->
-            <div class="main-container">
-                <section class="container my-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7 offset-lg-2">
+                    <h1 class="serif display-4 pt-4">Végétaux toxiques et mortels</h1>
+                    <p class="lead">
+                        Les enfants peuvent ne pas être conscients des danger des plantes. Mieux vaut prévenir que tenter de guérir
+                    </p>
+                </div>
+                <div class="col-lg-3 float-right">
+                </div>
+                <div class="col-12 col-md-10 col-lg-7 offset-lg-2">
+                    <p>
+                        Avec gentillesse mais fermeté, dites-leur de ne jamais porter à la bouche les belles baies vertes, rouges ou noires qu'ils voient pour la première fois. Surtout ne pas leur faire peur, cela ne ferait qu'entretenir leur ignorance.
+                    </p>
+                    <p>Montrez-leur les plantes éventuellement allergisantes ou simplement irritantes, même par simple contact. Expliquez-leur l'intérêt d'emporter une bouteille d'eau pour se laver les mains lorsque l'on veut partir à la découverte des <a href="https://fr.wikipedia.org/wiki/M%C3%A9tabolite_secondaire">métabolites secondaires</a> de ces véritables chimistes que sont les végétaux.
+                    </p>
+                    <p>
+                        Les enfants apprendront vite à reconnaître sans les craindre ces fleurs qui, <a href="../../flsv/acc/biblio.htm#bb">vénéneuses ou toxiques</a>, peuvent s'avérer moins dangereuses que bien des désherbants, produits phytosanitaires ou insecticides qui modifient tellement l'odeur et la saveur des végétaux que même les animaux ne s'y retrouvent plus et s'intoxiquent. Quant aux mycologues, ils disent désormais qu'<em>il n'est plus possible de garantir au public la totale inocuité des espèces de champignons jusqu'ici réputées comestibles</em>. En 2017, les <a href="http://solidarites-sante.gouv.fr/IMG/pdf/cp-_intoxschampignons_v201017_16h30.pdf">cas graves d'intoxication</a> sont partout en augmentation, y compris dans l'Yonne.
+                    </p>
+                    <p align="left">
+                        Cueillir des fleurs sauvages exige des précautions connues <a href="http://ugo.bratelli.free.fr/Articles/PoisonAntiquite.pdf">depuis l'Antiquité</a>, ce que même Harry Potter n'ignore pas.
+                    </p>
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <div id="carouselExampleCaptions" class="carousel  slide carousel-fade" data-ride="carousel" data-interval="10000">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" style="min-height: 60vh;">
-                                        <div class="bg-holder" style="background-image: url(images/yonne-800.jpg)">
-                                        </div>
-                                        <div class="carousel-caption text-white d-md-block col-9 col-md-8 offset-md-1 text-align-left">
-                                            <div class="p-3 mb-4" style="background-color: rgba(0,0,0,0.4);">
-                                                <h5>L'Yonne avec un botaniste amateur</h5>
-                                                <p class="d-none d-lg-block">L'Yonne est un département créé en <a href="https://www.lyonne.fr/auxerre-89000/actualites/le-4-mars-1790-le-departement-de-l-yonne-etait-cree-de-toutes-pieces-et-n-avait-pas-encore-sa-forme-actuelle_13509094/">1790</a>. Il fait partie de la région Bourgogne et de la région Bourgogne-Franche-Comté, mais il appartient géographiquement au Bassin parisien.</p>
-                                                <p>
-                                                    <a href="https://fleursauvageyonne.github.io/flsv/acc/yonne_2.htm" class="btn btn-secondary btn-small text-white">Découvrez l'Yonne</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" style="min-height: 60vh;">
-                                        <div class="bg-holder" style="background-image: url(images/logo-couv-800.jpg)">
-                                        </div>
-                                        <div class="carousel-caption text-white d-md-block col-9 col-md-8 offset-md-1 text-align-left">
-                                            <div class="p-3 mb-4" style="background-color: rgba(0,0,0,0.6);">
-                                                <h5>Découvrez la Nouvelle version du site web <img src="images/logo-simple-blanc.svg" style="width:30px" alt="FLSVY"></h5>
-                                                <p class="d-none d-lg-block">En avril 2020, le site web a été réorganisé afin de faciliter la navigation, la recherche, la lecture.</p>
-                                                <p>
-                                                    <a href="https://fleursauvageyonne.github.io/flsv/acc/yonne_2.htm" class="btn btn-secondary btn-small text-white">En savoir plus</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item " style="min-height: 60vh;">
-                                        <!-- <img src="images/couverture2.jpg" class="d-block w-100" alt="..."> -->
-                                        <div class="bg-holder" style="background-image: url(images/couverture2-800.jpg)">
-                                        </div>
-                                        <div class="carousel-caption text-white d-md-block col-10 col-md-7 text-align-left" style="">
-                                            <div class="p-3 mb-3" style="background-color: rgba(0,0,0,0.4);">
-                                                <h5>Connaissez-vous les saules de la famille des Salicaceae&nbsp;?</h5>
-                                                <p class="d-none d-md-block">
-                                                    Au début du XVIIe siècle, Jean-Baptiste Van Helmont planta un jeune saule afin d'expliquer la croissance des végétaux. Après cinq ans d'arrosages et d'observations, il conclut que l'eau s'était changée en substance végétale
-                                                </p>
-                                                <p><a href="https://fleursauvageyonne.github.io/flsv/fambot/ordmalpig.htm#saules" class="btn btn-secondary btn-small text-white">Découvrez les Salicaceae</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
+                            <figure class="figure w-100">
+                                <img src="../../imag10/spadice.jpg" class="img-fluid img-thumbnail figure-img w-100" title="Baies d'Arum">
+                                <figcaption class="figure-caption">
+                                    <a href="../../flsv/vert/arum.htm"><em>Arum maculatum</em></a> (ou <em>A. immaculatum</em>) :<br>petites baies sucrées mais <a href="https://www.toxiplante.fr/monographies/arum_tachete.html">toxiques</a>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="my-2 p-3">
-                                <h2 class="display-5 serif">Trouver des fleurs ou plantes</h2>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a class="pl-1 text-truncate d-block" title="Noms latins" href="listes/especes.htm">Noms latins</a>
-                                        <a class="pl-1 text-truncate d-block" title="Noms français et vernaculaires" href="listes/especes.htm">Noms français</a>
-                                        <a class="pl-1 text-truncate d-block" title="Noms français et vernaculaires" href="listes/especes.htm">Noms vernaculaires</a>
-                                        <a class="pl-1 text-truncate  d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                                        <a class="pl-1 text-truncate d-block" title="Fleurs des champs et des prés" href="articles/champs.htm">Fleurs des champs et des prés</a>
-                                        <a class="pl-1 text-truncate d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
-                                        <a class="pl-1 text-truncate d-block" title="Végétaux toxiques et mortels" href="articles/toxiques.htm">Végétaux toxiques</a>
-                                        <a class="pl-1 text-truncate d-block" title="Sphaignes, hépatiques, prêles, fougères, lycopodes" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">Végétaux sans fleurs</a>
-                                    </div>
-                                    <div class="col-6">
-                                        <a class="pl-1 text-truncate d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
-                                        <a class="pl-1 text-truncate d-block" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
-                                        <a class="pl-1 text-truncate d-block" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
-                                        <a class="pl-1 text-truncate d-block" title="Les graminées" href="https://fleursauvageyonne.github.io/flsv/poac/Lipoac.htm">Poaceae (une famille)</a>
-                                        <a class="pl-1 text-truncate d-block" title="Arbres, arbustes, arbrisseaux..." href="https://fleursauvageyonne.github.io/flsv/arbres/LArbres.htm">Plantes ligneuses</a>
-                                        <a class="pl-1 text-truncate d-block" title="Fleurs petites ou cachées" href="https://fleursauvageyonne.github.io/flsv/pftd/LI_plfd.htm">Fleurs très discrètes</a>
-                                        <a class="pl-1 text-truncate d-block" title="Espèces végétales protégées" href="https://fleursauvageyonne.github.io/flsv/esprot/esprotegees.htm">Espèces protégées</a>
-                                    </div>
-                                </div>
-                                <h2 class="display-5 pt-3 serif">Vocabulaire</h2>
-                                <div class="row mt-3">
-                                    <div class="col-12 col-sm-6">
-                                        <p>Peu importe le mot, mais il est toujours agréable de savoir de quoi l’on parle.<br>
-                                            <span class="text-muted">Lucien Baillaud, <em>La botanique et les mots pour la dire</em></span>
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <p>
-                                            <a class="d-block pl-1 text-truncate" title="Glossaire des termes botaniques" href="listes/glossaire.htm">Glossaire</a>
-                                            <a class="d-block pl-1 text-truncate" title="Mots latins" href="listes/mots-latins.htm">Mots latins</a>
-                                            <a class="d-block pl-1 text-truncate" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                                            <a class="d-block pl-1 text-truncate" title="Code de nomenclature" href="articles/code-nomenclature.htm">Code de nomenclature</a>
-                                            <a class="d-block pl-1 text-truncate" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
-                                            <a class="d-block pl-1 text-truncate" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
-                                            <a class="d-block pl-1 text-truncate" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <figure class="figure w-100">
+                                <img src="../../imag14/loniceraxylo2.jpg" class="img-fluid img-thumbnail figure-img w-100" title="Lonicera xylosteum">
+                                <figcaption class="figure-caption"> Des petites baies toxiques, Chèvrefeuille à balais, camerisier, <a href="https://fleursauvageyonne.github.io/flsv/black/lonicerxylo.htm"><em>Lonicera xylosteum</em></a> L., 1753</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <figure class="figure w-100">
+                                <img src="../../imag03/ran_sp2.jpg" class="img-fluid img-thumbnail figure-img w-100" title="Ranunculus sp. Attention. Les renonculacées sont souvent toxiques.">
+                                <figcaption class="figure-caption">
+                                    <!-- Nom de l'espèce à vérifier -->
+                                    <a href="https://fleursauvageyonne.github.io/flsv/fambot/ordranunc.htm#ranunc"><em>Ranunculus sp.</em></a> Attention, les <a href="https://fleursauvageyonne.github.io/flsv/fambot/ordranunc.htm#ranunc">renonculacées</a> sont souvent toxiques.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <figure class="figure w-100">
+                                <img src="../../idiapo/d_vinhir/img02.jpg" class="img-fluid img-thumbnail figure-img w-100" title="Vincetoxicum hirundinaria">
+                                <figcaption class="figure-caption">
+                                    <!-- Nom de l'espèce à vérifier -->
+                                    En fin d'été, dans l'Avallonais et le Chablisien, les feuilles jaunissantes du dompte venin, <a href="https://fleursauvageyonne.github.io/flsv/blanc/vinhir.htm"><em>Vincetoxicum hirundinaria</em></a>, vénéneux dans toutes ses parties, illuminent le bord des routes au moindre rayon de soleil.
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-                </section>
-                <section class="bg-dark  pt-2">
-                    <div class="container d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                        <div class="mr-md-3 pt-2 px-1 pt-md-2 px-md-2 overflow-hidden">
-                            <h2 class="display-5 serif">Couleurs</h2>
-                            <p class="lead">Trouver des fleurs par couleur approximative</p>
-                            <table summary="index colorimétrique" class="tableaucouleur tableaucouleur-large ">
-                                <tbody>
-                                    <tr>
-                                        <td bgcolor="#fffcd6" class="multi">
-                                            <a href="https://fleursauvageyonne.github.io/flsv/var/LF15.htm">
-                                                <img src="images/couleurs.jpg" style="" title="fleurs multicolores">
-                                            </a>
-                                        </td>
-                                        <td bgcolor="#000000"><a title="fleurs noires" href="https://fleursauvageyonne.github.io/flsv/black/LF12.htm">&nbsp;</a></td>
-                                        <td bgcolor="#fbf9c0"><a title="fleurs blanc crème" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1_2.htm">&nbsp;</a></td>
-                                        <td bgcolor="#ffffff"><a title="fleurs blanches" href="https://fleursauvageyonne.github.io/flsv/blanc/LF1.htm">&nbsp;</a></td>
-                                        <td></td>
-                                        <!-- <td bgcolor="#8cad1f"><a title="plantes sans fleurs" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">&nbsp;</a></td> -->
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#1308e1"><a title="fleurs bleu foncé" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_3.htm">&nbsp;</a></td>
-                                        <td bgcolor="#6473c8"><a title="Fleurs bleues" href="https://fleursauvageyonne.github.io/flsv/azur/LF3.htm">&nbsp;</a></td>
-                                        <td bgcolor="#dbe4ff"><a title="fleurs bleu clair" href="https://fleursauvageyonne.github.io/flsv/azur/LF3_2.htm">&nbsp;</a></td>
-                                        <td bgcolor="#57D53B"><a title="fleurs vertes ou paraissant l'être" href="https://fleursauvageyonne.github.io/flsv/vert/LF5.htm">&nbsp;</a></td>
-                                        <td bgcolor="#965f00"><a title="fleurs brunes, beiges ou marron" href="https://fleursauvageyonne.github.io/flsv/marron/LF11.htm">&nbsp;</a></td>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffff21"><a title="fleurs jaunes" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6.htm">&nbsp;</a></td>
-                                        <td bgcolor="#e4ec0b"><a title="fleurs jaunâtres et jaune verdâtre" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_2.htm">&nbsp;</a></td>
-                                        <td bgcolor="#ffea05"><a title="fleurs jaune-orangé" href="https://fleursauvageyonne.github.io/flsv/jaune/LF6_3.htm">&nbsp;</a></td>
-                                        <td bgcolor="#ffa500"><a title="fleurs orangées" href="https://fleursauvageyonne.github.io/flsv/naranja/LF7.htm">&nbsp;</a></td>
-                                        <td bgcolor="#fe0000"><a title="fleurs rouges" href="https://fleursauvageyonne.github.io/flsv/rouge/LF10.htm">&nbsp;</a></td>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#f400a0"><a title="fleurs fuchsia" href="https://fleursauvageyonne.github.io/flsv/fuchsia/LF8.htm">&nbsp;</a></td>
-                                        <td bgcolor="#af007e"><a title="fleurs pourpres" href="https://fleursauvageyonne.github.io/flsv/pourpre/LF4.htm">&nbsp;</a></td>
-                                        <td bgcolor="#8000b0"><a title="fleurs violettes" href="https://fleursauvageyonne.github.io/flsv/violet/LF2.htm">&nbsp;</a></td>
-                                        <td bgcolor="#e399ff"><a title="fleurs mauves" href="https://fleursauvageyonne.github.io/flsv/mauve/LF14.htm">&nbsp;</a></td>
-                                        <td bgcolor="#ffbfcb"><a title="fleurs roses, r. violacé, r. purpurin et rose verdâtre" href="https://fleursauvageyonne.github.io/flsv/pink/LF9.htm">&nbsp;</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="text-align-left  pt-3 pr-md-3">
-                                La couleur n'est pas en botanique scientifique un critère reconnu.
-                                En effet, durant la nuit, les fleurs sont toutes grises et leur feuillage sombre et de couleurs noires, brunes, violacées ou bleutées et, en plein jour, il peut arriver de voir des <a href="http://www.desfleursanotreporte.com/pages/Des_plantes_albinos_-4569696.html">fleurs albinos</a> ou tout simplement hypochromes, comme cette <a href="https://fleursauvageyonne.github.io/flsv/violet/medsat.htm"><em>Medicago sativa</em></a> habituellement violette.
-                            </p>
-                            <p class="text-align-left  pr-md-3">
-                                Perçue différemment selon les individus qui n'ont pas tous la même rétine ni la même sensibilité à son grain et à sa texture, affichée différemment selon les écrans d'ordinateur, la couleur des corolles des fleurs, comme l'avait déjà remarqué Linné, change également en fonction du niveau d'acidité des sols.
-                            </p>
-                        </div>
-                        <div class="mr-md-3 pt-2 px-1 pt-md-2 px-md-2 overflow-hidden">
-                            <h2 class="display-5 serif">Articles</h2>
-                            <p class="lead">Découvrez la botanique à travers divers articles</p>
-                            <p>
-                                <a class="d-block pl-1 text-truncate" title="L'intelligence des plantes" href="articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
-                                <a class="d-block pl-1 text-truncate" title="Les débuts de l’herborisation dans l’Yonne" href="articles/un-peu-histoire.htm">Un peu d'histoire</a>
-                                <a class="d-block pl-1 text-truncate" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
-                                <a class="d-block pl-1 text-truncate" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
-                                <a class="d-block pl-1 text-truncate" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                                <a class="d-block pl-1 text-truncate" title="Fleurs et abeilles" href="articles/abeilles.htm">Fleurs et abeilles</a>
-                                <a class="d-block pl-1 text-truncate" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
-                                <a class="d-block pl-1 text-truncate" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
-                                <a class="d-block pl-1 text-truncate" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
-                                <a class="d-block pl-1 text-truncate" title="Fleurs et microscope" href="https://fleursauvageyonne.github.io/flsv/micro/mic.htm">Fleurs et microscope</a>
-                                <a class="d-block pl-1 text-truncate" title="Fleurs d’ailleurs" href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">Fleurs d'ailleurs et FSF</a>
-                                <a class="d-block pl-1 text-truncate" href="https://fleursauvageyonne.github.io/flsv/var/bota.htm">Quelques botanistes</a>
-                            </p>
-                        </div>
+                </div>
+                <div class="col-lg-3 float-right">
+                    <div class=" bg-dark p-3 m-0 ml-lg-3 my-3 text-center">
+                        <p>Visiter le <a href="http://gapext.chru-lille.fr/~cap/GP/magazines/93789.html">Centre antipoison de Lille</a>. Vous pouvez également consulter <a href="http://www.floretox.fr/">FloreTox</a>.</p>
                     </div>
-                </section>
-                <section class="container py-3">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
-                            <div class="card bg-transparent">
-                                <div class="card-body">
-                                    <h5>Le mot du mois</h5>
-                                    <div class="card-text text-sm">
-                                        <h3 class="card-title pt-1"><a href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1_1.htm#phytovirus">Phytovirus</a></h3>
-                                        <p>
-                                            Très souvent <a href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1_2.htm#symb">symbiontes</a> (ou symbiotes) mutualistes, <a href="https://www.sciencesetavenir.fr/nature-environnement/plantes-et-vegetaux/les-virus-sont-plus-presents-dans-les-cultures-que-dans-les-plantes-sauvages_120544">les virus</a> des espèces végétales sauvages des zones naturelles ont jusqu'ici été très peu étudiés. Ils existent tout autant que les phytovirus des zones cultivées comme le virus <a href="https://www.jardinsdefrance.org/le-virus-le-plus-couteux-de-lhistoire/">le plus coûteux de l'Histoire</a>, un <em>Potyvirus</em> responsable de la <a href="https://fr.wikipedia.org/wiki/Virus_de_la_panachure_de_la_tulipe">panachure de la tulipe</a>.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span class="text-sm  font-weight-bold"><a href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi1_1.htm#phytovirus">En savoir plus</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
-                            <div class="card bg-transparent ">
-                                <div class="card-body">
-                                    <h5>Le saviez vous ?</h5>
-                                    <div class="card-text text-sm">
-                                        <h3 class="card-title pt-1"><a href="https://fleursauvageyonne.github.io/">Les plantes émettent des ultrasons</a></h3>
-                                        <p>
-                                            On sait depuis longtemps que <a href="https://academic.oup.com/beheco/article/24/4/789/218916">les plantes produisent des ondes sonores</a>. Les plantes émettent des <a href="https://www.futura-sciences.com/planete/actualites/botanique-surprise-plantes-ont-langage-base-ultrasons-78716/">ultrasons</a>, détectables à plusieurs mètres de distance, notamment avant de dépérir.
-                                        </p>
-                                        <p class="mt-0 text-muted">29 mars 2020</p>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span class="text-sm  font-weight-bold"><a href="https://fleursauvageyonne.github.io/">Les archives</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-30 pb-3">
-                            <div class="card bg-transparent">
-                                <div class="card-body">
-                                    <h5>Vous débutez en botanique&nbsp;?</h5>
-                                    <div class="card-text text-sm">
-                                        <h3 class="card-title pt-1"><a href="listes/mots-latins.htm#misc">Miscellanea botanica</a></h3>
-                                        <p>Cet herbier numérique se présente sous la forme de ce qui se nommait autrefois, à l'époque où le latin tenait le rôle actuel de la langue anglaise, <em><a href="listes/mots-latins.htm#spicil">Spicilegium</a> botanicum</em> ou <em><a href="listes/mots-latins.htm#misc">Miscellanea</a> botanica</em>, une cueillette de ci de là, un glanage ou un grappillage de quelques découvertes botaniques que nous partageons avec plaisir.</p>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span class="text-sm  font-weight-bold"><a href="listes/mots-latins.htm#misc">En savoir plus</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-dark py-4">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-7">
-                                <img class="img-fluid border w-100" src="especes/images/castanea-sativa-3-v-1.jpg" alt="Castanea sativa">
-                            </div>
-                            <div class="col-md-5 pl-md-3 mt-2 mt-md-0 p-3">
-                                <h4 class="serif">Le fruit du jour</h4>
-                                <p>
-                                    <a href="https://fleursauvageyonne.github.io/flsv/arbres/castanea.htm">
-                                        <strong>Châtaignier</strong><br>
-                                        <em>Castanea sativa</em></a><br>
-                                    Réserve forestière de la Forêt communale de Joigny,<br>
-                                    3 août 2017
-                                </p>
-                                <a href="https://fleursauvageyonne.github.io/flsv/arbres/castanea.htm" role="button" class="btn btn-secondary text-white">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="container py-3">
-                    <div class="px-3">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-8 col-lg-10 pt-3 ">
-                                <h2 class="h3 block-title mb-3 text-center">À propos de <em>Fleurs sauvages de l'Yonne</em></h2>
-                                <p class="lead text-center">
-                                    Enumeratio silvaticorum agrorumque florum Icaunae, in Burgundia (Gallia celtica)
-                                </p>
-                                <p>C’est au début des années 2000, avant l'apparition de la "botanique connectée", que Claude Richard, botaniste amateur passionné alors membre de l'Association Icaunaise de Botanique (AIB), eut l’idée de créer <em>Fleurs sauvages de l'Yonne</em> (FLSVY).</p>
-                                <p>Vous souhaitez pouvoir donner un <a href="listes/especes.htm">nom latin</a> mais également mais également <a href="listes/especes.htm">français</a> aux fleurs et à d’autres végétaux, ligneux ou <a title="Sphaignes, hépatiques, prêles, fougères, lycopodes" href="https://fleursauvageyonne.github.io/flsv/plssfl/Liplssfl.htm">sans fleurs</a>, pouvant croiser votre chemin dans le <a href="https://fleursauvageyonne.github.io/flsv/acc/yonne_1.htm">département de l'Yonne</a> (en Bourgogne / Franche-Comté), notre Herbier virtuel icaunais vous le permettra d’une façon différente de <a title="Pl@ntNet" href="https://plantnet.org/apropos/">Pl@ntNet</a>, car un végétal n'est pas qu'un nom.</p>
-                                <p>Fleurs et végétaux ne tiennent pas compte des limites administratives et lorsque nous ne les avons pas vus personnellement dans l’Yonne nous vous les présentons vus <a href="https://fleursauvageyonne.github.io/flsv/acc/ailleurs.htm">ailleurs</a>. Rarement, vous en verrez qui sont cultivés dans les parcs et les jardins. La <a href="https://fr.wikipedia.org/wiki/Botanique_horticole">botanique horticole</a> est un vaste domaine différent de celui que nous abordons ici.</p>
-                                <p>La Botanique est un domaine difficile. Il est parfois ardu d'y démêler le vrai du faux quand on est amateur, mais c'est un domaine passionnant où plus on apprend et plus on prend conscience de l'immensité de ce qu'on ignore.<br />Vous débutez en botanique ?<br /><em>Fleurs sauvages de l'Yonne</em> (FLSVY) est fait pour vous.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container py-3">
+        <div class="row justify-content-center pb-3">
+            <div class="col-12 col-md-8">
+                <h2 class="serif">Fleurs sauvages</h2>
+                <p>
+                    Voici quelques plantes plus ou moins toxiques que vous pouvez trouver dans l'Yonne, cette liste n'est pas exhaustive.</p>
+            </div>
+        </div>
+        <div id="toolbar" class="">
+            <div class="form-inline" role="form">
+                <div class="form-group mb-2">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary ml-1 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Couleurs
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" id="selectcolor" style="min-width: 300px">
+                            <div class="row m-0">
+                                <div class="col-6 p-0">
+                                    <button class="dropdown-item active" type="button" value="">Tout / effacer</button>
+                                    <button class="dropdown-item" type="button" value="Noir"><span class="couleur-span" style="background-color: #000000;"></span> Noir</button>
+                                    <button class="dropdown-item" type="button" value="Blanc"><span class="couleur-span" style="background-color: #fff;"></span> Blanc</button>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <button class="dropdown-item" type="button" value="Bleu"><span class="couleur-span" style="background-color: #007fff;"></span> Bleu</button>
+                                    <button class="dropdown-item" type="button" value="Rose"><span class="couleur-span" style="background-color: #f5d1f7"></span> Rose</button>
+                                    <button class="dropdown-item" type="button" value="Violette"><span class="couleur-span" style="background-color: #be64b6"></span> Violette</button>
+                                    <button class="dropdown-item" type="button" value="Violet"><span class="couleur-span" style="background-color: #9858C5;"></span> Violet</button>
+                                    <button class="dropdown-item" type="button" value="Jaune"><span class="couleur-span" style="background-color: #feff00;"></span> Jaune</button>
+                                    <button class="dropdown-item" type="button" value="Rouge"><span class="couleur-span" style="background-color: #e93940;"></span> Rouge</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="table" class="table" data-classes="table table-hover table-striped table-borderless" data-thead-classes="thead-dark">
+            <!-- -->
+            <thead>
+                <tr>
+                    <th data-field="latin" data-sortable="true" data-formatter="nameFormatter" data-valign="middle" data-width-unit="%" data-width="25"><span class="d-none d-md-inline">Nom </span>Latin</th>
+                    <th data-field="français" data-sortable="true"><span class="d-none d-md-inline">Nom </span>Français</th>
+                    <th data-field="vernaculaire" data-sortable="true" data-width-unit="%" data-width="15"><span class="d-none d-md-inline">Nom </span>Vernaculaire</th>
+                    <th data-field="famille" data-sortable="true" data-formatter="familleFormatter">Famille</th>
+                    <th data-field="classement" data-sortable="true" data-formatter="classementFormatter">Classements</th>
+                    <th data-field="couleurNom" data-sortable="true" data-formatter="colorFormatter">Couleurs</th>
+                </tr>
+            </thead>
+        </table>
     </div>
     <footer class="bg-footer footer-wrapper pt-3 pb-5 text-white">
         <div class="container">
@@ -570,13 +418,13 @@
                 <div class="card bg-transparent border-0">
                     <!-- <div class="primary text-primary font-weight-bold">titre sup</div> -->
                     <div class="d-block font-weight-bold">Trouver des fleurs ou plantes</div>
-                    <a class="d-block" title="Noms latins" href="listes/especes.htm">Noms latins </a>
-                    <a class="d-block" title="Noms français et vernaculaires" href="listes/especes.htm">Noms français</a>
-                    <a class="d-block" title="Noms français et vernaculaires" href="listes/especes.htm">Noms vernaculaires</a>
+                    <a class="d-block" title="Noms latins" href="../listes/especes.htm">Noms latins </a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms français</a>
+                    <a class="d-block" title="Noms français et vernaculaires" href="../listes/especes.htm">Noms vernaculaires</a>
                     <a class="d-block" title="Familles botaniques" href="https://fleursauvageyonne.github.io/flsv/fambot/famlist.htm">Familles</a>
-                    <a class="d-block" title="Fleurs des champs et des prés" href="articles/champs.htm">Fleurs des champs et des prés</a>
+                    <a class="d-block" title="Fleurs des champs et des prés" href="../articles/champs.htm">Fleurs des champs et des prés</a>
                     <a class="d-block" title="Plantes aquatiques" href="https://fleursauvageyonne.github.io/flsv/var/LFaquahydro.htm">Végétaux aquatiques</a>
-                    <a class="d-block" title="Végétaux toxiques et mortels" href="articles/toxiques.htm">Végétaux toxiques</a>
+                    <a class="d-block" title="Végétaux toxiques et mortels" href="../articles/toxiques.htm">Végétaux toxiques</a>
                     <a class="d-block" title="Orchidaceae" href="https://fleursauvageyonne.github.io/flsv/orchid/Liorchid.htm">Orchidées</a>
                     <a class="d-block" title="Holo- ou hémiparasites" href="https://fleursauvageyonne.github.io/flsv/orob/oroblist.htm">Orobanchaceae</a>
                     <a class="d-block" title="Les laiches" href="https://fleursauvageyonne.github.io/flsv/carex/licrx.htm">Carex (un genre)</a>
@@ -593,7 +441,7 @@
                             <tr>
                                 <td bgcolor="#fffcd6" class="multi">
                                     <a href="https://fleursauvageyonne.github.io/flsv/var/LF15.htm">
-                                        <img src="images/couleurs.jpg" title="fleurs multicolores">
+                                        <img src="../images/couleurs.jpg" title="fleurs multicolores">
                                     </a>
                                 </td>
                                 <td bgcolor="#000000">
@@ -683,22 +531,22 @@
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Vocabulaire</div>
-                    <a class="d-block" title="Glossaire des termes botaniques" href="listes/glossaire.htm">Glossaire</a>
-                    <a class="d-block" title="Mots latins" href="listes/mots-latins.htm">Mots latins</a>
+                    <a class="d-block" title="Glossaire des termes botaniques" href="../listes/glossaire.htm">Glossaire</a>
+                    <a class="d-block" title="Mots latins" href="../listes/mots-latins.htm">Mots latins</a>
                     <a class="d-block" title="Couleurs latines" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi4.htm">Couleurs latines</a>
-                    <a class="d-block" title="Code de nomenclature" href="https://fleursauvageyonne.github.io/flsv/noms/codenomen.htm">articles/code-nomenclature.htm</a>
+                    <a class="d-block" title="Code de nomenclature" href="../articles/code-nomenclature.htm">Code de nomenclature</a>
                     <a class="d-block" title="Un aperçu de l’observation des feuilles" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi3.htm">Les feuilles</a>
                     <a class="d-block" title="Types d’inflorescences" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi2.htm">Les inflorescences</a>
                     <a class="d-block" title="Dissémination végétale" href="https://fleursauvageyonne.github.io/flsv/Lex/Lexi6.htm">Les ...chories</a>
                 </div>
                 <div class="card bg-transparent border-0">
                     <div class="d-block font-weight-bold">Articles</div>
-                    <a class="d-block" title="L'intelligence des plantes" href="articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
-                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="articles/un-peu-histoire.htm">Un peu d'histoire</a>
+                    <a class="d-block" title="L'intelligence des plantes" href="../articles/intelligence-des-plantes.htm">L'intelligence des plantes</a>
+                    <a class="d-block" title="Les débuts de l’herborisation dans l’Yonne" href="../articles/un-peu-histoire.htm">Un peu d'histoire</a>
                     <a class="d-block" title="Au Jardin botanique de l’Arquebuse à Dijon" href="https://fleursauvageyonne.github.io/flsv/acc/visite.htm">B.. A.. BA botanique</a>
                     <a class="d-block" title="Le saviez-vous ?" href="https://fleursauvageyonne.github.io/flsv/acc/accueil4.htm">Le saviez-vous ?</a>
                     <a class="d-block" title="La fleur du vent - Le Roi Guivarc’h - L’iris de Clovis" href="https://fleursauvageyonne.github.io/flsv/legend/Legd1.htm">Fleurs et contes</a>
-                    <a class="d-block" title="Fleurs et abeilles" href="articles/abeilles.htm">Fleurs et abeilles</a>
+                    <a class="d-block" title="Fleurs et abeilles" href="../articles/abeilles.htm">Fleurs et abeilles</a>
                     <a class="d-block" title="Fleurs et papillons" href="https://fleursauvageyonne.github.io/flsv/apis/papillons.htm">Fleurs et papillons</a>
                     <a class="d-block" title="Les insectes floricoles" href="https://fleursauvageyonne.github.io/flsv/apis/floricoles.htm">Les insectes floricoles</a>
                     <a class="d-block" title="Cécidies ou galles" href="https://fleursauvageyonne.github.io/flsv/galles/cecid.htm">Cécidies ou galles</a>
@@ -709,19 +557,201 @@
             </div>
         </div>
         <div class="text-center d-block pt-4 w-100">
-            <img src="images/logo-simple-blanc.svg" style="width:80px">
+            <a href="../index.htm"><img src="../images/logo-simple-blanc.svg" style="width:80px"></a>
         </div>
         <div class="text-center align-items-center justify-content-center w-100 pt-2 px-4 d-sm-flex">
             <div class="mr-3"><span class="badge badge-info"> Mise à jour :&nbsp;mars 2020</span></div>
-            <div class="mr-3"><img alt="" src="images/copyleft-blanc.svg" width="16" height="16">&nbsp;2005 à 2020&nbsp;&nbsp;</div>
+            <div class="mr-3"><img alt="" src="../images/copyleft-blanc.svg" width="16" height="16">&nbsp;2005 à 2020&nbsp;&nbsp;</div>
             <div class="mr-3"><a title="page d’accueil en ligne" href="https://fleursauvageyonne.github.io/">fleursauvageyonne</a></div>
         </div>
     </footer>
     <a href="#" class="back-top text-white" data-tooltip="tooltip" data-placement="left" data-trigger="hover" title="" data-original-title="Haut de la page">Haut</a>
-    <script src="lib/jquery-3.4.1.min.js"></script>
-    <script src="lib/popper.min.js"></script><!-- 1.16 -->
-    <script src="lib/bootstrap.min.js"></script><!-- 4.4.1 -->
-    <script src="lib/lib.js"></script>
+    <script src="../lib/jquery-3.4.1.min.js"></script>
+    <script src="../lib/popper.min.js"></script><!-- 1.16 -->
+    <script src="../lib/bootstrap.min.js"></script><!-- 4.4.1 -->
+    <script src="../lib/lib.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js"></script> -->
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/locale/bootstrap-table-fr-FR.min.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script> -->
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <script src="../lib/bootstrap-table-accent-neutralise.js"></script>
+    <script type="text/javascript">
+    var data;
+    /*var dataUrl = 'https://fleursauvageyonne.github.io/maj/data/taxons.json';*/
+    /* pour voir les data en locale avec chrome il faut lancer chrome avec les variables "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files  --disable-web-security*/
+    var dataUrl = '../data/taxons.json';
+
+    function getUrlParameter(ParamName) {
+        name = ParamName.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(window.location.href);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+
+    $(document).ready(function() {
+        $(function() {
+            var $table = $('#table');
+            /* $table.bootstrapTable({ data: data });*/
+            $table.bootstrapTable({
+                searchAlign: 'left',
+                mobileResponsive: true,
+                sortable: true,
+                sortPriority: [{ "sortName": "latin", "sortOrder": "asc" }],
+                search: true,
+                /*showMultiSortButton: true,*/
+                /*showMultiSort: true,*/
+                searchAccentNeutralise: true,
+                /*showSearchClearButton: true,*/
+                toolbar: "#toolbar",
+                toolbarAlign: "right",
+                /*rowStyle:function(row,index){},*/
+                url: dataUrl,
+                cache: false,
+                responseHandler: function(res) {
+                    /*console.log(res);*/
+                    /* filtre pour une famille */
+                    var queryFamille = getUrlParameter('famille');
+                    var queryCouleur = getUrlParameter('couleur');
+                    var queryLatin = getUrlParameter('latin');
+                    if (queryLatin) {
+                        res = $.grep(res, function(n, i) {
+                            var str = n.latin.toLowerCase()
+                            return (str.indexOf(queryLatin.toLowerCase()) != -1);
+                        });
+                    }
+                    if (queryFamille) {
+                        res = $.grep(res, function(n, i) { return n.famille.toLowerCase() === queryFamille.toLowerCase(); });
+                    }
+                    if (queryCouleur) {
+
+                        res = $.grep(res, function(n, i) {
+
+                            var coulBool = true;
+                            if (Array.isArray(n.couleurNom)) {
+                                var lwrMyArr = n.couleurNom.map(function(ele) { return ele.toLowerCase(); })
+                                if ($.inArray(queryCouleur.toLowerCase(), lwrMyArr) !== -1) { coulBool = true; } else { coulBool = false; };
+                            } else {
+                                coulBool = false;
+                            }
+                            return coulBool;
+                        });
+                    }
+                    /* afficher uniquement une famille, clade ou ordre, tout en minuscule*/
+                    res = $.grep(res, function(n, i) {
+
+                        var coulBool = false;
+                        if (n.classement && Array.isArray(n.classement)) {
+
+                            var lwrMyArr = n.classement.map(function(ele) { return ele.toLowerCase(); });
+                            if ($.inArray("toxique", lwrMyArr) !== -1) {
+                                coulBool = true;
+                            };
+                        }
+                        return coulBool;
+                    });
+                    /* res = $.grep(res, function(n, i) { return n.famille === 'Violaceae'; });*/
+                    return res;
+                }
+            });
+
+
+
+
+            $('#selectcolor').find('button').on('click', function() {
+                $('#selectcolor').find('button').removeClass("active");
+                $(this).addClass("active");
+                var searchcoul = $(this).val();
+
+                if (searchcoul !== "") {
+                    $("#dropdownMenu2").removeClass("btn-secondary");
+                    $("#dropdownMenu2").addClass("btn-primary");
+                } else {
+                    $("#dropdownMenu2").removeClass("btn-primary");
+                    $("#dropdownMenu2").addClass("btn-secondary");
+                }
+
+                $('#table').bootstrapTable('filterBy', { couleurNom: [searchcoul] }, {
+                    'filterAlgorithm': function(row, filters) {
+                        if (filters.couleurNom[0] === "") {
+                            return true;
+                        } else if ($.inArray(filters.couleurNom[0], row.couleurNom) !== -1) { return true; } else { return false; }
+                    }
+                });
+                $('#table').bootstrapTable('refreshOptions', { 'filterAlgorithm': 'and' });
+            });
+
+
+
+            /**/
+            /* $table.bootstrapTable();*/
+            /* $('#table').on('click-row.bs.table', function(row, element, field) {
+                 window.location.href = element.url;
+             });*/
+
+
+        });
+
+    });
+
+    function nameFormatter(value, row, index) {
+        var content = '<span class="font-weight-bold font-italic">' + value + '</span>';
+        if (row.autorité && row.autorité != "") {
+            content = content + '<div class="text-secondary small">' + row.autorité + '</div>'
+        }
+          if (row.synonyme  && Array.isArray(row.synonyme)) {
+              for (var i = 0; i < row.synonyme.length; i++) {
+            content = content + '<div class="small">' + row.synonyme[i] + ' <span class="text-secondary">syn.</span></div>'
+        }
+        }
+        content = '<div class="flex-fill">' + content + "</div>";
+        if (row.vignette && row.vignette != "") {
+            content = content + '<div class="mr-2 " style="width:70px;"><img  width="70" src="' + row.vignette + '"></div>';
+        }
+
+        content = '<a class="d-flex flex-row-reverse justify-content-sm-start" href="' + row.url + '">' + content + '</a>';
+        return content;
+    }
+
+    function colorFormatter(value, row, index) {
+        var content = "";
+        if (Array.isArray(row.couleurCode)) {
+            for (var i = 0; i < row.couleurCode.length; i++) {
+                content = content + '<div class="d-inline-block mr-1" style="background-color:' + row.couleurCode[i] + ';width:20px;height:20px;border:1px solid #ccc" title="' + row.couleurNom[i] + '"></div>';
+            }
+        }
+        return content;
+    }
+
+    function classementFormatter(value, row, index) {
+        var content = "";
+        var separator = "";
+        if (Array.isArray(row.classement)) {
+            for (var i = 0; i < row.classement.length; i++) {
+                content = content + separator + row.classement[i];
+                separator = ", ";
+            }
+        }
+        return content;
+    }
+
+    function familleFormatter(value, row, index) {
+        var content = "";
+        if (value) {
+            content = value;
+        }
+        var contentArbre = "";
+        if (row.apgIII && Array.isArray(row.apgIII)) {
+            for (var i = 0; i < row.apgIII.length; i++) {
+
+                contentArbre = contentArbre + '<div class="d-block small text-secondary text-nowrap" >' + new Array(i + 1).join('&nbsp;') + '└ ' + row.apgIII[i][0] + ' : ' + row.apgIII[i][1] + '</div>';
+            }
+        }
+        content = content + contentArbre;
+        return content;
+    }
+    </script>
 </body>
 
 </html>
