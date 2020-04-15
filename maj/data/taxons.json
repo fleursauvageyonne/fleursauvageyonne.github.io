@@ -33,7 +33,7 @@
             "français": "Ambroisie à feuilles d'armoise",
             "vernaculaire": "Ambroisie annuelle, Ambroisie élevée",
             "famille": "Asteraceae (Compositae)",
-            "apgIII": [["Genre","Ambrosia"],["Tribu","Heliantheae"],["Sous-famille","Asteroideae"],["Famille","Asteraceae"]],
+            "apgIII": [["Famille","Asteraceae"],["Sous-famille","Asteroideae"],["Tribu","Heliantheae"]],
             "url": "https://fleursauvageyonne.github.io/flsv/vert/ambrartemis.htm",
             "vignette": "https://fleursauvageyonne.github.io/maj/especes/images/ambrosia-artemisiifolia-v-140.jpg",
             "couleurNom": "",
