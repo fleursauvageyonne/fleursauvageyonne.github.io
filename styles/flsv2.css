@@ -582,6 +582,12 @@ table tbody tr th {
 	width: 465px;
 	border: 0px outset;
 	text-align: center;
+	padding-left: 50px;
+	padding-right: 10px;
+	margin: 0px 0px 16px 0px;
+	line-height: 150%;
+	background-color: #ffffff;
+	margin: auto;
 	background-color: white;
 	border-collapse: separate;
 	border-spacing: 2px;
