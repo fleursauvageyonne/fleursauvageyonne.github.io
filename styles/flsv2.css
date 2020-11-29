@@ -299,6 +299,7 @@ a img {
 
 #article table caption {
 	margin: auto;
+	font-size-adjust: inherit;
 }
 
 #article h1 {
