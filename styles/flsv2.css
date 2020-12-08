@@ -485,9 +485,9 @@ a img {
 
 .tdlxlat {
 	vertical-align: top;
-	width: 50%;
-	font-size: 1.2em;
-	font-weight: bold;
+	width: 52%;
+	font-size: 1.3em;
+	font-weight: inherit;
 	color: #053a89;
 	padding-left: 0px;
 	padding-right: 0px;
