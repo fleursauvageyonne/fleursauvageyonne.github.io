@@ -460,11 +460,11 @@ a img {
 
 .descriptif th {
 	text-align: left;
-	line-height: 0.9em;
+	line-height: 1.5em;
 }
 
 .descriptif th .legend {
-	font-size: .8em;
+	font-size: 1.5em;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
