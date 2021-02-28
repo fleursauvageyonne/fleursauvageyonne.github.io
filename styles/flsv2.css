@@ -455,7 +455,7 @@ a img {
 .descriptif th,
 .descriptif td {
 	padding: 4px;
-	white-space: nowrap;
+	white-space: normal;
 }
 
 .descriptif th {
