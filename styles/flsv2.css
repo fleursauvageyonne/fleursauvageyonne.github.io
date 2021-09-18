@@ -6,11 +6,13 @@ html {
 }
 
 #site {
-	width: 780px;
-	border: 10px;
+	width: 100%;
+	max-width: 780px;
+	/*border: 10px;*/
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 body {
@@ -278,18 +280,20 @@ a img {
 }
 
 #article {
-	width: 718px;
-	float: left;
-	padding-left: 50px;
-	padding-right: 10px;
-	margin: 0px 0px 16px 0px;
-	line-height: 150%;
-	background-color: #ffffff;
-	text-align: left;
+	width: 100%;
+    margin: 0px auto;
+    line-height: 175%;
+    background-color: #ffffff;
+    text-align: left;
+    max-width: 780px;
+    padding: 20px 30px;
+    box-sizing: border-box;
 }
 
 .articlezdt {
-	width: 500px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 708px;
 }
 
 #article table {
@@ -306,29 +310,37 @@ a img {
 	margin: 1.4em 1em 1.8em 1em;
 	clear: both;
 	padding: 0;
-	font-size: 1.4em;
-	text-align: right;
+	font-size: 1.8em;
+	
 }
 
 #article h2 {
 	margin: 1.2em 0 .6em 0;
 	padding: .2em 0 .2em 0;
 	text-align: left;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	font-weight: bold;
 }
 
 #article h3 {
-	margin: 1.7em 0 .1em 0;
-	padding: .2em 0 .2em 0;
+	margin: 1.7em 0 1.7em 0;
+	padding: .2em 0 ;
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#article h4 {
+	margin: 1.7em 0 1.7em 0;
+	padding: .2em 0 ;
+	text-align: left;
+	font-size: 1.3em;
 	font-weight: bold;
 }
 
 #article h5 {
-	margin: 1.7em 0 0;
-	padding: .2em 0 0;
+	margin: 1.7em 0 1.7em 0;
+	padding: .2em 0 ;
 	text-align: left;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -753,13 +765,13 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 1.5em;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
 }
 
 li {
     display: list-item;
     text-align: -webkit-match-parent;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 ul ul {
