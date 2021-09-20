@@ -318,7 +318,12 @@ a img {
 }
 
 #bandeau small {
-	font-size: 0.8em;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+#bandeau em {
+	font-size: 1.2em;
 	font-weight: normal;
 }
 
