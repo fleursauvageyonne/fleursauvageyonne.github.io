@@ -581,11 +581,11 @@ a img {
 #article .citat {
 	border: 0px solid #666666;
 	width: 460px;
-	height: 80px;
-	text-align: right;
-	top: 80px;
-	right: 0px;
-	font-size: 0.8em;
+	height: 50px;
+	text-align: left;
+	top: 300px;
+	padding-top: 90px;
+	font-size: 0.9em;
 	font-weight: lighter;
 	line-height: 105%;
 }
