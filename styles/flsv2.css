@@ -240,6 +240,7 @@ body {
 }
 
 #pagebasflr {
+	text-align: left;
 	margin: auto;
 	width: 90%;
 	padding-bottom: 20px;
