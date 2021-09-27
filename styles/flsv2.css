@@ -114,7 +114,7 @@ textarea {
 
 button,
 input {
-  *overflow: visible;
+  *overflow: auto;
   line-height: normal;
 }
 
