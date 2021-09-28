@@ -236,7 +236,7 @@ body {
 }
 
 #wrapper {
-	overflow: auto;
+	/*overflow: auto;*/
 }
 
 #pagebasflr {
