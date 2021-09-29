@@ -233,6 +233,7 @@ html {
 body {
 	margin: 0 auto;
 	font: 80% Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+	position: relative;
 }
 
 #wrapper {
@@ -1017,8 +1018,12 @@ ul ul {
 	position: absolute;
 	width: 250px;
 	height: 100%;
+	min-height: 100%;
+	top: 0;
+	bottom: 0;
 	border-right: 1px solid #000;
 	display: none;
+	background-color: #fff;
 }
 #menuHtmlBody{
 	overflow: auto;
