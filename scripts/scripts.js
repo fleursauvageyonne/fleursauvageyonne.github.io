@@ -43,7 +43,7 @@ menuHtmlClose.addEventListener('click', function(ev) {
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
-  scrollToTopBtn.classList.add("menuHtmlShow");
+  menuHtml.classList.add("menuHtmlShow");
 } else {
  menuHtml.classList.remove("menuHtmlShow");
 }
