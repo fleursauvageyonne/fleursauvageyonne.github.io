@@ -3,18 +3,20 @@
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 if(scrollToTopBtn){
   document.addEventListener("scroll", handleScroll);
- function handleScroll() {
-  /*var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;*/
- /* var GOLDEN_RATIO = 0.5;*/
- /*if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {*/
-  if (document.documentElement.scrollTop  > document.documentElement.clientHeight) {
+  function handleScroll() {
+    /*var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;*/
+    /* var GOLDEN_RATIO = 0.5;*/
+    /*if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {*/
+      if (document.documentElement.scrollTop  > document.documentElement.clientHeight) {
     //show button
-    if(!scrollToTopBtn.classList.contains("showScrollBtn"))
-    scrollToTopBtn.classList.add("showScrollBtn")
+    if(!scrollToTopBtn.classList.contains("showScrollBtn")) {
+      scrollToTopBtn.classList.add("showScrollBtn");
+    }
   } else {
     //hide button
-    if(scrollToTopBtn.classList.contains("showScrollBtn"))
-    scrollToTopBtn.classList.remove("showScrollBtn")
+    if(scrollToTopBtn.classList.contains("showScrollBtn")) {
+      scrollToTopBtn.classList.remove("showScrollBtn");
+    }
   }
 }
 
@@ -31,23 +33,33 @@ function scrollToTop() {
 /**/
 var menuBtn = document.querySelector(".menuBtn");
 var menuHtml = document.getElementById('menuHtml');
+var menuHtmlBody = document.getElementById('menuHtmlBody');
+var menuHtmlClose = document.getElementById('menuHtmlClose');
+menuHtmlClose.addEventListener('click', function(ev) {
+ ev.preventDefault();
+ menuHtml.classList.remove("showMenu");
 
+}
+menuBtn.addEventListener('click', function(ev) {
+ ev.preventDefault();
+ if(!menuHtml.classList.contains("showMenu")) {
+  scrollToTopBtn.classList.add("showMenu");
+} else {
+ menuHtml.classList.remove("showMenu");
+}
+/* this.style.display = 'none';*/
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+  if(request.readyState === 4) {
+    /*bio.style.border = '1px solid #e8e8e8';*/
+    if(request.status === 200) {
+      menuHtml.innerHTML = request.responseText;
+    } else {
+      menuHtml.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
+    }
+  }
+}
 
-      menuBtn.addEventListener('click', function(ev) {
-         ev.preventDefault();
-       /* this.style.display = 'none';*/
-       var request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-        if(request.readyState === 4) {
-          /*bio.style.border = '1px solid #e8e8e8';*/
-          if(request.status === 200) {
-            menuHtml.innerHTML = request.responseText;
-          } else {
-            menuHtml.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
-          }
-        }
-      }
-
-      request.open('Get', '../acc/menusmart.htm');
-        request.send();
-      });
+request.open('Get', '../acc/menusmart.htm');
+request.send();
+});
