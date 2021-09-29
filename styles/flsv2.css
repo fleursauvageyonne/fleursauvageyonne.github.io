@@ -1012,3 +1012,16 @@ ul ul {
   transform: translateY(0);
   opacity: 1;
 }
+
+#menuHtml {
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	border-right: 1px solid #000;
+}
+#menuHtmlBody{
+	overflow: auto;
+}
+#menuHtmlClose{
+
+}
