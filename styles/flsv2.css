@@ -1018,10 +1018,14 @@ ul ul {
 	width: 250px;
 	height: 100%;
 	border-right: 1px solid #000;
+	display: none;
 }
 #menuHtmlBody{
 	overflow: auto;
 }
 #menuHtmlClose{
 
+}
+#menuHtmlShow{
+	display: block !important;
 }
