@@ -59,26 +59,21 @@ menuHtmlClose.addEventListener('click', function(ev) {
  menuHtml.classList.remove("menuHtmlShow");
 });
 // Listen for all clicks on the document
-document.addEventListener('click', function (event) {
-
+ function clickEvent (event) {
     // If the click happened inside the the container, bail
     if (!event.target.closest('#menuHtmlBody')) { 
    menuHtml.classList.remove("menuHtmlShow");
       }
-      else {
-
-    // Otherwise, run our code...
-
-      }
-
-}, false);
-menuBtn.addEventListener('click', function(ev) {
- ev.preventDefault();
- if(!menuHtml.classList.contains("menuHtmlShow")) {
-  menuHtml.classList.add("menuHtmlShow");
-} else {
- menuHtml.classList.remove("menuHtmlShow");
+  ;
 }
+
+function menuClose(){
+ menuHtml.classList.remove("menuHtmlShow");
+ document.removeEventListener('click',clickEvent , true);
+};
+function menuOpen() {
+document.addEventListener('click',clickEvent , false);
+  menuHtml.classList.add("menuHtmlShow");
 /* this.style.display = 'none';*/
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
@@ -94,4 +89,16 @@ request.onreadystatechange = function() {
 
 request.open('Get', '../acc/menusmart.htm');
 request.send();
+
+};
+
+
+menuBtn.addEventListener('click', function(ev) {
+ ev.preventDefault();
+ if(!menuHtml.classList.contains("menuHtmlShow")) {
+ menuOpen();
+} else {
+ menuClose();
+}
+
 });
