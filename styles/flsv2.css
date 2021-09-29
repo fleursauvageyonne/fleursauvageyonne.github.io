@@ -994,3 +994,24 @@ ul ul {
     margin-block-end: 0px;
      margin-top: 0.8em;
 }
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: block;
+  padding: 8px 4px;
+  cursor: pointer;
+ width: 40px;
+ height: 40px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+  border: none;
+  background-color: #7081ec;
+  color: white;
+  font-weight: bolder;
+}
+.showScrollBtn {
+  transform: translateY(0);
+  opacity: 1;
+}
