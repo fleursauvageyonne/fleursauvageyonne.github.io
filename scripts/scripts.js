@@ -29,8 +29,27 @@ function scrollToTop() {
   });
 }
 }
-
-/**/
+/* polyfill pour menu click outside*/
+/**
+ * Element.closest() polyfill
+ * https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
+ */
+if (!Element.prototype.closest) {
+    if (!Element.prototype.matches) {
+        Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+    }
+    Element.prototype.closest = function (s) {
+        var el = this;
+        var ancestor = this;
+        if (!document.documentElement.contains(el)) return null;
+        do {
+            if (ancestor.matches(s)) return ancestor;
+            ancestor = ancestor.parentElement;
+        } while (ancestor !== null);
+        return null;
+    };
+}
+/* menu */
 var menuBtn = document.querySelector(".menuBtn");
 var menuHtml = document.getElementById('menuHtml');
 var menuHtmlBody = document.getElementById('menuHtmlBody');
@@ -39,7 +58,20 @@ menuHtmlClose.addEventListener('click', function(ev) {
  ev.preventDefault();
  menuHtml.classList.remove("menuHtmlShow");
 });
+// Listen for all clicks on the document
+document.addEventListener('click', function (event) {
 
+    // If the click happened inside the the container, bail
+    if (!event.target.closest('#menuHtmlBody')) { 
+      return;
+      }
+      else {
+
+    // Otherwise, run our code...
+ menuHtml.classList.remove("menuHtmlShow");
+      }
+
+}, false);
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
