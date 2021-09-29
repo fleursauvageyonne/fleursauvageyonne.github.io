@@ -643,26 +643,26 @@ a img {
 
 .alert {
 	background-color: #ece0d9;
-	margin: 17px 0 16px 0px;
-	padding: 12px;
-	line-height: 120%;
-	text-align: justify;
+	margin: 20px 0px;
+	padding: 20px;
+/*	line-height: 120%;
+	text-align: justify;*/
 }
 
 .alert1 {
 	background-color: #F8DEF6;
-	margin: 16px 50px 16px 10px;
-	padding: 17px;
-	line-height: 120%;
-	font-weight: normal;
+	margin: 20px 0px;
+	padding: 20px;
+	/*line-height: 120%;
+	font-weight: normal;*/
 }
 
 .alert2 {
 	background-color: #e0e8ff;
-	margin: 16px 10px 16px 10px;
-	padding: 17px;
-	line-height: 120%;
-	font-weight: normal;
+		margin: 20px 0px;
+	padding: 20px;
+	/*line-height: 120%;
+	font-weight: normal;*/
 	}
 
 .alert ul {
