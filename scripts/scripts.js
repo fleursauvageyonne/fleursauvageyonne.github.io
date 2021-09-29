@@ -38,8 +38,8 @@ var menuHtmlClose = document.getElementById('menuHtmlClose');
 menuHtmlClose.addEventListener('click', function(ev) {
  ev.preventDefault();
  menuHtml.classList.remove("showMenu");
+});
 
-}
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("showMenu")) {
