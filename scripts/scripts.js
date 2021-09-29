@@ -34,20 +34,20 @@ function scrollToTop() {
  * Element.closest() polyfill
  * https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
  */
-if (!Element.prototype.closest) {
-    if (!Element.prototype.matches) {
-        Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-    }
-    Element.prototype.closest = function (s) {
-        var el = this;
-        var ancestor = this;
-        if (!document.documentElement.contains(el)) return null;
-        do {
-            if (ancestor.matches(s)) return ancestor;
-            ancestor = ancestor.parentElement;
-        } while (ancestor !== null);
-        return null;
-    };
+ if (!Element.prototype.closest) {
+  if (!Element.prototype.matches) {
+    Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+  }
+  Element.prototype.closest = function (s) {
+    var el = this;
+    var ancestor = this;
+    if (!document.documentElement.contains(el)) return null;
+    do {
+      if (ancestor.matches(s)) return ancestor;
+      ancestor = ancestor.parentElement;
+    } while (ancestor !== null);
+    return null;
+  };
 }
 /* menu */
 var menuBtn = document.querySelector(".menuBtn");
@@ -59,36 +59,36 @@ menuHtmlClose.addEventListener('click', function(ev) {
  menuHtml.classList.remove("menuHtmlShow");
 });
 // Listen for all clicks on the document
- function clickEvent (event) {
+function clickEvent (event) {
     // If the click happened inside the the container, bail
     if (!event.target.closest('#menuHtmlBody')) { 
-   menuHtml.classList.remove("menuHtmlShow");
-      }
-  ;
-}
+     menuHtml.classList.remove("menuHtmlShow");
+   }
+   ;
+ }
 
-function menuClose(){
- menuHtml.classList.remove("menuHtmlShow");
- document.removeEventListener('click',clickEvent , true);
-};
-function menuOpen() {
-document.addEventListener('click',clickEvent , false);
+ function menuClose(){
+   menuHtml.classList.remove("menuHtmlShow");
+   document.removeEventListener('click',clickEvent , true);
+ };
+ function menuOpen() {
+  document.addEventListener('click',clickEvent , false);
   menuHtml.classList.add("menuHtmlShow");
-/* this.style.display = 'none';*/
-var request = new XMLHttpRequest();
-request.onreadystatechange = function() {
-  if(request.readyState === 4) {
-    /*bio.style.border = '1px solid #e8e8e8';*/
-    if(request.status === 200) {
-      menuHtmlBody.innerHTML = request.responseText;
-    } else {
-      menuHtmlBody.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
+  /* this.style.display = 'none';*/
+  var request = new XMLHttpRequest();
+  request.onreadystatechange = function() {
+    if(request.readyState === 4) {
+      /*bio.style.border = '1px solid #e8e8e8';*/
+      if(request.status === 200) {
+        menuHtmlBody.innerHTML = request.responseText;
+      } else {
+        menuHtmlBody.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
+      }
     }
   }
-}
 
-request.open('Get', '../acc/menusmart.htm');
-request.send();
+  request.open('Get', '../acc/menusmart.htm');
+  request.send();
 
 };
 
@@ -96,9 +96,11 @@ request.send();
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
- menuOpen();
-} else {
- menuClose();
-}
+   menuOpen();
+   console.log("open");
+ } else {
+   menuClose();
+   console.log("close");
+ }
 
 });
