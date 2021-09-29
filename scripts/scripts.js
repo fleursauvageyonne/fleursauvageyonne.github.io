@@ -37,15 +37,15 @@ var menuHtmlBody = document.getElementById('menuHtmlBody');
 var menuHtmlClose = document.getElementById('menuHtmlClose');
 menuHtmlClose.addEventListener('click', function(ev) {
  ev.preventDefault();
- menuHtml.classList.remove("showMenu");
+ menuHtml.classList.remove("menuHtmlShow");
 });
 
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
- if(!menuHtml.classList.contains("showMenu")) {
-  scrollToTopBtn.classList.add("showMenu");
+ if(!menuHtml.classList.contains("menuHtmlShow")) {
+  scrollToTopBtn.classList.add("menuHtmlShow");
 } else {
- menuHtml.classList.remove("showMenu");
+ menuHtml.classList.remove("menuHtmlShow");
 }
 /* this.style.display = 'none';*/
 var request = new XMLHttpRequest();
@@ -53,9 +53,9 @@ request.onreadystatechange = function() {
   if(request.readyState === 4) {
     /*bio.style.border = '1px solid #e8e8e8';*/
     if(request.status === 200) {
-      menuHtml.innerHTML = request.responseText;
+      menuHtmlBody.innerHTML = request.responseText;
     } else {
-      menuHtml.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
+      menuHtmlBody.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
     }
   }
 }
