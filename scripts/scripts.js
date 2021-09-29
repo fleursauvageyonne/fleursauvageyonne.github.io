@@ -72,8 +72,8 @@ function clickEvent (event) {
    document.removeEventListener('click',clickEvent , true);
  };
  function menuOpen() {
-  document.addEventListener('click',clickEvent , false);
   menuHtml.classList.add("menuHtmlShow");
+  document.addEventListener('click',clickEvent , false);
   /* this.style.display = 'none';*/
   var request = new XMLHttpRequest();
   request.onreadystatechange = function() {
