@@ -63,12 +63,12 @@ document.addEventListener('click', function (event) {
 
     // If the click happened inside the the container, bail
     if (!event.target.closest('#menuHtmlBody')) { 
-      return;
+   menuHtml.classList.remove("menuHtmlShow");
       }
       else {
 
     // Otherwise, run our code...
- menuHtml.classList.remove("menuHtmlShow");
+
       }
 
 }, false);
