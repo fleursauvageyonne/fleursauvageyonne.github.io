@@ -1,7 +1,6 @@
 
 /* get a reference to our predefined button*/
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
-console.log(scrollToTopBtn);
 if(scrollToTopBtn){
   document.addEventListener("scroll", handleScroll);
  function handleScroll() {
@@ -28,3 +27,27 @@ function scrollToTop() {
   });
 }
 }
+
+/**/
+var menuBtn = document.querySelector(".menuBtn");
+var menuHtml = document.getElementById('menuHtml');
+
+
+      menuBtn.addEventListener('click', function(ev) {
+         ev.preventDefault();
+       /* this.style.display = 'none';*/
+       var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if(request.readyState === 4) {
+          /*bio.style.border = '1px solid #e8e8e8';*/
+          if(request.status === 200) {
+            menuHtml.innerHTML = request.responseText;
+          } else {
+            menuHtml.innerHTML = 'Erreur pendant le chargement du menu: ' +  request.status + ' ' + request.statusText;
+          }
+        }
+      }
+
+      request.open('Get', '../acc/menusmart.htm');
+        request.send();
+      });
