@@ -54,26 +54,31 @@ var menuBtn = document.querySelector(".menuBtn");
 var menuHtml = document.getElementById('menuHtml');
 var menuHtmlBody = document.getElementById('menuHtmlBody');
 var menuHtmlClose = document.getElementById('menuHtmlClose');
+var menuHtmlFirstClick = false;
 menuHtmlClose.addEventListener('click', function(ev) {
  ev.preventDefault();
- menuHtml.classList.remove("menuHtmlShow");
+ menuClose();
 });
 // Listen for all clicks on the document
-function clickEvent (event) {
+function clickEvent () {
     // If the click happened inside the the container, bail
-    if (!event.target.closest('#menuHtmlBody')) { 
-     menuHtml.classList.remove("menuHtmlShow");
+    if (menuHtmlFirstClick && menuHtml.classList.contains("menuHtmlShow") && event.target.closest('#menuHtml')) {
+      /* console.log("clickEventIn");*/
+   } else if(menuHtmlFirstClick && menuHtml.classList.contains("menuHtmlShow")) {
+    /*console.log("clickEventOut");*/
+      menuClose();
    }
-   ;
+   if(menuHtml.classList.contains("menuHtmlShow")){menuHtmlFirstClick = true;}
  }
-
  function menuClose(){
-   menuHtml.classList.remove("menuHtmlShow");
-   document.removeEventListener('click',clickEvent , true);
+    menuHtml.classList.remove("menuHtmlShow");
+   document.removeEventListener('click',clickEvent);
+   menuHtmlFirstClick = false;
  };
  function menuOpen() {
+
+    document.addEventListener('click',clickEvent,false );
   menuHtml.classList.add("menuHtmlShow");
-  document.addEventListener('click',clickEvent , false);
   /* this.style.display = 'none';*/
   var request = new XMLHttpRequest();
   request.onreadystatechange = function() {
@@ -86,21 +91,16 @@ function clickEvent (event) {
       }
     }
   }
-
-  request.open('Get', '../acc/menusmart.htm');
+  request.open('Get', '../acc/menusmartsimple.htm');
   request.send();
-
 };
-
 
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
    menuOpen();
-   console.log("open");
  } else {
    menuClose();
-   console.log("close");
  }
 
 });
