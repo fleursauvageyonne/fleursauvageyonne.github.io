@@ -50,6 +50,7 @@ function scrollToTop() {
   };
 }
 /* menu */
+window.addEventListener('load', function(){
 var menuBtn = document.querySelector(".menuBtn");
 var menuHtml = document.getElementById('menuHtml');
 var menuHtmlBody = document.getElementById('menuHtmlBody');
@@ -76,7 +77,6 @@ function clickEvent () {
    menuHtmlFirstClick = false;
  };
  function menuOpen() {
-
     document.addEventListener('click',clickEvent,false );
   menuHtml.classList.add("menuHtmlShow");
   /* this.style.display = 'none';*/
@@ -94,7 +94,7 @@ function clickEvent () {
   request.open('Get', '../acc/menusmartsimple.htm');
   request.send();
 };
-
+/* bouton menu*/
 menuBtn.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
@@ -102,5 +102,52 @@ menuBtn.addEventListener('click', function(ev) {
  } else {
    menuClose();
  }
-
 });
+
+/* */
+if(document.ontouchstart!==null) {
+    var touchsurface = menuHtml,
+        startX,
+        startY,
+        dist,
+        threshold = 150, //required min distance traveled to be considered swipe
+        allowedTime = 200, // maximum time allowed to travel that distance
+        elapsedTime,
+        startTime
+
+    function handleswipe(isrightswipe){
+        if (isrightswipe){
+           // touchsurface.innerHTML = 'Congrats, you\'ve made a <span style="color:red">right swipe!</span>'
+            menuClose();
+       } else{
+           // touchsurface.innerHTML = 'Condition for right swipe not met yet'
+        }
+    }
+
+    touchsurface.addEventListener('touchstart', function(e){
+       // touchsurface.innerHTML = ''
+        var touchobj = e.changedTouches[0]
+        dist = 0
+        startX = touchobj.pageX
+        startY = touchobj.pageY
+        startTime = new Date().getTime() // record time when finger first makes contact with surface
+        e.preventDefault()
+    }, false);
+
+    touchsurface.addEventListener('touchmove', function(e){
+        e.preventDefault() ;// prevent scrolling when inside DIV
+    }, false)
+
+    touchsurface.addEventListener('touchend', function(e){
+        var touchobj = e.changedTouches[0]
+        dist = startX - touchobj.pageX  // get total dist traveled by finger while in contact with surface. right to left. Invert to get the reverse
+        elapsedTime = new Date().getTime() - startTime // get time elapsed
+        // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
+        var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
+        handleswipe(swiperightBol)
+        e.preventDefault()
+    }, false)
+
+  } //end test touchstart
+
+}, false); // end window.onload
