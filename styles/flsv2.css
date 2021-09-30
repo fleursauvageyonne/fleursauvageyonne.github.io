@@ -1015,6 +1015,7 @@ ul ul {
 .showScrollBtn {
 	transform: translateY(0);
 	opacity: 1;
+	cursor: pointer;
 }
 
 #menuHtml {
@@ -1023,10 +1024,14 @@ ul ul {
 	height: 100%;
 	min-height: 100%;
 	top: 0;
+	/*left: -251px;*/
+	transform: translateX(-251px);
 	bottom: 0;
 	border-right: 1px solid #000;
-	display: none;
+/*	display: none;*/
 	background-color: #fff;
+	transition: all 0.5s ease-in-out;
+	/*animation: closeM 1s ease-in-out forwards;*/
 }
 #menuHtmlBody{
 	overflow: auto;
@@ -1035,7 +1040,28 @@ ul ul {
 	position: absolute;
 	right: 0;
 	padding: 5px;
+	cursor: pointer;
 }
 .menuHtmlShow{
-	display: block !important;
+	/*left: 0px !important;*/
+	/*animation: openM 1s ease-in-out forwards !important;*/
+	/*display: block !important;*/
+		transform: translateX(0) !important;
+}
+@keyframes openM {
+   0% {
+    transform: translateX(-251px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closeM {
+      0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-251px);
+  }
 }
