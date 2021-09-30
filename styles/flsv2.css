@@ -1048,20 +1048,8 @@ ul ul {
 	/*display: block !important;*/
 		transform: translateX(0) !important;
 }
-@keyframes openM {
-   0% {
-    transform: translateX(-251px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
-@keyframes closeM {
-      0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-251px);
-  }
+.menu-item{
+	font-size: 1.2em;
+	font-weight: bold;
 }
