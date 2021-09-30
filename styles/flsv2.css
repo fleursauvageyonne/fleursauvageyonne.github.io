@@ -414,6 +414,8 @@ a img {
 	line-height: 105%;
 }
 
+
+
 #menu_pr {
 	width: 100%;
 	text-align: left;
@@ -425,6 +427,8 @@ a img {
 	background-color:#ffffff;
 	box-sizing: border-box;
 }
+
+#menu_pr a: link;{ color: #8cad1f; }
 
 #menu_pr a img {
 	border: 0;
@@ -438,8 +442,8 @@ a img {
 
 #menu_pr hr {
 	margin: 10px 0;
-	width: 90%;
-	padding: 20;
+	width: 100%;
+	padding: 20px;
 }
 
 #menu_pr h1 {
@@ -461,10 +465,10 @@ a img {
 #menu_pr ul li {
 	position: relative;
 	margin: 0;
-	padding: 20;
+	/*padding: 20;*/
 	list-style: none;
 	list-style-position: outside;
-	background: url(../imag10/bgris.gif) no-repeat center left;
+	background: url(../imag10/bgris.gif) no-repeat top 5px left 5px;
 	padding-left: 20px;
 }
 
