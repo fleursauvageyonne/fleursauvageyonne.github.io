@@ -105,7 +105,21 @@ menuBtn.addEventListener('click', function(ev) {
 });
 
 /* */
-if(document.ontouchstart!==null) {
+var supportsTouch = false;
+if ('ontouchstart' in window) {
+    //iOS & android
+    supportsTouch = true;
+
+} else if(window.navigator.msPointerEnabled) {
+
+    // Windows
+    // To test for touch capable hardware 
+    if(navigator.msMaxTouchPoints) {
+        supportsTouch = true;
+    }
+
+}
+if(supportsTouch) {
     var touchsurface = menuHtml,
         startX,
         startY,
@@ -124,6 +138,7 @@ if(document.ontouchstart!==null) {
         }
     }
 
+
     touchsurface.addEventListener('touchstart', function(e){
        // touchsurface.innerHTML = ''
         var touchobj = e.changedTouches[0]
@@ -134,9 +149,10 @@ if(document.ontouchstart!==null) {
         e.preventDefault()
     }, false);
 
-    touchsurface.addEventListener('touchmove', function(e){
-        e.preventDefault() ;// prevent scrolling when inside DIV
-    }, false)
+// prevent scrolling when inside DIV
+  /*  touchsurface.addEventListener('touchmove', function(e){
+        e.preventDefault() ;
+    }, false)*/
 
     touchsurface.addEventListener('touchend', function(e){
         var touchobj = e.changedTouches[0]
