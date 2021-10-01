@@ -1022,14 +1022,14 @@ ul ul {
 
 #menuHtml {
 	position: absolute;
-	width: 250px;
+	width: 290px;
 	height: 100%;
 	min-height: 100%;
 	top: 0;
 	/*left: -251px;*/
-	transform: translateX(-251px);
+	transform: translateX(-291px);
 	bottom: 0;
-	border-right: 1px solid #000;
+	border-right: 1px solid #ccc;
 /*	display: none;*/
 	background-color: #fff;
 	transition: all 0.3s ease-in-out;
