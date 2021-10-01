@@ -428,7 +428,7 @@ a img {
 	box-sizing: border-box;
 }
 
-#menu_pr a: link;{ color: #8cad1f; }
+#menu_pr a{ color: #8cad1f; }
 
 #menu_pr a img {
 	border: 0;
@@ -460,7 +460,10 @@ a img {
 	text-align: left;
 	padding: 20;
 }
-
+#menu_pr ul {
+	margin-left: 0;
+	    padding-inline-start: 0;
+}
 #menu_pr ul li {
 	position: relative;
 	margin: 0;
@@ -753,6 +756,7 @@ h3 {
 	background-color: white;
 	border-collapse: separate;
 	border-spacing: 2px;
+	padding: 5px;
 }
 
 .tableaucouleur td {
@@ -1051,6 +1055,8 @@ ul ul {
 }
 
 .menu-item{
-	font-size: 1.2em;
+	font-size: 0.9em;
+	margin-bottom: .5em;
+	margin-top: .8em;
 	font-weight: bold;
 }

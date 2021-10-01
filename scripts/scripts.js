@@ -146,8 +146,8 @@ if(supportsTouch) {
         startX = touchobj.pageX
         startY = touchobj.pageY
         startTime = new Date().getTime() // record time when finger first makes contact with surface
-        e.preventDefault()
-    }, false);
+       // e.preventDefault()
+    }, { passive: false });
 
 // prevent scrolling when inside DIV
   /*  touchsurface.addEventListener('touchmove', function(e){
@@ -161,8 +161,8 @@ if(supportsTouch) {
         // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
         var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
         handleswipe(swiperightBol)
-        e.preventDefault()
-    }, false)
+        // e.preventDefault()
+    }, { passive: false })
 
   } //end test touchstart
 
