@@ -261,22 +261,22 @@ body {
 
 a:link {
 	text-decoration: none;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 
 a:visited {
 	text-decoration: none;
-	font-weight: bolder;
+/*	font-weight: bolder;*/
 }
 
 a:active {
 	text-decoration: none;
-	font-weight: bolder;
+/*	font-weight: bolder;*/
 }
 
 a:hover {
 	text-decoration: underline;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 
 a img {
@@ -1057,5 +1057,5 @@ ul ul {
 	margin-top: .8em;
 	font-weight: bold;
 }
-
+.nav-top { padding: 5px; text-align: left; background-color: #AAAAAA55; }
 .d-block {display: block}
