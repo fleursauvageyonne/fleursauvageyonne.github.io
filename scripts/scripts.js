@@ -51,7 +51,7 @@ function scrollToTop() {
 }
 /* menu */
 window.addEventListener('load', function(){
-var menuBtn = document.querySelector(".menuBtn");
+var menuBtn = document.querySelectorAll(".menuBtn");
 var menuHtml = document.getElementById('menuHtml');
 var menuHtmlBody = document.getElementById('menuHtmlBody');
 var menuHtmlClose = document.getElementById('menuHtmlClose');
@@ -95,13 +95,16 @@ function clickEvent () {
   request.send();
 };
 /* bouton menu*/
-menuBtn.addEventListener('click', function(ev) {
+menuBtn.forEach(function(menuBtnItem) {
+
+menuBtnItem.addEventListener('click', function(ev) {
  ev.preventDefault();
  if(!menuHtml.classList.contains("menuHtmlShow")) {
    menuOpen();
  } else {
    menuClose();
  }
+});
 });
 
 /* */
