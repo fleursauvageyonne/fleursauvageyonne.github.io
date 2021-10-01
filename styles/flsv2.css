@@ -512,7 +512,7 @@ a img {
 .articlezdt {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 708px;
+	max-width: 780px;
 }
 
 #article table {
@@ -1057,3 +1057,5 @@ ul ul {
 	margin-top: .8em;
 	font-weight: bold;
 }
+
+.d-block {display: block}
