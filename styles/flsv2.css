@@ -321,16 +321,16 @@ a img {
     border-bottom: solid 1px #dddddd;
 }
 
-.BotCl { font-size: 1.1em;
-    font-weight: lighter;
-}
-
 #bandeau h2 {
     margin: 0;
     clear: left;
     font-size: 1.6em;
     height: 100%;
     background-size: contain !important;
+}
+
+.BotCl {
+    font-size: 1.1em; 
 }
 
 #bandeau h2 img {
