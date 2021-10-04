@@ -295,7 +295,7 @@ a img {
     border: none;
 }
 
-#bandeauflsv {
+#bandeauflsv {width: 800px;
     /*width: 648px;*/
     margin: 0 auto;
     background-color: #ffffff;
