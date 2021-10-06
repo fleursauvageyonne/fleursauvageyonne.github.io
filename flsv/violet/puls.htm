@@ -49,36 +49,19 @@
 
     -->
     </style>
-    <script type="text/javascript">
-    <!--
-    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
-    var lien = ["", "", "", ""];
-    var lienTitle = ["Irancy, 13 avril 2014", "Irancy, 13 avril 2014", "Jussy, 17 avril 2011", "Jussy, 17 avril 2011"];
-    var numero = 0;
-
-    function changer() {
-        document.imageCarousel.src = "../../idiapo/d_anem/" + nom[numero];
-        document.getElementById("imageCarouselLien").href = lien[numero];
-        //document.getElementById("imageCarousel").title = lienTitle[numero];
-        document.getElementById("CarouselText").innerHTML = lienTitle[numero];
-        numero += 1;
-        if (numero == nom.length) numero = 0;
-        setTimeout("changer()", 3000);
-    }
-    //-->
-    </script>
 </head>
 
 <body onload="changer()">
     <div id="site">
-        <div id="bandeauflsv"><a title="Accueil de Fleurs sauvages de l'Yonne" href="https://fleursauvageyonne.github.io"><img src="../../imag10/accueil.jpg" width="122" height="14" title="accueil" />&#160;Accueil</a>, <a href="../../flsv/acc/presentation.htm">Présentation</a> et <a href="../../flsv/acc/menusmart.htm">Menu&#160;<a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br />de <em>Fleurs sauvages de l'Yonne et d'ailleurs</em></a>
-            <div id="bandeau">
+        <div id="bandeauflsv">
+                <p align="center"><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>
+                <div id="bandeau">
                 <h2>Anémone pulsatille,<br />herbe au vent,<br /><a href="http://www.cnrtl.fr/etymologie/coquelourde">
                         <font color="#de94fb">coquelourde</font>
                     </a><br /><small><em>Anemone pulsatilla</em> L., 1753<br />Famille des <a title="famille des Ranunculaceae" href="../../flsv/fambot/ordranunc.htm#ranunc">
                             <font color="#de94fb">Ranunculaceae</font>
-                        </a><br />Sous-famille des Ranunculoideae,<br /> tribu des Anemoneae</small></h2>
-                <div id="BotCl">Clade des Eudicotylédones - Dicotylédones vraies<br />Ordre des Ranunculales</div>
+                        </a><br />Sous-famille des Ranunculoideae,<br /> tribu des Anemoneae<br />
+                Clade des Eudicotylédones - Dicotylédones vraies<br />Ordre des Ranunculales</small></h2>
             </div>
             <table summary="" align="center" width="622">
                 <tr>
@@ -146,13 +129,34 @@
             <p><img src="../../imag11/anempuls2.jpg" width="493" height="692" title="Anemone pulsatilla" /><br />
                 Réserve du Bois du Parc, Mailly le Chateau, 22 avril 2018</p>
             <p>Les deux photos ci-dessus &#169; <a href="../../flsv/acc/crphot.htm#db">Daniel Bourget</a></p>
-            <div id="bandeauflsv"><br /><br /><a title="Accueil de Fleurs sauvages de l'Yonne" href="https://fleursauvageyonne.github.io"><img src="../../imag10/accueil.jpg" width="122" height="14" title="accueil" />&#160;Accueil</a>, <a href="../../flsv/acc/presentation.htm">Présentation</a> et <a href="../../flsv/acc/menusmart.htm">Menu&#160;<a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br />de <em>Fleurs sauvages de l'Yonne et d'ailleurs</em></a>
-                <div id="pagebasflr">Mise à jour :&#160;octobre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">
+
+            <div id="bandeauflsv">
+                    <p align="center"><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>     
+                               <div id="pagebasflr">Mise à jour :&#160;octobre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">
                             <font color="#29410f">fleursauvageyonne</font>
-                        </a></em></a></div>
+                        </a></em></a></div> 
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+            
+        <script type="text/javascript">
+    <!--
+    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+    var lien = ["", "", "", ""];
+    var lienTitle = ["Irancy, 13 avril 2014", "Irancy, 13 avril 2014", "Jussy, 17 avril 2011", "Jussy, 17 avril 2011"];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "../../idiapo/d_anem/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imageCarousel").title = lienTitle[numero];
+        document.getElementById("CarouselText").innerHTML = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 3000);
+    }
+    //-->
+    </script>
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
 </body>
