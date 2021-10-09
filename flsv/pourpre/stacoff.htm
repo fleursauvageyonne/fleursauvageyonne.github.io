@@ -49,24 +49,6 @@
 
     -->
     </style>
-    <script type="text/javascript">
-    <!--
-    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
-    var lien = ["../../idiapo/dpourpre/d_stachysoff/img1.jpg", "../../idiapo/dpourpre/d_stachysoff/img2.jpg", "../../idiapo/dpourpre/d_stachysoff/img3.jpg", "../../idiapo/dpourpre/d_stachysoff/img4.jpg"];
-    var lienTitle = ["St Georges sur Baulche, 30 juin 2013", "Vermenton, Bois de la Corne, 21 juin 2011", "Vermenton, Bois de la Corne, 21 juin 2011", "Vermenton, Bois de la Corne, 20 août 2011"];
-    var numero = 0;
-
-    function changer() {
-        document.imageCarousel.src = "../../idiapo/dpo_stachysoff/" + nom[numero];
-        document.getElementById("imageCarouselLien").href = lien[numero];
-        //document.getElementById("imageCarousel").title = lienTitle[numero];
-        document.getElementById("CarouselText").innerHTML = lienTitle[numero];
-        numero += 1;
-        if (numero == nom.length) numero = 0;
-        setTimeout("changer()", 2500);
-    }
-    //-->
-    </script>
 </head>
 
 <body onload="changer()">
@@ -75,8 +57,8 @@
             <div id="bandeau">
                 <h2>Épiaire bétoine,<br />bétoine officinale, bétoine pourpre<br />
                     <small> <em>Betonica officinalis</em> L., 1753
-                        <br />Famille des <a href="../../flsv/fambot/ordlamial.htm">Lamiaceae</a> (Labiatae),<br />sous-famille des Lamioideae</small></h2>
-                <div id="BotCl">Clade des Euasteridées I / Lamiidées<br />Ordre des Lamiales</div>
+                        <br />Famille des <a href="../../flsv/fambot/ordlamial.htm">Lamiaceae</a> (Labiatae),<br />sous-famille des Lamioideae<br />
+                Clade des Euasteridées I / Lamiidées<br />Ordre des Lamiales</small></h2>
             </div>
             <table summary="" align="center" width="622">
                 <tr>
@@ -119,20 +101,22 @@
                         <h4>Détails caractéristiques</h4>
                         <a name="db"></a>
                         <ul>
-                            <li>Son port élancé.<br /><a name="db"></a><img src="../../imag11/betonicaoff1.jpg" width="474" height="316" title="Betonica officinalis, son port" /><br />
-                                <font size="-2">Arces, Maison forestière de Courbépine, 14 juillet 2018 &#169; <a href="../../flsv/acc/crphot.htm#db">Daniel Bourget</a></font><br />
-                            </li>
-                            <li>Son inflorescence en glomérule spiciforme<br /><img src="../../imag11/betonicaoff2.jpg" width="474" height="819" title="Betonica officinalis, glomérule spiciforme" /><br />
-                                <font size="-2">Arces, Maison forestière de Courbépine, 14 juillet 2018 &#169; Daniel Bourget</font><br />
-                                <br />
-                            </li>
-                            <li>La forme de ses feuilles à marges crénelées.<br /><img src="../../imag01/stachysoff3.jpg" width="474" height="352" title="Feuilles de Betonica officinalis" /><br />
-                                <font size="-2">St Georges sur Baulche, 30 juin 2013</font><br />
-                            </li>
+                            <li>Son port élancé.</li></ul>
+                            <p><a name="db"></a><img src="../../imag11/betonicaoff1.jpg" width="474" height="316" title="Betonica officinalis, son port" /><br />
+                                <font size="-2">Arces, Maison forestière de Courbépine, 14 juillet 2018 &#169; <a href="../../flsv/acc/crphot.htm#db">Daniel Bourget</a></font></p>
+                            <ul>
+                            <li>Son inflorescence en glomérule spiciforme</li></ul>
+                            <p><img src="../../imag11/betonicaoff2.jpg" width="474" height="819" title="Betonica officinalis, glomérule spiciforme" /><br />
+                                <font size="-2">Arces, Maison forestière de Courbépine, 14 juillet 2018 &#169; Daniel Bourget</font></p>
+                            <ul>
+                            <li>La forme de ses feuilles à marges crénelées.</li></ul>
+                            <p><img src="../../imag01/stachysoff3.jpg" width="474" height="352" title="Feuilles de Betonica officinalis" /><br />
+                                <font size="-2">St Georges sur Baulche, 30 juin 2013</font></p>
+                                <ul>
                             <li>Les styles de ses fleurs.</li>
                         </ul>
-                        <p align="center"><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../idiapo/dpo_stachysoff/img1.jpg" width="389" height="498" name="imageCarousel" id="imageCarousel" title="Betonica officinalis" /></p>
-                        <div id="CarouselText" style="text-align:center; widows:inherit; height:inherit;"></div>
+                        <p><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../idiapo/dpo_stachysoff/img1.jpg" width="389" height="498" name="imageCarousel" id="imageCarousel" title="Betonica officinalis" /></p>
+                        <div id="CarouselText" style="text-align:left; widows:inherit; height:inherit;"></div>
                         <h4>Nombre d'espèces icaunaises dans le genre</h4>
                         <ul>
                             <li><em>BETONICA</em> : 1.</li>
@@ -140,14 +124,30 @@
                     </td>
                 </tr>
             </table>
-            <p><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a></p>
-            <div id="pagebasflr">Mise à jour :&#160;septembre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">
-                        <font color="#29410f">fleursauvageyonne</font>
-                    </a></em></a></div>
-        </div>
-    </div>
-    </div>
-    </div>
+            <div id="bandeauflsv">
+                    <p align="center"><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>         
+                               <div id="pagebasflr">Mise à jour :&#160;octobre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">fleursauvageyonne</a></em></div>
+                                </div>
+                            </div>
+                        </div>
+ <script type="text/javascript">
+    <!--
+    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+    var lien = ["../../idiapo/dpourpre/d_stachysoff/img1.jpg", "../../idiapo/dpourpre/d_stachysoff/img2.jpg", "../../idiapo/dpourpre/d_stachysoff/img3.jpg", "../../idiapo/dpourpre/d_stachysoff/img4.jpg"];
+    var lienTitle = ["St Georges sur Baulche, 30 juin 2013", "Vermenton, Bois de la Corne, 21 juin 2011", "Vermenton, Bois de la Corne, 21 juin 2011", "Vermenton, Bois de la Corne, 20 août 2011"];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "../../idiapo/dpo_stachysoff/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imageCarousel").title = lienTitle[numero];
+        document.getElementById("CarouselText").innerHTML = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 2500);
+    }
+    //-->
+    </script>
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
 </body>
