@@ -309,15 +309,10 @@ a img {
 }
 
 #bandeau {
-    /*background-color:none;*/
-}
-
-#bandeau {
     border: 0;
     padding: 12px 10px 12px 10px;
     margin: 0 0 4px 0;
     height: 120px;
-    text-align: center;
     border-bottom: solid 1px #dddddd;
 }
 
