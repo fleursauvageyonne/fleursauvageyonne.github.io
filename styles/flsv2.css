@@ -230,6 +230,7 @@ article
 
 html {
     font-size: 100%;
+    width: 100%;
 }
 
 #site {
@@ -244,7 +245,7 @@ html {
 
 body {
     margin: 0 auto;
-    font: 80% Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font: 1rem Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
     position: relative;
 }
 
@@ -309,15 +310,10 @@ a img {
 }
 
 #bandeau {
-    /*background-color:none;*/
-}
-
-#bandeau {
     border: 0;
     padding: 12px 10px 12px 10px;
     margin: 0 0 4px 0;
     height: 120px;
-    text-align: center;
     border-bottom: solid 1px #dddddd;
 }
 
@@ -829,7 +825,7 @@ table tbody tr th {
 }
 
 .tableauplsfl {
-    width: 465px;
+    /*width: 465px;*/
     border: 0px;
     text-align: left;
     padding-left: 10px;
