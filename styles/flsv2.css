@@ -230,6 +230,7 @@ article
 
 html {
     font-size: 100%;
+    width: 100%;
 }
 
 #site {
@@ -244,7 +245,7 @@ html {
 
 body {
     margin: 0 auto;
-    font: 80% Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font: 1rem Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
     position: relative;
 }
 
