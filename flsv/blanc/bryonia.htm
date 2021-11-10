@@ -58,33 +58,6 @@
 
     -->
     </style>
-    <script type="text/javascript">
-    <!--
-    var nom = ["img01.jpg", "img02.jpg"];
-    var lien = ["../../flsv/blanc/bryonia.htm", "../../flsv/blanc/bryonia.htm"];
-    var lienTitle = ["Avallon, 22 septembre 2011 de 14h28 à 16h05", "Avallon, 22 septembre 2011 de 14h28 à 16h05"];
-    var numero = 0;
-
-    function changer() {
-        document.imageCarousel.src = "../../idiapo/d_vrille/" + nom[numero];
-        document.getElementById("imageCarouselLien").href = lien[numero];
-        //document.getElementById("imagecarousel").title = lienTitle[numero];
-        document.getElementById("carouselText").innerHTML = lienTitle[numero];
-        numero += 1;
-        if (numero == nom.length) numero = 0;
-        setTimeout("changer()", 2500);
-    }
-    //-->
-    </script>
-    <script type="text/JavaScript">
-        var note=new Array(0, 0, 0, 0, 0, 0);
-var tot;
-function totaliser(){tot=0;
-for (i=0; i<6; i++)
-{tot+=note[i]; }
-confirm(" " + note[0] + " + " + note[1] + " + " + note[2] +" + " + note[3] +" + " + note[4] +" + " + note[5] +"  \n=\n" + tot + "/6");
-}
-</script>
 </head>
 
 <body onload="changer()">
@@ -155,7 +128,7 @@ confirm(" " + note[0] + " + " + note[1] + " + " + note[2] +" + " + note[3] +" + 
                         </td>
                     </tr>
                 </table>
-                <p align="center"><a href="#descriptif"><img src="../../imag03/flemont.gif" width="15" height="20" title="Pour en savoir plus" /></a>&#160;&#160;<img src="../../imag01/bryodio6.jpg" width="400" height="332" title="Bryonia cretica subsp. dioica" />&#160;&#160;<img src="../../imag10/fem.gif" width="14" height="21" title="femelle" /></p>
+                <p align="center"><img src="../../imag01/bryodio6.jpg" width="400" height="332" title="Bryonia cretica subsp. dioica" />&#160;&#160;<img src="../../imag10/fem.gif" width="14" height="21" title="femelle" /></p>
                 <p align="center"><a name="vrille"></a>
                     <font color="#ce445a" size="+4">&#10086;</font><br />
                 </p>
@@ -215,16 +188,45 @@ confirm(" " + note[0] + " + " + note[1] + " + " + note[2] +" + " + note[3] +" + 
                     <p align="center"><br />Tout comme la bryone sauvage ci-dessus,<br />les Cucurbitaceae cultivées produisent peu de fleurs femelles<br />d'où l'intérêt pour les agronomes<br />de transformer leurs fleurs mâles en fleurs femelles.</p>
                     <div class="alert1">Quant aux jardiniers amateurs, ils devraient faire très attention de ne pas cultiver une espèce de Cucurbitacée comestible (ex. courge) à proximité d'une espèce non-comestible (ex. coloquinte ornementale) car des insectes peuvent féconder les courges comestibles avec du pollen de coloquinte.<br />Une hybridation non maîtrisée de ces espèces pourrait s'avérer dangereuse car si les fruits issus de ces fécondations ne contiennent pas de cucurbitacine, leurs graines en contiendraient.</div>
 
-                    <div id="bandeauflsv">
-                     <p align="center"><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>         
-                               <div id="pagebasflr">Mise à jour :&#160;novembre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<em><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">
-                            <font color="#29410f">fleursauvageyonne</font>
-                        </a></em></div>
+                 <div id="bandeauflsv">
+                   <p align="center"><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>         
+                               <div id="pagebasflr">Mise à jour :&#160;novembre 2021&#160;&#160;<img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2021&#160;&#160;<a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io">
+                            <font color="#29410f"><em>fleursauvageyonne</em></font></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+<script type="text/javascript">
+    <!--
+    var nom = ["img01.jpg", "img02.jpg"];
+    var lien = ["../../flsv/blanc/bryonia.htm", "../../flsv/blanc/bryonia.htm"];
+    var lienTitle = ["Avallon, 22 septembre 2011 de 14h28 à 16h05", "Avallon, 22 septembre 2011 de 14h28 à 16h05"];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "../../idiapo/d_vrille/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imagecarousel").title = lienTitle[numero];
+        document.getElementById("carouselText").innerHTML = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 2500);
+    }
+    //-->
+    </script>
+
+    <script type="text/JavaScript">
+        var note=new Array(0, 0, 0, 0, 0, 0);
+var tot;
+function totaliser(){tot=0;
+for (i=0; i<6; i++)
+{tot+=note[i]; }
+confirm(" " + note[0] + " + " + note[1] + " + " + note[2] +" + " + note[3] +" + " + note[4] +" + " + note[5] +"  \n=\n" + tot + "/6");
+}
+</script>
+
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
 </body>
