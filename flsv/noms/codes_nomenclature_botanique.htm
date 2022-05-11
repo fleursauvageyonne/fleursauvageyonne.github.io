@@ -24,6 +24,7 @@
     <meta name="robots" content="noarchive" />
     <meta http-equiv="Cache-control" content="no-store" />
     <link href="../../styles/flsv2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../../styles/flsv1.css" rel="stylesheet" type="text/css" media="screen" />
     <style type="text/css">
     <!-- a:link {
         color: #823636;
@@ -57,6 +58,21 @@
         margin: 0;
         height: 100%;
     }
+
+        #article h3 {
+        color: #9c4246;
+    }
+
+    #article .listeF h3 {
+        text-align: right;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+        #article .listeF h3 img {
+        padding-left: 6px;
+    }
     -->
     </style>
 </head>
@@ -71,8 +87,11 @@
             <div id="article">
                 <p align="right"><img src="../../imag14/ailleurs.jpg" width="266" height="39" /></p>
                 <div class="articlezdt">
-                    <h1 class="padding-t-x">
-                        <a href="../../flsv/acc/menusmart.htm"><img align="left" src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br />Codes de nomenclature</h1>
+                    <p><br /><a href="../../flsv/acc/menusmart.htm"><img align="left" src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br /><br />                    
+                     <a class="button" title="Noms latins" href="noms1.htm">Noms latins</a><a class="button" title="Noms français" href="noms2.htm">Noms français</a><a class="button" title="Noms vernaculaires" href="noms3.htm">Noms vernaculaires</a><a class="button" title="Synonymes" href="noms4.htm">Synonymes</a><a class="button" title="Genre des mots" href="noms6.htm">Le genre des noms et des mots en Botanique</a><a class="button" title="Codes de nomenclature botanique" href="">Codes de nomenclature</a></p>
+
+                    <h3 class="padding-t-x">
+                        Codes de nomenclature</h3>
                     <p><em>Les plantes changent parfois de nom avec les progrès de la Systématique...<br />mais elles ne changent pas d'identité.</em><br /><a href="http://www.arbres-lozere.fr/">Maurice Reille</a><br /><br /></p>
                    
                     <p>Les progrès de la Systématique semblent s'accompagner de codes en tous genres, même pour les botanistes&#160;!<br />Fini le <em>binomen</em>, nous sommes entrés dans l'ère de l'<a href="http://phylonames.org/code/glossary/"><em>uninomen</em></a>, finie la classification linnéenne du XVIIIe siècle précédemment utilisée, qui rapprochait parfois des espèces proches d’aspect mais éloignées génétiquement.<br />En effet, la catégorie « espèce » est presque aussi subjective que les autres catégories linnéennes selon Marc Ereshefsky, auteur de <a href="https://sfs.infosyslab.fr/index.php/page/8/?q=node%2F19"><em>Linnaean Ranks: Vestiges of a Bygone Era</em></a>, ouvrage apparemment jamais traduit en français.<br />La nomenclature phylogénétique (et donc, le PhyloCode) ne requiert pas l’utilisation de ces catégories, contrairement à tous les codes de nomenclature pour taxons qui existent depuis longtemps et qui sont en contradiction avec la théorie de l'évolution.</p>
@@ -107,32 +126,29 @@
 
                     <p>Un botaniste professionnel nous a aimablement précisé, et nous l'en remercions, que :</p>
                     <p><em>La notion d'autonyme est définie par les articles 6.2, 26.1 et surtout 22.1 du Code international de nomenclature de Shenzhen :<br />
-22.1. The name of any subdivision of a genus that includes the type of the adopted, legitimate name of the genus to which it is assigned is to repeat that generic name unaltered as its epithet, not followed by an author citation (see Art. 46 ). Such names are autonyms ( Art. 6.8; see also Art. 7.7 ).<br />
-Concrètement, un autonyme est donc un nom créé automatiquement par la publication d’une subdivision d’un genre ou d’une espèce (exemple : la publication de "Genista pilosa subsp. cebennensis" crée automatiquement l’autonyme "Genista pilosa subsp. pilosa"). Cela est valable pour les sous-espèces et les variétés, et bien entendu lors de la description du premier taxon infraspécifique pour une espèce donnée.<br />
-Il n'y a donc pas lieu de publier un autonyme, comme cela est obligatoire pour toute autre combinaison nomenclaturale. C'est le seul cas d'automatisme nomenclatural.</em></p>
+                        22.1. The name of any subdivision of a genus that includes the type of the adopted, legitimate name of the genus to which it is assigned is to repeat that generic name unaltered as its epithet, not followed by an author citation (see Art. 46 ). Such names are autonyms ( Art. 6.8; see also Art. 7.7 ).<br />
+                        Concrètement, un autonyme est donc un nom créé automatiquement par la publication d’une subdivision d’un genre ou d’une espèce (exemple : la publication de "Genista pilosa subsp. cebennensis" crée automatiquement l’autonyme "Genista pilosa subsp. pilosa"). Cela est valable pour les sous-espèces et les variétés, et bien entendu lors de la description du premier taxon infraspécifique pour une espèce donnée.<br />
+                        Il n'y a donc pas lieu de publier un autonyme, comme cela est obligatoire pour toute autre combinaison nomenclaturale. C'est le seul cas d'automatisme nomenclatural.</em>
+                    </p>
 
-<p>Donc ce nom "automatiquement" créé, cet AUTOnyme, n'est-il pas tout simplement une façon de savoir que la plante concernée a une ou des sous-espèces dont la découverte a automatiquement engendré sa création et qu'il n'est lui-même pas une sous-espèce mais...<strong>un nom</strong>, le nom de l'espèce type ? Nous persistons à ne pas comprendre pourquoi les botanistes de terrain comptent des autonymes en précisant leurs inventaires avec des cartes différentes de celles de l'espèce type.</p>
+                    <p>Donc ce nom "automatiquement" créé, cet AUTOnyme, n'est-il pas tout simplement une façon de savoir que la plante concernée a une ou des sous-espèces dont la découverte a automatiquement engendré sa création et qu'il n'est lui-même pas une sous-espèce mais...<strong>un nom</strong>, le nom de l'espèce type ? Nous persistons à ne pas comprendre pourquoi les botanistes de terrain comptent des autonymes en précisant leurs inventaires avec des cartes différentes de celles de l'espèce type.</p>
 
                     <hr width="50%">            
 
                     <p>Les Occidentaux et leurs Codes devenus obèses produisent désormais beaucoup d'objets obèses.</p>
 
-                    <p>4 x 4 (normalement véhicules tout-terrain, destinés à être "franchisseurs" d'obstacles hors route) circulant <strong>sur</strong> les routes et stationnant <strong>dans</strong> les rues des villes européennes (mais alors déguisés en SUV), villes aux artères difficilement modifiables car à la voirie étriquée d'un autre temps.</p>
+                    <p>4 x 4 (normalement véhicules tout-terrain, destinés à être "franchisseurs" d'obstacles <strong>hors</strong> route) circulant <strong>sur</strong> les routes et stationnant <strong>dans</strong> les rues des villes européennes (mais alors déguisés en SUV), villes aux artères difficilement modifiables car à la voirie étriquée d'un autre temps.</p>
                     <p>En ce qui concerne Paris, cet autre temps était celui du baron Haussman (1809-1891) qui fut préfet de l'Yonne, ce qui lui permit de faire approvisionner la capitale avec l'eau de nombreuses <a href="https://patrimoine-vanne.info/chigy/travaux/travaux.html">sources icaunaises</a>... mais de son temps on ne parlait pas de forêt urbaine, on créait des squares !</p>
                     <p>Quelles forêts (à moins que le mot forêt ait perdu son sens académique de "vaste étendue couverte d’arbres ; l’ensemble de ces arbres") vont donc pouvoir pousser sur des territoires urbains alors que leur superficie ne peut que relever des territoires ruraux ? Veut-on faire maigrir les forêts ? Mais dans ce cas on les nommait bois... Ou bien est-ce pour cacher la destruction des bois existants comme le Bois de Vincennes, par exemple, et également celle des squares comme au pied de la Tour Eiffel où la "bétonisation" bat son plein ?</p>
                     <p>Est-ce là le début d'une agroforesterie urbaine qui planterait des arbres et des arbustes pérennes, prétendument destinés à l’alimentation, dans les parcs préexistants, les "délaissés urbains" et même les cimetières pour nourrir les pauvres habitants... relégués eux en banlieue et interdits de circulation avec leurs maigres voitures ? Ou bien les places des villes vont-elles devenir des récipients à Bonsaï et des pots à Penjing nouveaux modèles obèses... du genre bonsaï&#160;4&#160;x&#160;4&#160;?</p>
 
-                    <p>Quels parcs d'engraissement intellectuel nous attendent et avec quelles inclinaisons de planchers&#160;? Le gras (mot semble-t-il apparu au <a href="https://www.academie-francaise.fr/">XIIe siècle</a>, issu du latin <em>crassus</em>, « épais ») n'est-il pas en train de faire disparaître la matière grise&#160;?</p>
+                    <p>Quels parcs d'engraissement intellectuel nous attendent et avec quelles inclinaisons de planchers&#160;? Le gras (mot semble-t-il apparu au <a href="https://www.academie-francaise.fr/">XIIe siècle</a>, issu du latin <em>crassus</em>, « épais ») n'est-il pas en train de faire disparaître la matière grise&#160;? Le volume des cerveaux régresse-t-il pour atteindre celui d'<em>Homo erectus</em> ou même, à grande vitesse, celui de l’Australopithèque... avec l'aide du <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/virus-zika">virus Zika</a> chez les femmes enceintes&#160;?
+                    </p>
 
-
-                    <p align="left"><br /><br />
-                        Retrouver<br />
-                        | Noms <a title="Noms latins" href="noms1.htm">latins</a> | <a title="Noms français" href="noms2.htm">français</a> | <a title="Noms vernaculaires" href="noms3.htm">vernaculaires</a> |<br />
-                        | <a title="Synonymes" href="noms4.htm">Synonymes</a> |<br />
-                        | Codes de nomenclature |<br /><br /></p>
+                    <p><br /><br /><a class="button" title="Noms latins" href="noms1.htm">Noms latins</a><a class="button" title="Noms français" href="noms2.htm">Noms français</a><a class="button" title="Noms vernaculaires" href="noms3.htm">Noms vernaculaires</a><a class="button" title="Synonymes" href="noms4.htm">Synonymes</a><a class="button" title="Genre des mots" href="noms6.htm">Le genre des noms et des mots en Botanique</a><a class="button" title="Codes de nomenclature botanique" href="">Codes de nomenclature</a><br /><br /></p>
 
                     <p><a href="../../flsv/acc/menusmart.htm"><img src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a></p>
-                <p style="font-size:10px">
+                    <p style="font-size:10px">
                     <img src="../../imag03/rvb1.gif" width="100%" height="4" /><br />
                     Mise à jour :&#160;mai 2022<br /><img src="../../imag10/copyleft.png" width="13" height="13" />&#160; 2005 à 2022&#160;&#160;<a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io"><em>fleursauvageyonne</em></a></p> 
                             </div>
