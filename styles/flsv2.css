@@ -300,8 +300,8 @@ a img {
 }
 
 #bandeauflsv {
-    /*width: 700px;*/
-    /*width: 648px;*/
+    width: 700px;
+    width: 648px;
     margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
