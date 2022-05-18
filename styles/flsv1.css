@@ -34,3 +34,14 @@
     /*line-height: 120%;
    font-weight: normal;*/
 }
+
+#BotCl {
+         line-height: 1;
+    }
+
+    #article h7 {
+        color: #e76a00;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: left;
+    }
