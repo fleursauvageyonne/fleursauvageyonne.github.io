@@ -35,13 +35,19 @@
    font-weight: normal;*/
 }
 
-#BotCl {
-         line-height: 1;
-    }
-
     #article h7 {
         color: #e76a00;
         font-size: 14px;
         font-weight: lighter;
         text-align: left;
+  
+    }
+
+    #article h3 {
+        color: #e76a00;
+        font-size: 1.9
+        font-weight: bold;
+        text-align: left;
+        padding: .0em 0;
+        margin-top: auto;
     }
