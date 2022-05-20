@@ -525,12 +525,6 @@ a img {
     box-sizing: border-box;
 }
 
-.articlezdt {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 780px;
-}
-
 #article table {
     font-size: 1em;
     margin: auto;
