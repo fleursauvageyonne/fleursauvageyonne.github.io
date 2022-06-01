@@ -39,6 +39,19 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+ .button4 {
+    background-color:#f2ffc7;
+     border-radius: 8px;
+        border: 2px double #e3e3e3;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 
 .alerttx {
