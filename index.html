@@ -36,12 +36,12 @@
     a:link {
         text-decoration: none;
         font-weight: bolder;
-        color: #5d24d1;
+        color: #f400a0;
     }
 
     a:visited {
         text-decoration: none;
-        color: #5d24d1;
+        color: #f400a0;
     }
 
     a:active {
@@ -54,7 +54,7 @@
     }
 
     body {
-        background-color: #b09fcf;
+        background-color: #51732c;
     }
 
      #site {
@@ -64,7 +64,7 @@
     </style>
 </head>
 
-<body>
+<body onload="changer()">
     <div id="wrapper">
         <div id="site">
         
@@ -81,12 +81,13 @@
                 </td>
             </tr>
             <tr><td><hr width="10%" /></td></tr>
-            <tr><td align="left">Voici <a href="flsv/mauve/lactuca_perennis.htm"><em>Lactuca perennis</em>, la laitue vivace,</a><br />visible en fleur dans l'Yonne dès le mois de mai. Elle est ici visitée par <em>Episyrphus balteatus</em>,<br />une mouche nommée <strong>syrphe</strong>, à la recherche du nectar dont elle se nourrit, ce qui lui permettra de contribuer à la pollinisation de cette <a href="flsv/familles_botaniques/ordAsterales2.htm#aster">Astéracée</a>.</td>
+            <tr><td align="left">En juin <a style="color:#c88aff" href="flsv/mauve/lactuca_perennis.htm"><em>Lactuca perennis</em>, la laitue vivace</a>, sera encore visible en fleur le long de certaines routes secondaires de l'Yonne pendant que, dans les champs, fleurira une <a href="flsv/Lex/Lexi1_1.htm#mess">messicole</a> comme <a href="flsv/rouge/lathyrus_tuberosus.htm"><em>Lathyrus tuberosus</em></a>.</td>
             </tr>
             <tr>
                 <td>
-                    <a href="flsv/mauve/lactuca_perennis.htm"><img src="imag14/lactuca_perennis01.jpg" width="550" height="491" title="Lactuca perennis" /></a>
-                    </td></tr>
+                    <a name="imageCarouselLien" id="imageCarouselLien"></a><img src="idiapo/dro_lathyrus/img1.jpg" width="425" height="319" name="imageCarousel" id="imageCarousel" title="Lathyrus tuberosus" />
+                </td>
+            </tr>
             <tr>
                 <td align="left"><a name="flsvy"></a></td></tr>
                    <tr><td align="left"><img src="imag10/clrd/flsvyindex.jpg" width="360" height="42" /></td></tr>
@@ -142,10 +143,27 @@
 
                 <tr>
                 <td>
-                    Mise à jour : MAI 2022<br /><img src="imag10/copyleft.png" title="Copyleft" align="abstop" width="13" height="13" />&#160; 2005 à 2022</font><br /><br /></td></tr></table>
+                    Mise à jour : JUIN 2022<br /><img src="imag10/copyleft.png" title="Copyleft" align="abstop" width="13" height="13" />&#160; 2005 à 2022</font><br /><br /></td></tr></table>
                         </div>
                     </div>
                 </div>
+
+<script type="text/javascript">
+            <!--
+            var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+            var lien = ["", "", "", ""];
+            var numero = 0;
+
+            function changer() {
+                document.imageCarousel.src = "idiapo/dro_lathyrus/" + nom[numero];
+                document.getElementById("imageCarouselLien").href = lien[numero];
+                //document.getElementById("imageCarousel").title = lienTitle[numero];
+                numero += 1;
+                if (numero == nom.length) numero = 0;
+                setTimeout("changer()", 2500);
+            }
+            //-->
+            </script>
 
  <button class="scrollToTopBtn" title="Haut de la page">▲</button>
     <script src="scripts/scripts.js" defer="defer"></script>
