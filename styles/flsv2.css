@@ -249,6 +249,7 @@ html {
 body {
     margin: 0 auto;
     font: 0.9rem Verdana, Geneva, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-size: initial;
     position: relative;
 }
 
