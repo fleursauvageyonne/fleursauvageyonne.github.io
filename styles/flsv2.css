@@ -287,12 +287,14 @@ a:visited {
 }
 
 a:active {
-    text-decoration: none;
+    color: #52aada;
     /*	font-weight: bolder;*/
 }
 
 a:hover {
+    font-style: italic;
     text-decoration: underline;
+
     /*font-weight: bolder;*/
 }
 
@@ -779,6 +781,7 @@ h3 {
 }
 
 .tableaucouleur td a:hover {
+        font-style: italic;
     text-decoration: none;
 }
 
@@ -901,27 +904,8 @@ ul#menu li a {
     white-space: nowrap;
 }
 
-ul#menu li a:hover {
-    padding: 2px 0;
-    color: #69856e;
-    background-color: #f4edf7;
-    border-top-color: #f0f0f0;
-    border-left-color: #f0f0f0;
-    border-right-color: #000000;
-    border-bottom-color: #000000;
-}
-
-ul#menu li a {
-    display: block;
-    padding: 2px 0;
-    border: 1px solid #cccccc;
-    color: #69856e;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
 ul#ordres li a:hover {
+        font-style: italic;
     padding: 2px 0;
     color: #69856e;
     background-color: #f4edf7;
