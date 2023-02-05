@@ -271,9 +271,7 @@ body {
     margin: 0 0 0 0;
     width: 90%;
     padding: 8px;
-    font-size: .7em;
-    border-top-style: solid;
-    border-top-width: thin;
+    font-size: .8em;
 }
 
 a:link {
@@ -310,10 +308,6 @@ a img {
     text-align: center;
     font-size: 0.9em;
     font-weight: normal;
-}
-
-#bandeaumenu {
-    width: 648px;
 }
 
 #bandeau {
@@ -370,56 +364,6 @@ a img {
     text-align: center;
 }
 
-#menu {
-    width: 50%;
-    height: auto;
-    text-align: left;
-    font-size: 1em;
-    font-weight: bold;
-    float: right;
-    padding: 8px;
-    margin-top: 1px;
-    margin-right: 8px;
-}
-
-#menu a img {
-    border: 0;
-}
-
-#menu p {
-    text-align: left;
-    margin: 0;
-    padding: 0
-}
-
-#menu hr {
-    margin: 10px 0;
-    width: 50%;
-    padding: 0;
-}
-
-#menu h1 {
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 1em 0 0 0;
-    padding: inherit;
-}
-
-#menu ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    list-style-position: outside;
-}
-
-#menu ul li {
-    margin: 0 0 0 0;
-    background: url(../imag10/bgris.gif) no-repeat center left;
-    padding-left: : 14px;
-}
-
 .lang {
     border: 0px solid #666666;
     margin: 5px 0 5px 0;
@@ -428,8 +372,6 @@ a img {
     font-weight: lighter;
     line-height: 105%;
 }
-
-
 
 #menu_pr {
     width: 100%;
@@ -442,7 +384,7 @@ a img {
 }
 
 #menu_pr a {
-    color: #8cad1f;
+    color: #108704;
 }
 
 #menu_pr a img {
