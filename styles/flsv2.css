@@ -660,7 +660,7 @@ a img {
 }
 
 .alert {
-    background-color: #ece0d9;
+    background-color: #f2ffc7;
     margin: 20px 0px;
     padding: 20px;
     /*	line-height: 120%;
@@ -1055,7 +1055,7 @@ ul ul {
 .menu-item {
     margin-bottom: .5em;
     margin-top: .8em;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .nav-top {
