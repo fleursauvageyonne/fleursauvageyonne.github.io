@@ -383,8 +383,19 @@ a img {
     box-sizing: border-box;
 }
 
+/* lien non visité */
 #menu_pr a {
-    color: #108704;
+    color: #1dc70a;
+}
+
+ /* lien visité */
+#menu_pr a:visited {
+        color: #1dc70a;
+}
+
+/* lien sélectionné */
+#menu_pr a:active {
+    color: #52aada;
 }
 
 #menu_pr a img {
