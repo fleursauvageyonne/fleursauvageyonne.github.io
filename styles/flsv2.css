@@ -17,6 +17,7 @@
     clear: both;
 }
 
+
 .hide-text {
     font: 0/0 a;
     color: transparent;
@@ -588,7 +589,7 @@ a img {
     margin-right: inherit;
     solid: #ffffff;
     background-color: #f1eae8;
-    font-weight: bolder;
+    font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
