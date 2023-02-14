@@ -102,3 +102,11 @@
         line-height: max(20px, 20px);
         border-radius: 220px;
     } 
+
+        .image-ronde {
+        width : 460px; height : 460px;
+        border: none;
+        -moz-border-radius : 230px;
+        -webkit-border-radius : 230px;
+        border-radius : 230px;
+    }
