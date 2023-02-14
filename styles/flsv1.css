@@ -1,7 +1,7 @@
  .button {
     background-color:#f2ffc7;
-     border-radius: 8px;
-        border: 2px double #e3e3e3;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
     color: white;
     padding: 3px 5px;
     text-align: center;
@@ -14,8 +14,8 @@
 
 .button2 {
     background-color:#e4f0f7;
-     border-radius: 8px;
-        border: 2px double #e3e3e3;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
     color: white;
     padding: 3px 5px;
     text-align: center;
@@ -28,8 +28,8 @@
 
 .button3 {
     background-color:#ffefe6;
-     border-radius: 8px;
-        border: 2px double #e3e3e3;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
     color: white;
     padding: 3px 5px;
     text-align: center;
