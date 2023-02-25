@@ -111,3 +111,9 @@
         border-radius : 230px;
     }
 
+       .image-ronde2 {
+        width : 260px; height : 260px;
+        border: none;
+        -moz-border-radius : 130px;
+        -webkit-border-radius : 130px;
+        border-radius : 130px;
