@@ -375,10 +375,11 @@ a img {
 }
 
 #menu_pr {
-    width: 100%;
+    width: 90%;
     text-align: left;
     height: 100%;
     padding: 20px 20px;
+    margin-left: inherit;
     margin-top: 10px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -405,7 +406,7 @@ a img {
 
 #menu_pr p {
     text-align: left;
-    margin: 0;
+    margin: 40px;
     padding: 20;
 }
 
@@ -419,7 +420,8 @@ a img {
     font-size: 1.8em;
     font-weight: bold;
     text-align: left;
-    padding: 20px;
+    margin-left: 40px;
+    padding: 0px;
 }
 
 #menu_pr h2 {
@@ -431,7 +433,7 @@ a img {
 }
 
 #menu_pr ul {
-    margin-left: 0;
+    margin-left: 40px;
     padding-inline-start: 0;
 }
 
@@ -443,6 +445,14 @@ a img {
     list-style-position: outside;
     background: url(../imag10/bgris.gif) no-repeat top 5px left 5px;
     padding-left: 20px;
+}
+
+.menu_alert {
+    background-color: #f2ffc7;
+    margin: 20px 0px;
+    padding: 40px;
+    /*  line-height: 120%;
+text-align: justify;*/
 }
 
 .lang_pr {
@@ -1007,6 +1017,7 @@ ul ul {
 }
 
 .menu-item {
+    margin-left: 40px;
     margin-bottom: .5em;
     margin-top: .8em;
     font-weight: bolder;
