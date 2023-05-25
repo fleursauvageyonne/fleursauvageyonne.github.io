@@ -375,7 +375,7 @@ a img {
 }
 
 #menu_pr {
-    width: 90%;
+    width: 95%;
     text-align: left;
     height: 100%;
     padding: 20px 20px;
@@ -392,7 +392,7 @@ a img {
 
  /* lien visité */
 #menu_pr a:visited {
-        color: #1dc70a;
+     color: #1dc70a;
 }
 
 /* lien sélectionné */
