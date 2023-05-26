@@ -378,8 +378,8 @@ a img {
     width: 95%;
     text-align: left;
     height: 100%;
-    padding: 20px 20px;
-    margin-left: inherit;
+    padding: 10px 20px;
+    margin-left: 35px;
     margin-top: 10px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -387,12 +387,12 @@ a img {
 
 /* lien non visité */
 #menu_pr a {
-    color: #1dc70a;
+    color: #0f9902;   
 }
 
  /* lien visité */
 #menu_pr a:visited {
-     color: #1dc70a;
+     color: #0f9902;
 }
 
 /* lien sélectionné */
@@ -406,8 +406,8 @@ a img {
 
 #menu_pr p {
     text-align: left;
-    margin: 40px;
-    padding: 20;
+    margin-left: 26px;
+    padding: 10px;
 }
 
 #menu_pr hr {
@@ -420,7 +420,7 @@ a img {
     font-size: 1.8em;
     font-weight: bold;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 35px;
     padding: 0px;
 }
 
@@ -433,7 +433,7 @@ a img {
 }
 
 #menu_pr ul {
-    margin-left: 40px;
+    margin-left: 35px;
     padding-inline-start: 0;
 }
 
@@ -450,7 +450,7 @@ a img {
 .menu_alert {
     background-color: #f2ffc7;
     margin: 20px 0px;
-    padding: 40px;
+    padding: 35px;
     /*  line-height: 120%;
 text-align: justify;*/
 }
@@ -465,15 +465,6 @@ text-align: justify;*/
 }
 
 .lang {
-    border: 0px solid #666666;
-    margin: 5px 0 5px 0;
-    padding: 0px;
-    font-size: 0.8em;
-    font-weight: lighter;
-    line-height: 105%;
-}
-
-.lang_pr {
     border: 0px solid #666666;
     margin: 5px 0 5px 0;
     padding: 0px;
@@ -1017,7 +1008,7 @@ ul ul {
 }
 
 .menu-item {
-    margin-left: 40px;
+    margin-left: 35px;
     margin-bottom: .5em;
     margin-top: .8em;
     font-weight: bolder;
