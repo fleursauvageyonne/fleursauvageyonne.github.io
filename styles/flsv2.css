@@ -269,7 +269,8 @@ body {
 }
 
 #pagebascoul {
-    margin: 0 0 0 0;
+    text-align: center;
+    margin: auto;
     width: 90%;
     padding: 8px;
     font-size: .6em;
