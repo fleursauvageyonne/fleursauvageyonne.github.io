@@ -313,6 +313,16 @@ a img {
     font-weight: normal;
 }
 
+#bandeau_sflngr {
+    width: 700px;
+    width: 648px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
 #bandeau {
     border: 0;
     padding: 3px 6px 3px 6px;
