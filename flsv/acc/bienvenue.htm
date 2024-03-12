@@ -63,9 +63,25 @@
 
     -->
     </style>
+    <script type="text/javascript">
+    <!--
+    var nom = ["img1.jpg", "img2.jpg"];
+    var lien = ["", ""];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "../../idiapo/d_mois_juin/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imageCarousel").title = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 2500);
+    }
+    //-->
+    </script>
 </head>
 
-<body>
+<body onload="changer()">
     <div id="wrapper">
         <div id="site">
             <div id="bandeau">
@@ -88,35 +104,31 @@
                         <tr><td height="30px"></td></tr>
                     </table>
 
-                       <p align="center"><img src="../../imag14/chemin.jpg" width="600" height="795" title="Un chemin bordés de fleurs discrètes"></p>
+                     <p align="center"><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../idiapo/d_mois_juin/img1.jpg" width="600" height="795" name="imageCarousel" id="imageCarousel" title="Un chemin bordés de fleurs discrètes" /></p>
 
                        <table summary="" width="95%">
-                        <tr><td colspan="2" valign="top">Parmi elles, le <a href="../../flsv/jaune/lotus_corniculatus.htm">lotier corniculé</a> ou l'épervière piloselle, hôte notamment des chenilles d'un curieux papillon crépusculaire <strong>à plumes</strong> que vous n'avez peut-être jamais vu et que vous découvrirez avec elle dont le nom latin est <a href="../../flsv/jaune/pilosella_officinarum.htm"><em>Pilosella officinarum</em></a>&#160;:</td></tr><tr><td height="15px"></td></tr>
-                    </table>     
+                        <tr><td colspan="2" valign="top">Parmi elles, le <a href="../../flsv/jaune/lotus_corniculatus.htm">lotier corniculé</a> ou l'épervière piloselle, hôte notamment des chenilles d'un curieux papillon crépusculaire <strong>à plumes</strong> que vous n'avez peut-être jamais vu et que vous découvrirez avec elle dont le nom latin est <a href="../../flsv/jaune/pilosella_officinarum.htm"><em>Pilosella officinarum</em></a>&#160;:</td></tr><tr><td height="15px"></td></tr>                         
 
-                         <p align="center"><a href="../../flsv/jaune/pilosella_officinarum.htm"><img src="../../imag01/pilosella_officinarum4.jpg" width="600" height="214" title="Pilosella officinarum"></a></p>
-
-                         <table summary="" width="95%">
+                         <tr><td colspan="2" valign="top" align="center"><a href="../../flsv/jaune/pilosella_officinarum.htm"><img src="../../imag01/pilosella_officinarum4.jpg" width="600" height="214" title="Pilosella officinarum"></a></td></tr>
+   
                         <tr><td colspan="2" valign="top">N'offrant pas d'outils aussi puissants que ceux offert par les <a href="https://www.gbif.org/dataset/search?publishing_country=FR">bases de données</a> existant au sein du <a href="https://www.gbif.org/fr/what-is-gbif">GBIF</a>, le <a href="../../flsv/acc/accueil2.htm">mode d'emploi</a> de <em>FLSVY-et d'ailleurs</em> est très simple.</td></tr>
                         <tr><td colspan="2" valign="top"><strong>Dans l'Yonne</strong> ou ailleurs, les découvertes qui vous attendent peuvent tout simplement se trouver, en toutes saisons, dans les moindres recoins où les plantes, pour croître avant de dépérir silencieusement, se contentent de recevoir et d'absorber la lumière et <a href="http://www.exobiologie.info/articles/page7/page7.html">l’eau</a>.</td></tr>
                             <tr><td height="30px"></td></tr>
 
-                <tr><td align="center" colspan="2" height="274px"><img src="../../imag10/a_pulsatilla.jpg" width="325" height="274" title="Pulsatilla vulgaris"><br /><font size="-1"><a href="../../flsv/violet/pulsatilla_vulgaris.htm"><em>Pulsatilla vulgaris</em></a>, l'herbe au vent.</font></td></tr>
+                <tr><td align="center" colspan="2" height="274px" style="font-size: small;"><img src="../../imag10/a_pulsatilla.jpg" width="325" height="274" title="Pulsatilla vulgaris"><br /><a href="../../flsv/violet/pulsatilla_vulgaris.htm"><em>Pulsatilla vulgaris</em></a>, l'herbe au vent.</td></tr>
                 <tr><td height="15px"></td></tr>
 
                         <tr><td colspan="2" valign="top"><strong><em>Voyez-vous ces fleurs&#160;?<br />C'est avec elles que vous allez pouvoir penser autrement.</em></strong><br />écrivait DARWIN le 16 juillet 1860 dans une lettre adressée à <a href="https://specialcollections-blog.lib.cam.ac.uk/?p=21175/">J.S.&#160;Henslow</a>.</td></tr>
                         <tr><td height="15px"></td></tr>
                 
-                  <tr><td align="center" colspan="2" height="381px"><img src="../../imag14/lactuca_serriola0.jpg" width="461" height="381" title="Lactuca serriola"><br /><font size="-1"><a href="../../flsv/jaune/lactuca_serriola.htm"><em>Lactuca serriola</em></a>,<br />Courbevoie (Hauts-de-Seine), 7 août 2021.</font></td></tr>
+                  <tr><td align="center" colspan="2" height="381px" style="font-size: small;"><img src="../../imag14/lactuca_serriola0.jpg" width="461" height="381" title="Lactuca serriola"><br /><a href="../../flsv/jaune/lactuca_serriola.htm"><em>Lactuca serriola</em></a>,<br />Courbevoie (Hauts-de-Seine), 7 août 2021.</td></tr>
                   <tr><td height="15px"></td></tr>
 
                         <tr><td colspan="2" valign="top">Les fleurs de cette scarole sont devenues des petits fruits que les botanistes nomment <a href="../../flsv/Lex/Lexi1.htm#cyp">cypsèles</a> car c'est une fleur de la famille des <a href="../../flsv/familles_botaniques/ordAsterales2.htm#aster">Asteraceae</a>.</td></tr>
                         <tr><td height="15px"></td></tr>
 
                    <tr><td colspan="2" valign="top">Vous débutez en Botanique&#160;?</td></tr>
-               </table>
-                  
-               <table summary="" width="95%">
+              
                     <tr><td colspan="2" valign="top"><img src="../../imag10/clrd/herbvirt1.jpg" width="334" height="92" title="L'Herbier virtuel icaunais de Claude Richard" /><br />botaniste AMATEUR passionné (à l'origine des pages qui suivent),<br />ancien membre de l'Association Icaunaise de Botanique<br /><img src="../../imag10/clrd/AIB.gif" width="41" height="39" title="AIB" /></td></tr>
                 
                     <tr><td colspan="2" valign="top"><strong>pourrait peut-être vous aider à faire vos premiers pas</strong>, sans prétendre bien entendu rivaliser avec <a title="Pl@ntNet" href="https://plantnet.org/apropos/">Pl@ntNet</a> ni TelaBotanica. La Botanique est en effet un domaine difficile et il est parfois ardu d'y démêler le vrai du faux quand on est <strong>botaniste amateur</strong>.</td></tr>
@@ -126,19 +138,19 @@
                    <tr><td colspan="2" valign="top">Comme l'écrit <a href="../../flsv/acc/biblio.htm#ti">Alain Corbin</a> dans son ouvrage <em>Terra Incognita</em>&#160;:<br />«&#160;[...] répétons-le, observer n'est pas comprendre.&#160;»</td></tr>
                     <tr><td height="15px"></td></tr>
 
-                    <tr><td colspan="2" height="331px" valign="top" align="center"><img src="../../imag10/fleurs_apetales.jpg" width="325" height="331" title="Fleurs femelles apétales  du noisetier"><br /><font size="-1"><a href="../../flsv/arbres/corylus_avellana.htm"><em>Corylus avellana</em></a>, fleurs femelles apétales.</font></td></tr>
+                    <tr><td colspan="2" height="331px" valign="top" align="center" style="font-size: small;"><img src="../../imag10/fleurs_apetales.jpg" width="325" height="331" title="Fleurs femelles apétales  du noisetier"><br /><a href="../../flsv/arbres/corylus_avellana.htm"><em>Corylus avellana</em></a>, fleurs femelles apétales.</td></tr>
                      <tr><td height="15px"></td></tr>
 
                      <tr><td colspan="2" valign="top"><em>FLSVY-et d'ailleurs</em> qui, initialement, vous accueillait <a href="../../flsv/acc/accueil0.htm">ainsi</a>, s'améliorera, nous l'espérons, petit à petit pour que vous puissiez le trouver dans votre poche au cours de vos balades en chantant, fredonnant ou récitant peut-être des ballades entraînantes comme...</td></tr>
 
-                    <tr><td colspan="2" valign="top" align="center">
-                        <a href="https://www.youtube.com/watch?v=DGCSE2KAsK8" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="La ballade de Clérambard (1969)" /><font size="-1">La ballade de Clérambard</font></a>
+                    <tr><td colspan="2" valign="top" align="center" style="font-size:small;">
+                        <a href="https://www.youtube.com/watch?v=DGCSE2KAsK8" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="La ballade de Clérambard (1969)" />&#160;La ballade de Clérambard</a>
                         </td></tr>
 
                     <tr><td colspan="2" valign="top">... ou pour que vous puissiez vous détendre tout en approfondissant vos connaissances durant vos moments casaniers.</td></tr>
 
-                    <tr><td colspan="2" valign="top" align="center">
-                        <a href="https://www.youtube.com/watch?v=XRb7AJgTZeA" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="De la musique pour votre esprit" /><font size="-1">Music for Your Mind (un antidote acoustique)</font></a>
+                    <tr><td colspan="2" valign="top" align="center" style="font-size:small;">
+                        <a href="https://www.youtube.com/watch?v=XRb7AJgTZeA" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="De la musique pour votre esprit" />&#160;Music for Your Mind (un antidote acoustique)</a>
                         </td></tr>
 
                                        
@@ -179,35 +191,27 @@
                     <tr><td valign="top">
                     En hommage à un apiculteur nommé <a href="https://www.youtube.com/watch?v=hMSnhh8qQGQ" target="_blank">Anton Janša</a> (1734-1773), <strong>le 20 mai</strong> de chaque année est désormais décrété "Journée mondiale des abeilles".<br /><br /></td></tr>                
                  <tr><td valign="top">Mais c'est tout au long des années qui passent que nous croisons des insectes et pas seulement des abeilles.</td></tr>
-                </table>
-
-                 <table summary="" width="95%">
+               
                  <tr><td colspan="2" valign="top" align="left"><a class="button" href="../../flsv/apis/abeilles.htm">Abeilles</a><a class="button" href="../../flsv/apis/papillons.htm">Lépidoptères</a><a class="button" href="../../flsv/apis/anthophiles.htm">Insectes anthophiles</a></td></tr>
 
                   <tr><td colspan="2" valign="top">Des insectes <a href="../../flsv/apis/anthophiles.htm#carnassier">carnassiers</a>, pollinisateurs ou non, anthophiles ou non, créateurs de <a href="../../flsv/galles/cecidies.htm">formations "fascinantes"</a> ou <a name="demoiselle"></a>vifs et translucides comme peuvent l'être les <a href="../../flsv/apis/anthophiles.htm#odonata">demoiselles</a> souvent nommées agrions.<br /><br /></td></tr>
 
             <tr><td colspan="2" align="center"><img src="../../imag14/demoiselle_1.jpg" width="461" height="610" title="Platycnemis pennipes"><br /><a href="https://www.youtube.com/watch?v=UHAmivegWXM&t" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="Libellule de Giverny de Pierre Lozère" /><font size="-1">Libellule de Giverny de Pierre Lozère</font></a><br />Une demoiselle est presque invisible au milieu des feuilles.<br />L'avez-vous vue ?<br /><br /><img src="../../imag14/demoiselle_2.jpg" width="461" height="444" title="Platycnemis pennipes, agrion à larges pattes ou pennipatte bleuâtre"><br /><font size="-1">Dordives (Loiret) - 22 juin 2023</font><br /><br /><a href="https://www.radiofrance.fr/franceculture/podcasts/les-racines-du-ciel/l-entomologie-comme-art-de-philosopher-avec-alain-cugno-3699610" target="_blank"><img src="../../imag10/cornet.jpg" width="55" height="30" title="L'entomologie comme art de philosopher avec Alain Cugno" /><font size="-1">La libellule et le philosophe</font></a></td></tr>  
                            
-             <tr>                 
-                  <td height="30"></td>
-                    </tr>
-                </table> 
+             <tr><td height="30"></td></tr>
+            </table> 
 
                 <p><a class="button" href="../../flsv/acc/bienvenue.htm#bvn">Bienvenue</a><a class="button" title="Mode d'emploi de FLSVY-et d'ailleurs" href="../../flsv/acc/accueil2.htm">Mode d'emploi de <em>FLSVY-et d'ailleurs</em></a></p>
 
-                <table>
-                    <tr>
-                        <td height="30"></td>
-                    </tr>
+                <table><tr><td height="30"></td></tr>
                 </table>   
 
                 <p><br /><br /><a href="../../flsv/acc/menusmart.htm"><img align="left" src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a></p>
 
                         <p><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io"><img src="../../imag00/bdp.jpg" width="823" height="68" title=""></a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                               </div>
+                                           </div>
+                                       </div>
                                     
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
