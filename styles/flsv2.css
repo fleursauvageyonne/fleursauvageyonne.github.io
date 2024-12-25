@@ -249,7 +249,8 @@ html {
 body {
     margin: 0 auto;
     font: 1.0rem Helvetica, "Bitstream Vera Sans", Verdana, Geneva, Arial, sans-serif;
-    font-size:large;;
+    font-size:large;
+    font-weight: bolder;
     position: relative;
 }
 
