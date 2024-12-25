@@ -54,8 +54,8 @@
 }
  .button5 {
     background-color:#ffc7ca;
-     border-radius: 8px;
-        border: 2px double #e3e3e3;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
     color: white;
     padding: 6px 8px;
     text-align: center;
@@ -93,8 +93,6 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-
-
 
 .alerttx {
     background-color: #f2ffc7;
