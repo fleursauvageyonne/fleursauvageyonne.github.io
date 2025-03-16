@@ -59,7 +59,8 @@
 </head>
 
 <body onload="changer()">
-    <div id="site">
+    <div id="wrapper">
+       <div id="site">
              <div id="bandeauflsv">
                 <p align="center"><a href="../acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>
                 <div id="bandeau">
@@ -68,20 +69,18 @@
 
             <table align="center" width="650">
                     <tr>
-                        <td>&#160;&#160;</td>
-                        <td align="left"><a href="#descriptif">Pour en savoir plus</a></td>
+                        <td>&#160;&#160;</td><td align="left"><a href="#descriptif">Pour en savoir plus</a></td>
                     </tr>
                     <tr>
-                        <td>&#160;&#160;</td>
-                        <td align="left"><a href="#descriptif"><img src="../../imag03/fledesc.gif" width="15" height="20" title="Pour en savoir plus" align="top" /></a></td>
+                        <td>&#160;&#160;</td><td align="left"><a href="#descriptif"><img src="../../imag03/fledesc.gif" width="15" height="20" title="Pour en savoir plus" align="top" /></a></td>
                     </tr>
                 </table>
 
                 <p align="center" style="font-size:small;"><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../idiapo/dblanc/d_stellaria_holostea/img1.jpg" width="457" height="607" name="imageCarousel" id="imageCarousel" title="Stellaria holostea" /><br />Fin avril - Début mai 2009</p>
 
-            <table summary="descriptif" width="583" cellpadding="10" bgcolor="#ffffff" align="center"> 
+            <table width="583" cellpadding="10" bgcolor="#ffffff" align="center"> 
                 <tr>
-                    <td align="center"><a name="descriptif"></a><em>STELLARIA holostea</em> L.<br />Stellaire holostée</td>
+                   <td align="center"><a name="descriptif"></a><em>STELLARIA holostea</em> L.<br />Stellaire holostée</td>
                 </tr>
                 <tr>
                     <td width="559" align="left">
@@ -139,10 +138,10 @@
             <p align="center"><a href="../azur/hyacinthoides_non-scripta.htm">Jacinthe des bois</a> et stellaire holostée le long des routes nivernaises.</p>
             <p align="center" style="font-size:small;"><img src="../../imag14/nievre.jpg" width="492" height="343" title="Jacinthe des bois et stellaire holostée" /><br />Mai 2019</p>
 
-                    <div id="bandeauflsv">
-                        <p align="center"><a href="../acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>
+      <div id="bandeauflsv">
+            <p align="center"><a href="../acc/menusmart.htm"><img src="../../imag10/111/clicmenu.jpg"></a></p>
 
-                            <table align="center" summary="index colorimétrique" class="tableaucouleur">
+                    <table align="center" summary="index colorimétrique" class="tableaucouleur">
                             <tr>
                                 <td bgcolor="#fffcd6"><a href="../var/LF15.htm">
                                 <img src="../../imag10/arcenciel.jpg" title="fleurs multicolores" width="21" /></a></td>
@@ -169,27 +168,28 @@
                             </tr>
                         </table>
                         
-               <div id="pagebasflr">Mise à jour&#160;:&#160;janvier 2025<br /><img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2025 - <a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io"><em>fleursauvageyonne</em></a></div>
+           <div id="pagebasflr">Mise à jour&#160;:&#160;janvier 2025<br /><img src="../../imag10/copyleft.png" width="13" height="13" />&#160;2005 à 2025 - <a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io"><em>fleursauvageyonne</em></a></div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                <script type="text/javascript">
-                <!--
-                var nom = ["img1.jpg", "img2.jpg", "img3.jpg"];
-                var lien = ["", "", ""];
-                var numero = 0;
+    <script type="text/javascript">
+    <!--
+        var nom = ["img1.jpg", "img2.jpg", "img3.jpg"];
+        var lien = ["", "", ""];
+        var numero = 0;
 
-                function changer() {
-                    document.imageCarousel.src = "../../idiapo/dblanc/d_stellaria_holostea/" + nom[numero];
-                    document.getElementById("imageCarouselLien").href = lien[numero];
-                    //document.getElementById("imageCarousel").title = lienTitle[numero];
-                    numero += 1;
-                    if (numero == nom.length) numero = 0;
-                    setTimeout("changer()", 2400);
-                }
-                //-->
-                </script>
+        function changer() {
+            document.imageCarousel.src = "../../idiapo/dblanc/d_stellaria_holostea/" + nom[numero];
+            document.getElementById("imageCarouselLien").href = lien[numero];
+            //document.getElementById("imageCarousel").title = lienTitle[numero];
+            numero += 1;
+            if (numero == nom.length) numero = 0;
+            setTimeout("changer()", 2400);
+        }
+        //-->
+    </script>
             
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
