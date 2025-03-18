@@ -55,7 +55,7 @@
     </style>
 </head>
 
-<body>
+<body onload="changer()">
     <div id="wrapper">
         <div id="site">
         
@@ -113,8 +113,10 @@
             <td align="center"><a class="button4" href="flsv/acc/accueil01.htm" title="Accueil" href="flsv/acc/bienvenue.htm">Accueil&#160;►</a></td>
         </tr>
             <tr>
-                <td align="center" style="font-size:small;">Tandis que <a href="flsv/acc/yonne_4.htm#jy">les grues cendrées</a>, <em>Grus grus</em> (Linnaeus, 1758),<br />se font entendre,<br /><a href="flsv/arbres/cornus_mas.htm"><em>Cornus mas</em></a>, le cornouiller mâle déploit ses pétales.<br /><br />
-                <img src="imag01/cornus_mas08.jpg" width="221" height="373" title="Cornus mas, bourgeons floraux du cornouiller mâle" />&#160;<img src="imag01/cornus_mas09.jpg" width="221" height="373" title="Cornus mas, bourgeons floraux du cornouiller mâle" /><br />5 mars 2018 - Lucy-sur-Cure<br /><br />Et <a href="flsv/jaune/potentilla_verna.htm"><em>Potentilla verna</em></a> ne va pas tarder à ouvrir ses pétales échancrés<br /><br /><img src="imag14/potentilla_verna.jpg" width="221" height="219" title="Potentilla verna, la potetille printanière" /></td>
+                <td align="center" style="font-size:small;">Tandis que <a href="flsv/acc/yonne_4.htm#jy">les grues cendrées</a>, <em>Grus grus</em> (Linnaeus, 1758),<br />continuent à se faire entendre,<br /><a href="flsv/azur/vinca_minor.htm"><em>Vinca minor</em></a>, la petite pervenche, fait son apparition.<br /><br />
+                 <a name="imageCarouselLien" id="imageCarouselLien"></a><img src="idiapo/dbl_vinca_minor/img1.jpg" width="407" height="407" name="imageCarousel" id="imageCarousel" title="Vinca minor" />
+           <div id="carouselText" style="text-align:center; width:auto; font-size:small; margin:20;padding:10"></div><br /><br />
+                Et <a href="flsv/jaune/potentilla_verna.htm"><em>Potentilla verna</em></a> ne va pas tarder à ouvrir ses pétales échancrés<br /><br /><img src="imag14/potentilla_verna.jpg" width="221" height="219" title="Potentilla verna, la potetille printanière" /></td>
             </tr>
             <tr><td align="center"><a class="button" href="flsv/Lex/Lexi1_1.htm#petal">Pétale : un mot à découvrir !</a></td>
             </tr>
@@ -134,7 +136,7 @@
                 <td align="justify"><a href="flsv/acc/bienvenue.htm#herboristes">Pas toutes</a> ses découvertes cependant, pleines de <a href="flsv/Lex/Lexi5.htm#curiositas"><em>curiositas</em></a>, ce désir de connaître quand bien même on ne peut pas tout savoir ni <a href="flsv/acc/yonne_4.htm#inhospitalier">comprendre</a> par exemple ce qui perdure encore au XXIe siècle.</td>
               </tr>
               <tr>
-                <td>
+                 <td style="font-size:small;">
                 <a href="flsv/jaune/erysimum_cheiri.htm"><img src="imag01/erysimum_cheiri4.jpg" width="428" height="495" title="Erysimum cheiri, giroflée des murailles" /></a><br /><a href="flsv/jaune/erysimum_cheiri.htm"><em>Erysimum cheiri</em> (L.) Crantz, 1769</a>,<br />la giroflée des murailles</td>
             </tr>
             <tr>
@@ -195,6 +197,25 @@
          </table>
                                         </div>
                                     </div>
+
+<script type="text/javascript">
+    <!--
+    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg"];
+    var lien = ["", "", "", "", "", ""];
+    var lienTitle = ["Merry-sur-Yonne, 20 mars 2011", "Merry-sur-Yonne, 20 mars 2011", "Merry-sur-Yonne, 20 mars 2011", "Merry-sur-Yonne, 20 mars 2011", "Trucy-sur-Yonne, 19 avril 2010", "Trucy-sur-Yonne, 19 avril 2010"];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "idiapo/dbl_vinca_minor/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imagecarousel").title = lienTitle[numero];
+        document.getElementById("carouselText").innerHTML = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 2500);
+    }
+    //-->
+    </script>
                         
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="scripts/scripts.js" defer="defer"></script>
