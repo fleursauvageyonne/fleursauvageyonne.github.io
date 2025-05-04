@@ -60,7 +60,7 @@
     </style>
 </head>
 
-<body onload="changer()"> 
+<body> 
  <div id="wrapper">
         <div id="site">
             <div id="bandeau">
@@ -416,25 +416,6 @@
                                           </div>
                                       </div>
                                   </div>
-
-<script type="text/javascript">
-    <!--
-    var nom = ["img04.jpg", "img05.jpg", "img06.jpg"]
-        var lien = ["", "", "", ""];
-    var lienTitle = ["Forêt urbaine à Paris, place de Catalogne", "Forêt urbaine à Paris, place de Catalogne", "93 - Sevran Livry, 69 - Oullins, 77 - Bray-sur-Seine"];
-    var numero = 0;
-
-    function changer() {
-        document.imageCarousel.src = "../../idiapo/ailleurs/" + nom[numero];
-        document.getElementById("imageCarouselLien").href = lien[numero];
-        //document.getElementById("imagecarousel").title = lienTitle[numero];
-        document.getElementById("carouselText").innerHTML = lienTitle[numero];
-        numero += 1;
-        if (numero == nom.length) numero = 0;
-        setTimeout("changer()", 3500);
-    }
-    //-->
-    </script>
 
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
