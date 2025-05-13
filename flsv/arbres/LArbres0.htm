@@ -19,7 +19,7 @@
     <meta http-equiv="Content-script-type" content="text/javascript" />
     <meta http-equiv="Content-style-type" content="text/css" />
     <meta http-equiv="Content-language" content="fr" />
-    <meta name="keywords" content="FLSVY et d&#039;ailleurs, flsvy et d&#039;ailleurs, fleurs sauvages de l&#039;Yonne et d&#039;ailleurs en France, reconna&#238;tre une fleur sauvage, fleurs et musique, Enumeratio silvaticorum agrorumque florum Icaunae in Burgundia (Gallia celtica), wild flowers from Yonne in Burgundy and elsewhere, botanique dans l&#039;Yonne et ailleurs, flores selvagens de Fran&#231;a, fiori spontanee nell&#039;Yonne Borgogna Francia, wilde blumen von Yonne Burgund Frankreich, wilde bloemen van Yonne Bourgondi&#235; Frankrijk, Veronica salicifolia" />
+    <meta name="keywords" content="FLSVY et d&#039;ailleurs, flsvy et d&#039;ailleurs, fleurs sauvages de l&#039;Yonne et d&#039;ailleurs en France, reconna&#238;tre une fleur sauvage, fleurs et musique, Enumeratio silvaticorum agrorumque florum Icaunae in Burgundia (Gallia celtica), wild flowers from Yonne in Burgundy and elsewhere, botanique dans l&#039;Yonne et ailleurs, flores selvagens de Fran&#231;a, fiori spontanee nell&#039;Yonne Borgogna Francia, wilde blumen von Yonne Burgund Frankreich, wilde bloemen van Yonne Bourgondi&#235; Frankrijk, Veronica salicifolia, Prostanthera cuneata" />
     <meta name="robots" content="all" />
     <meta name="robots" content="index, follow" />
     <meta name="robots" content="noarchive" />
@@ -65,7 +65,7 @@
     </style>
 </head>
 
-<body>
+<body onload="changer()"> 
  <div id="wrapper">
         <div id="site">
             <div id="bandeau">
@@ -75,7 +75,7 @@
 
                        <p><a href="../acc/menusmart.htm"><img align="left" src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br /><br /></p>
             
-               <h1 class="padding-t-x">Forêt paisible à Montparnasse ?</h1>
+               <h1 class="padding-t-x">Forêt paisible à Montparnasse&#160;?</h1>
 
             <p align="center" style="font-size:small;"><img src="../../imag14/forêt_urbaine.jpg" width="492" height="656" title="Forêt, place de Catalogne, Paris XIVe"><br />Forêt<br />(interdite aux chiens et aux personnes SDF et sans-abri),<br />place de Catalogne à Paris, 30 avril 2025</p>
 
@@ -94,16 +94,37 @@
          <p align="center" style="font-size:small;"><img src="../../imag14/veronica_salicifolia2.jpg" width="492" height="316" title="Veronica salicifolia"><br /><em>Veronica salicifolia</em> G.Forst.<br />place de Catalogne à Paris, 7 mai 2025</p>
 
           <p align="center"><a href="https://www.youtube.com/watch?v=efLF0nX5AMc" target="_blank"><img src="../../imag10/avcmskp.gif" width="25" height="24" title="Les fêtes d'Hébé" />&#160;Les fêtes d'Hébé</a></p>
-          <p align="left" style="font-size:small;">La place de Catalogne se préparerait-elle à fêter une date anniversaire&#160;? Celle de la création des <a href="https://books.google.fr/books?id=w20YP4X0XuMC&printsec=frontcover&hl=fr#v=onepage&q&f=false">Fêtes d'Hébé</a> de Jean-Philippe Rameau sur un livret d'<a href="https://fr.wikipedia.org/wiki/Antoine_Gautier_de_Montdorge">Antoine-César Gautier de Montdorge</a> le 21 Mai 1739&#160;?</p>        
+          <p align="left">La place de Catalogne se préparerait-elle à fêter une date anniversaire&#160;? Celle de la création des <a href="https://books.google.fr/books?id=w20YP4X0XuMC&printsec=frontcover&hl=fr#v=onepage&q&f=false">Fêtes d'Hébé</a> de Jean-Philippe Rameau sur un livret d'<a href="https://fr.wikipedia.org/wiki/Antoine_Gautier_de_Montdorge">Antoine-César Gautier de Montdorge</a> le 21 Mai 1739&#160;?</p>
+
+          <p align="left">À moins qu'il faille la considérer comme salvatrice d'une Lamiacée disparue de Tasmanie en Australie à cause de ses ceuillettes intensives, une menthe nommée Alpine mint bush, <a href="https://nre.tas.gov.au/Documents/Prostanthera-cuneata.pdf"><em>Prostanthera cuneata</em></a> Benth. in DC. (1848)&#160; nous annonçant peut-être la plantation prochaine de gommiers des neiges, <em>Eucalyptus pauciflora</em> subsp. <em>niphophila</em>&#160;?</p>
+
+        <p align="center" style="font-size:small;"><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="../../idiapo/prostanthera_cuneata/img1.jpg" width="492" height="656" name="imageCarousel" id="imageCarousel" title="Aegonychon purpurocaeruleum" /><br /><em>Prostanthera cuneata</em> Benth.<br />place de Catalogne à Paris, 7 mai 2025</p>
 
         <p align="center"><br /><br /><a class="button" title="Forêts et bois : des écosystèmes complexes" href="../arbres/LArbres.htm#forêts">Forêts et bois : des écosystèmes complexes</a></p>
 
             <p><br /><br /><a href="../acc/menusmart.htm"><img align="left" src="../../imag10/icosmart.jpg" width="29" height="18" title="MENU" /></a><br /><br /></p>
 
             <p><a title="page d'accueil en ligne" href="https://fleursauvageyonne.github.io"><img src="../../imag00/bdp.jpg" width="823" height="68"></a></p>
-                                         </div>
-                                     </div>
-                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<script type="text/javascript">
+    <!--
+    var nom = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+    var lien = ["", "", ""];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "../../idiapo/prostanthera_cuneata/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imageCarousel").title = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 2900);
+    }
+    //-->
+    </script>
 
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="../../scripts/scripts.js" defer="defer"></script>
