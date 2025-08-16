@@ -146,3 +146,7 @@
         -webkit-border-radius : 130px;
         border-radius : 130px;
     }
+
+img {
+   border-radius: 2%;
+   }
