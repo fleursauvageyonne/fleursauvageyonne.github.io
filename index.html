@@ -55,12 +55,13 @@
     </style>
 </head>
 
-<body>            
+<body onload="changer()">             
         <table width="650" align="center" cellspacing="10" cellpadding="10" bgcolor="#ffffff">
          <tr>
             <td align="center" colspan="5">https://fleursauvageyonne.github.io/</td></tr>
          <tr><td align="center" colspan="5"><img title="FLSVY-et d'ailleurs" src="imag00/titrindex2.jpg" width="452" height="163" /><br /><font size="+2" style="font-family:Lucida Calligraphy;"><em>et d'ailleurs</em></font></td></tr>
-         <tr><td colspan="5" align="center" style="font-size:small;"><img src="idiapo/ailleurs/img00.jpg" width="600" height="270" name="imageCarousel" id="imageCarousel" title="Ailleurs" /><br />4 mars 2024, <a href="flsv/acc/yonne_4.htm#Serein">Le Serein</a> en crue devant Montréal dans l'Yonne © Claire Martin-Lucy</td></tr>
+         <tr><td colspan="5" align="center" style="font-size:small;"><a name="imageCarouselLien" id="imageCarouselLien"></a><img src="idiapo/yonne/img00.jpg" width="600" height="270" name="imageCarousel" id="imageCarousel" title="Dans le département de l'Yonne" /><br />
+            <div id="CarouselText" style="text-align:center; width:auto; font-size:small; margin:0;padding:0"></div></td></tr>
          <tr>
             <td align="center" colspan="5"><a class="button4" href="flsv/acc/bienvenue.htm#bvn" title="Entrez / Welcome / Bienvenidos / Välkommen / добро пожаловать / مَرْحَبا  / いらっしゃいませ / 欢迎" href="flsv/acc/bienvenue.htm">Bienvenue&#160;►</a><br /><font size="3">Welcome / Bienvenidos / Välkommen / Benvenuto<br />добро пожаловать / مَرْحَبا  /  Chào mừng<br />いらっしゃいませ / 欢迎<br />pարի գալուստ</font></a><br /><img src="imag10/smtppz.jpg" width="100" height="46" title="smartphone à l'horizontal - pincer pour zoomer"></td>
         </tr>
@@ -186,6 +187,37 @@
             <td align="center" style="font-size:small;" colspan="5"><em>Conception/maintenance informatiques<br /><a href="flsv/acc/bienvenue.htm#mail">Annick Jani</a></em><br />Mise à jour&#160;:&#160;NOVEMBRE 2025<br /><img src="imag10/copyleft.png" title="Copyleft" align="abstop" width="13" height="13" />&#160;2005 à 2025</font></td>
         </tr>
         </table>
+
+        <script type="text/javascript">
+    <!--
+    var nom = ["img00.jpg", "img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"];
+    var lien = ["", "", ""];
+    var lienTitle = ["Peupleraie, Joigny, 13 novembre 2025", "St-Georges-sur-Baulche, 13 novembre 2025", "Vue de Villefargeau, 13 novembre 2025", "4 mars 2024, Le Serein en crue devant Montréal dans l'Yonne © Claire Martin-Lucy", "Tonnerre, 25 avril 2024"];
+    var numero = 0;
+
+    function changer() {
+        document.imageCarousel.src = "idiapo/yonne/" + nom[numero];
+        document.getElementById("imageCarouselLien").href = lien[numero];
+        //document.getElementById("imageCarousel").title = lienTitle[numero];
+        document.getElementById("CarouselText").innerHTML = lienTitle[numero];
+        numero += 1;
+        if (numero == nom.length) numero = 0;
+        setTimeout("changer()", 3200);
+    }
+    //-->
+    </script>
+    }
+    //-->
+    </script>
+
+
+
+
+
+
+
+
+
                         
 <button class="scrollToTopBtn" title="Haut de la page">▲</button>
 <script src="scripts/scripts.js" defer="defer"></script>
