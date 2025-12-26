@@ -464,10 +464,6 @@ text-align: justify;*/
     width: 100%;
     margin: 0px auto;
     background-color: #ffffff;
-    text-align: left;
-    max-width: 780px;
-    padding: 20px 30px;
-    box-sizing: border-box;
 }
 
 #article table {
