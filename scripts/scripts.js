@@ -56,10 +56,12 @@ var menuHtml = document.getElementById('menuHtml');
 var menuHtmlBody = document.getElementById('menuHtmlBody');
 var menuHtmlClose = document.getElementById('menuHtmlClose');
 var menuHtmlFirstClick = false;
-menuHtmlClose.addEventListener('click', function(ev) {
- ev.preventDefault();
- menuClose();
-});
+if(menuHtmlClose){
+  menuHtmlClose.addEventListener('click', function(ev) {
+   ev.preventDefault();
+   menuClose();
+  });
+}
 // Listen for all clicks on the document
 function clickEvent () {
     // If the click happened inside the the container, bail
@@ -122,7 +124,7 @@ if ('ontouchstart' in window) {
     }
 
 }
-if(supportsTouch) {
+if(supportsTouch && menuHtml) {
     var touchsurface = menuHtml,
         startX,
         startY,

@@ -2,10 +2,6 @@
 
 
 
-.clearfix {
-    *zoom: 1;
-}
-
 .clearfix:before,
 .clearfix:after {
     display: table;
@@ -51,8 +47,7 @@ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+
 }
 
 audio:not([controls]) {
@@ -117,7 +112,6 @@ textarea {
 
 button,
 input {
-    *overflow: auto;
     line-height: normal;
 }
 
@@ -132,7 +126,9 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     cursor: pointer;
-    -webkit-appearance: button;
+    -webkit-appearance: button; /* Safari and Chrome */
+    -moz-appearance: button; /* Firefox */
+    appearance: button; /* Standard */
 }
 
 label,
@@ -150,12 +146,16 @@ input[type="search"] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    -webkit-appearance: textfield;
+    -webkit-appearance: textfield; /* Safari and Chrome */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Standard */
 }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Standard */
 }
 
 textarea {
@@ -232,7 +232,7 @@ article
 /* CSS Document */
 
 html {
-    font-size: 100%;
+    font-size: clamp(16px, 1.2vw + 0.5rem, 18px);
     width: 90%;
 }
 
@@ -244,19 +244,17 @@ html {
     padding: 0;
     text-align: center;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 body {
     margin: 0 auto;
     font: 1.0rem Helvetica, "Bitstream Vera Sans", Verdana, Geneva, Arial, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
     position: relative;
 }
 
-#wrapper {
-    /*overflow: auto;*/
-}
+
 
 #pagebasflr {
     text-align: center;
@@ -304,29 +302,24 @@ a img {
 }
 
 #bandeauflsv {
-    width: 700px;
-    width: 648px;
+    width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
-    font-size: 1.0em;
-    font-weight: normal;
 }
 
 #bandeau_sflngr {
-    width: 700px;
-    width: 648px;
+    width: 700100%px;
     margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
-    font-size: 1.0em;
-    font-weight: normal;
+
 }
 
 #bandeau {
     border: 0;
     padding: 3px 6px 3px 6px;
-    margin: 0 0 2px 0;
+    margin: 0;
     height: 118px;
     border-bottom: solid 1px #dddddd;
 }
@@ -600,7 +593,6 @@ text-align: justify;*/
     border-bottom: 20px;
     margin-left: inherit;
     margin-right: inherit;
-    solid: #ffffff;
     background-color: #f1eae8;
     font-weight: bold;
     padding-left: 20px;
@@ -617,7 +609,6 @@ text-align: justify;*/
     border-bottom: 4px;
     margin-left: inherit;
     margin-right: inherit;
-    solid: #ffffff;
     background-color: #F0F5FF;
     font-weight: normal;
     padding-left: 5px;
@@ -759,6 +750,45 @@ h3 {
     border-radius: 10px;
 }
 
+/* Responsive styles for .tableaucouleur on small screens */
+@media screen and (max-width: 768px) {
+    .tableaucouleur {
+        display: block;
+        width: 100%;
+        border-spacing: 0;
+    }
+    
+    .tableaucouleur tbody {
+        display: block;
+    }
+    
+    .tableaucouleur tr {
+        display: block;
+        width: 100%;
+    }
+    
+    .tableaucouleur td {
+        display: inline-block;
+        max-width: 30px;
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+        padding: 0;
+        text-align: center;
+        vertical-align: top;
+        border-radius: 10px;
+    }
+    
+    .tableaucouleur td a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
 .genre {
     text-transform: uppercase;
     font-style: italic;
@@ -783,7 +813,7 @@ table tbody tr th {
 }
 
 .descriptif .titre {
-    font-size: 1.0em
+    font-size: 1.0em;
     background-color: #CCCCCC;
     font-style: italic;
     padding-top: 10px;
@@ -1059,4 +1089,39 @@ ul ul {
 .mx-auto {
     margin-right: auto;
     margin-left: auto;
+}
+
+/* Ensure minimum readable font sizes on small screens */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    #bandeau h2 {
+        font-size: clamp(1.2em, 4vw, 1.7em);
+    }
+    
+    #article h1 {
+        font-size: clamp(1.2em, 4vw, 1.5em);
+    }
+    
+    #article h2 {
+        font-size: clamp(1.3em, 4vw, 1.6em);
+    }
+    
+    #article h3 {
+        font-size: clamp(1.1em, 4vw, 1.4em);
+    }
+    
+    #article h4 {
+        font-size: clamp(1.0em, 4vw, 1.3em);
+    }
+    
+    #article h5 {
+        font-size: clamp(0.95em, 4vw, 1.2em);
+    }
 }

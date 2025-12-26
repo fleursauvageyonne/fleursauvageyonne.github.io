@@ -7,7 +7,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -21,7 +21,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;     
+    font-size: 1.125rem;     
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;     
+    font-size: 1rem;     
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -48,7 +48,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: none;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -75,7 +75,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;     
+    font-size: 1rem;     
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -89,7 +89,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;     
+    font-size: 1rem;     
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -112,7 +112,7 @@
 
     #article h3 {
         color: #e76a00;
-        font-size: 1.9
+        font-size: 1.9em;
         font-weight: bold;
         text-align: left;
         padding: .0em 0;
@@ -150,3 +150,13 @@
 img {
    border-radius: 2%;
    }
+.w-100 {width: 100%;}
+/* Fluid Font Sizes - Using rem units for proportional scaling */
+
+/* Base fluid font size for html - scales smoothly with viewport */
+
+
+/* Body uses rem, which scales with the root html font-size */
+body {
+    font-size: 1.15rem;
+}
