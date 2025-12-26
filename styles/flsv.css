@@ -3,7 +3,6 @@
 
 
 
-
 .clearfix:before,
 .clearfix:after {
     display: table;
@@ -1190,3 +1189,171 @@ h4 {padding:  .5em }
     font-size: 1.2em;
     font-weight: 600;
 }
+
+/* Styles from flsv1.css */
+.button {
+    background-color:#f2ffc7;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color:#e4f0f7;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color:#ffefe6;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4 {
+    background-color:#f2ffc7;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding:  3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: none;
+    cursor: pointer;
+}
+.button5 {
+    background-color:#ffc7ca;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button6 {
+    background-color:#ffece0;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button7 {
+    background-color:#fcf0a4;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.alerttx {
+    background-color: #f2ffc7;
+    margin: 30px 10px;
+    padding: 20px;
+    /*line-height: 120%;
+   font-weight: normal;*/
+}
+
+#article h7 {
+    color: #e76a00;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Override #article h3 from flsv2.css with flsv1.css styles */
+#article h3 {
+    color: #e76a00;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: left;
+    padding: .0em 0;
+    margin-top: auto;
+}
+
+.circle {
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 220px;
+    background: #ccca3d;
+    height: 220px;
+    text-align: center;
+    line-height: max(20px, 20px);
+    border-radius: 220px;
+} 
+
+.image-ronde {
+    width : 460px; height : 460px;
+    border: none;
+    -moz-border-radius : 230px;
+    -webkit-border-radius : 230px;
+    border-radius : 230px;
+}
+
+.image-ronde2 {
+    width : 260px; height : 260px;
+    border: none;
+    -moz-border-radius : 130px;
+    -webkit-border-radius : 130px;
+    border-radius : 130px;
+}
+
+/* Override img from flsv2.css with flsv1.css border-radius */
+img {
+    border-radius: 2%;
+}
+
+.w-100 {width: 100%;}
+/* Fluid Font Sizes - Using rem units for proportional scaling */
+
+/* Base fluid font size for html - scales smoothly with viewport */
+
+
+/* Body uses rem, which scales with the root html font-size */
+/* Override body font-size from flsv2.css with flsv1.css */
+body {
+    font-size: 1.15rem;
+}
+
