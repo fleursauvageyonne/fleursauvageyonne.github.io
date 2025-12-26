@@ -289,7 +289,7 @@ a:active {
 }
 
 a:hover {
-    font-style: italic;
+   
     text-decoration: underline;
 
     /*font-weight: bolder;*/
@@ -464,6 +464,7 @@ text-align: justify;*/
     width: 100%;
     margin: 0px auto;
     background-color: #ffffff;
+    padding-top:10px;
 }
 
 #article table {
@@ -779,24 +780,24 @@ acronym {
 }
 
 .tableaucouleur td {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     font-size: 1px;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 15px;
     /*border:1px solid #fff;*/
 }
-.tableaucouleur td a img { width: 20px; height: 20px; border-radius: 10px;}
+.tableaucouleur td a img { width: 30px; height: 30px; border-radius: 15px;}
 .tableaucouleur td a:hover {
     text-decoration: none;
 }
 
 .tableaucouleur td a {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: block;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 /* Responsive styles for .tableaucouleur on small screens */
