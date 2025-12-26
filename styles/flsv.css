@@ -227,7 +227,6 @@ textarea {
 
 /*fin reset*/
 
-article
 /* CSS Document */
 
 html {
@@ -467,7 +466,6 @@ text-align: justify;*/
 }
 
 #article table {
-    width: 100%;
     margin: auto;
 }
 
