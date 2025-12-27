@@ -405,6 +405,9 @@ a img {
     font-size: 1.8em;
     font-weight: bold;
     text-align: left;
+    padding-top: 1em;
+    margin-block-end:0;
+    margin-block-start:0;
 
 }
 
