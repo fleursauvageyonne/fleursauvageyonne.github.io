@@ -298,7 +298,7 @@ a img {
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    text-align: center;
+    text-align: right;
 }
 #bandeau_sflngr p,#bandeauflsv p { 
     margin-block-start: 0; 
@@ -321,7 +321,7 @@ a img {
 }
 
 #bandeau h2 {
-    margin: 0;
+    margin: 0 170px 0 0;
     clear: left;
     font-size: 1.7em;
     height: 100%;
