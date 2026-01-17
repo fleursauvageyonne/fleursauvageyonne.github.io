@@ -524,7 +524,7 @@ a img {
    /* border-bottom: 1px solid #0e0e0e;*/
 }
 #bandeau h1.titre-latin .auteur, .titre-latin .auteur { 
-    font-size: .8em; font-weight:500 
+    font-size: .8em; font-weight:500; 
 }
 .titre-francais {
     font-size: 1.3em;
