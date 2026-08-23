@@ -643,6 +643,15 @@ text-align: justify;*/
 	font-weight: normal;*/
 }
 
+.alertpt {
+    text-align: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+    background-color: #f1eae8;
+    font-weight: lighter;
+    font-size: 0.8em;
+    padding: 15px;
+
 .alert ul {
     margin: 1em 0 0 17px;
 }
