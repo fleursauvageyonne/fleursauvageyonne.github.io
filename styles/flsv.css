@@ -98,37 +98,6 @@ img {
 .google-maps img {
     max-width: none;
 }
-
-button,
-input,
-select,
-textarea {
-    margin: 0;
-    font-size: 100%;
-    vertical-align: middle;
-}
-
-button,
-input {
-    line-height: normal;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    cursor: pointer;
-    -webkit-appearance: button; 
-    -moz-appearance: button;
-    appearance: button; 
-}
-
 label,
 select,
 button,
@@ -532,8 +501,6 @@ a img {
     line-height: 1.3;
 }
 
-
-
 .titre-tribu {
     font-size: 1.3em;
     font-weight: 500;
@@ -573,6 +540,37 @@ a img {
     margin: 0 0 1em 0;
     line-height: 1.4;
 }
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button; 
+    -moz-appearance: button;
+    appearance: button; 
+}
+
 
 /*#article img {margin:16px 0 4px 0;}*/
 #article img[href*="rvb1.gif"] {
@@ -739,7 +737,11 @@ acronym {
     border-radius: 15px;
     /*border:1px solid #fff;*/
 }
-.tableaucouleur td a img { width: 30px; height: 30px; border-radius: 15px;}
+
+.tableaucouleur td a img { width: 30px; height: 30px; border-radius: 15px;
+}
+
+
 .tableaucouleur td a:hover {
     text-decoration: none;
 }
@@ -1275,8 +1277,6 @@ h4 {padding:  .5em }
    font-weight: normal;*/
 }
 
-
-
 .circle {
     vertical-align: middle;
     margin-top: 30px;
@@ -1322,3 +1322,48 @@ body {
     font-size: 1.15rem;
 }
 
+    #article h2 {
+        color: #9c4246;
+    }
+
+    #article h3 {
+        color: #9c4246;
+    }
+
+    #article .listeF h3 {
+        text-align: right;
+    }
+
+    #article .listeF h3 img {
+        padding-left: 6px;
+    }
+    
+    #article .listeF h4 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+        padding-top: 8px;
+        color: #dc5709;
+    }
+
+    #article .listeF h4 a {
+        font-size: 0.7em;
+    }
+
+    #article h5 {
+        color: #9c4246;
+         font-size: 0.9em;
+    }
+
+    #article .listeF ul {
+        list-style-type: none;
+        margin-top: 0;
+    }
+
+    #article .listeF ul li {
+        font-style: italic;
+    }
+
+    #article .listeF ul li img {
+        padding-right: 4px;
+        vertical-align: text-bottom;
+        border: hidden;
