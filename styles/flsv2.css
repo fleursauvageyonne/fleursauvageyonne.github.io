@@ -1,0 +1,61 @@
+/*reset*/
+
+.button {
+    background-color:#f2ffc7;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+.button2 {
+    background-color:#e4f0f7;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color:#ffefe6;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+
+.button6 {
+    background-color:#ffece0;
+    border-radius: 8px;
+    border: 2px double #e3e3e3;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;     
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
