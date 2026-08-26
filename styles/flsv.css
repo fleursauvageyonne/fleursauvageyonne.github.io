@@ -721,38 +721,6 @@ acronym {
     width: 65px;
 }
 
-.tableaucouleur {
-    background-color: white;
-    border-collapse: separate;
-    border-spacing: 2px;
-    padding: 5px;
-}
-
-.tableaucouleur td {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    font-size: 1px;
-    padding: 0;
-    border-radius: 15px;
-    /*border:1px solid #fff;*/
-}
-
-.tableaucouleur td a img { width: 30px; height: 30px; border-radius: 15px;
-}
-
-
-.tableaucouleur td a:hover {
-    text-decoration: none;
-}
-
-.tableaucouleur td a {
-    width: 30px;
-    height: 30px;
-    display: block;
-    border-radius: 15px;
-}
-
 /* Responsive styles for .tableaucouleur on small screens */
 @media screen and (max-width: 768px) {
     .tableaucouleur {
@@ -1021,29 +989,6 @@ ul ul {
     margin-top: 0.8em;
 }
 
-.scrollToTopBtn {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    display: block;
-    padding: 8px 4px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: transform 0.5s, opacity 0.3s;
-    border: none;
-    background-color: #8cad1f;
-    color: white;
-    font-weight: bolder;
-}
-
-.showScrollBtn {
-    transform: translateY(0);
-    opacity: 1;
-    cursor: pointer;
-}
 
 #menuHtml {
     position: absolute;
@@ -1093,41 +1038,6 @@ ul ul {
 
 }
 
-
-.nav-top {
-    padding: 5px;
-    text-align: left;
-    background-color: #8cad1f;
-}
-
-.nav-top a:link,
-.nav-top a:hover,
-.nav-top a:visited {
-    color: white;
-}
-
-.nav-top-btn {
-    display: flex;
-    align-items: center;
-}
-
-.nav-top-body {
-    max-width: 780px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.d-block {
-    display: block
-}
-
-.mx-auto {
-    margin-right: auto;
-    margin-left: auto;
-}
-
 /* Ensure minimum readable font sizes on small screens */
 @media screen and (max-width: 768px) {
     html {
@@ -1163,14 +1073,9 @@ ul ul {
     }
 }
 
-h4 {padding:  .5em }
-
-.flsvy-font {
-    font-family: "Lucida Calligraphy", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-size: 1.2em;
-    font-weight: 600;
-}
+h4 {
+    padding:  .5em;
+ }
 
 /* Styles from flsv1.css */
 .button {
@@ -1211,20 +1116,6 @@ h4 {padding:  .5em }
     text-decoration: none;
     display: inline-block;
     font-size: 1.25rem;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.button7 {
-    background-color:#fcf0a4;
-    border-radius: 8px;
-    border: 2px double #e3e3e3;
-    color: white;
-    padding: 3px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;     
     margin: 4px 2px;
     cursor: pointer;
 }

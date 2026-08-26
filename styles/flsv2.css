@@ -1,5 +1,25 @@
 /*reset*/
 
+.menu-item {
+  margin-left:1rem;
+    margin-bottom: .5em;
+    margin-top: .8em;
+    font-weight: bolder;
+}
+.menu-item-text {
+  margin-left:1rem;
+    margin-bottom: .5em;
+    margin-top: .8em;
+
+}
+
+.flsvy-font {
+    font-family: "Lucida Calligraphy", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .button {
     background-color:#f2ffc7;
     border-radius: 8px;
@@ -54,6 +74,98 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: block;
+    padding: 8px 4px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.3s;
+    border: none;
+    background-color: #8cad1f;
+    color: white;
+    font-weight: bolder;
+}
+
+.showScrollBtn {
+    transform: translateY(0);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-top {
+    padding: 5px;
+    text-align: left;
+    background-color: #8cad1f;
+}
+
+.nav-top a:link,
+.nav-top a:hover,
+.nav-top a:visited {
+    color: white;
+}
+
+.nav-top-btn {
+    display: flex;
+    align-items: center;
+}
+
+.nav-top-body {
+    max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-block {
+    display: block
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tableaucouleur {
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 2px;
+    padding: 5px;
+}
+
+.tableaucouleur td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1px;
+    padding: 0;
+    border-radius: 15px;
+    /*border:1px solid #fff;*/
+}
+
+.tableaucouleur td a img { width: 30px; height: 30px; border-radius: 15px;
+}
+
+
+.tableaucouleur td a:hover {
+    text-decoration: none;
+}
+
+.tableaucouleur td a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 15px;
+}
+
 
 
 
