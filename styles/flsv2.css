@@ -205,7 +205,7 @@ textarea {
 
 
 .scrollToTopBtn {
-    position: fixed;
+    position: center;
     bottom: 50px;
     right: 50px;
     display: block;
