@@ -293,6 +293,10 @@ textarea {
     border-radius: 15px;
 }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
 
 
 
