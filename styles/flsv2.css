@@ -217,7 +217,7 @@ textarea {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    transform: translateY(100px);
+    transform: translate(10px);
     opacity: 0;
     transition: transform 0.5s, opacity 0.3s;
     border: none;
@@ -227,7 +227,7 @@ textarea {
 }
 
 .showScrollBtn {
-    transform: translateY(0);
+    transform: translate(10px);
     opacity: 1;
     cursor: pointer;
 }
