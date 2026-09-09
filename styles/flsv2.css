@@ -193,7 +193,7 @@ textarea {
     font-size: 1rem;     
     margin: 4px 2px;
     cursor: pointer;
-
+}
 .button6 {
     background-color:#ffece0;
     border-radius: 8px;
@@ -209,7 +209,7 @@ textarea {
 }
 
 .scrollToTopBtn {
-    position: center;
+    position: fixed;
     bottom: 50px;
     right: 50px;
     display: block;
@@ -217,7 +217,7 @@ textarea {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    transform: translate(10px);
+    transform: translateY(100px);
     opacity: 0;
     transition: transform 0.5s, opacity 0.3s;
     border: none;
@@ -227,7 +227,7 @@ textarea {
 }
 
 .showScrollBtn {
-    transform: translate(10px);
+    transform: translateY(0);
     opacity: 1;
     cursor: pointer;
 }
