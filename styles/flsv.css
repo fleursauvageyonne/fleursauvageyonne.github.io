@@ -914,11 +914,19 @@ li {
     margin-top: .8em;
     font-weight: bolder;
 }
+
 .menu-item-text {
   margin-left:1rem;
     margin-bottom: .5em;
     margin-top: .8em;
 
+}
+
+.menu-item-text_2 {
+  margin-left:1rem;
+    margin-bottom: .5em;
+    margin-top: .8em;
+    text-align: right;
 }
 
 /* Ensure minimum readable font sizes on small screens */
